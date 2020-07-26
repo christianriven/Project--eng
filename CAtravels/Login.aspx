@@ -19,6 +19,7 @@
       
   </head>
   <body>
+
 <div class="login-box">
   &nbsp;<h1>Ingresar <img class="avatar" src="img/logo.jpeg" alt="logo C.A."></h1>
     <form id="form1" runat="server">
@@ -26,7 +27,7 @@
         </label>
     &nbsp;
 
-        <label for="password">contraseña<asp:TextBox ID="txtLcontra" runat="server" TextMode="Password"></asp:TextBox>
+        <label for="password">Contraseña<asp:TextBox ID="txtLcontra" runat="server" TextMode="Password"></asp:TextBox>
         </label>
     &nbsp;
         &nbsp;

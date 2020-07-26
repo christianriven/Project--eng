@@ -19,23 +19,25 @@ namespace CAtravels
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (TxtName.Text.Trim() != "" && Txtcontra.Text != "" && TxtVcontra.Text != ""  && TxtEmail.Text.Trim() != "" && TxtCell.Text.Trim() !="")
+            if ( Txtusername.Text.Trim () != ""  &&   TxtName.Text.Trim() != "" && Txtcontra.Text != "" && TxtVcontra.Text != ""  && TxtEmail.Text.Trim() != "" && TxtCell.Text.Trim() !="")
             {
                 if (Txtcontra.Text == TxtVcontra.Text)
                 {
+                    string username;
                     string nombre;
                     string ncell;
                     string email;
                     string encriptada;
 
+                    username = Txtusername.Text;
                     nombre = TxtName.Text;
                     ncell = TxtCell.Text;
                     email = TxtEmail.Text;
                     encriptada = encriptada = EncryptString(Txtcontra.Text, initVector);
-                    if (conexionA.UsuariosRepetidos(nombre, encriptada, email, ncell) == 0)
+                    if (conexionA.UsuariosRepetidos(username, nombre, encriptada, email, ncell) == 0)
                     {
-                        alerta.Text = "<script>Swal.fire('Registrado con éxito', 'success'); </script>";
-
+                        alerta.Text = "<script>Swal.fire('Registrado con éxito', 'Bienvenido', 'success'); </script>";
+                        Txtusername.Text = "";
                         TxtName.Text = "";
                         TxtEmail.Text = "";
                         Txtcontra.Text = "";
@@ -46,7 +48,7 @@ namespace CAtravels
                     }
                     else
                     {
-                        alerta.Text = "<script>Swal.fire('Este nombre ya esta registrado' 'error'); </script>";
+                        alerta.Text = "<script>Swal.fire('Nombre de usuario repetido', 'Elije  nuevo nombre de usuario', 'error'); </script>";
                     }
                 }
                 else
@@ -94,5 +96,7 @@ namespace CAtravels
         {
             Response.Redirect("Login.aspx");
         }
+
+      
     }
 }

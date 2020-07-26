@@ -43,7 +43,7 @@ namespace CAtravels
 
                 //int retorno = 0;
                 MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1; database= catravels; Uid=root; pwd=;");
-                var cmd = "SELECT Id_usuarios from usuarios WHERE Nombre_Usuario='" + username + "' AND Password='" + contra + "';";
+                var cmd = "SELECT Id_usuarios from usuarios WHERE User_name='" + username + "' AND Password='" + contra + "';";
                 MySqlCommand comando = new MySqlCommand(cmd, conexion);
                 conexion.Open();
                 int retorno = Convert.ToInt32(comando.ExecuteScalar());
@@ -55,7 +55,7 @@ namespace CAtravels
                 else
                 {
                    
-                    alerta.Text = "<script>Swal.fire('Error de credenciales', 'Su nombre o contraseña no son correctos', 'error') </script>";
+                    alerta.Text = "<script>Swal.fire('Error de credenciales', 'Su nombre de usuario contraseña no son correctos', 'error') </script>";
                     txtUname.Text = "";
                     txtLcontra.Text = "";
                 }
