@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace CAtravels
 {
-    public partial class Paquetes1 : System.Web.UI.Page
+    public partial class Costa_Ricap : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -32,31 +32,6 @@ namespace CAtravels
         protected void LBpaquetes_Click(object sender, EventArgs e)
         {
             Response.Redirect("Paquetes1.aspx");
-        }
-
-        protected void LBMantigua_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("AntiguaGuatemala.aspx");
-        }
-
-        protected void LBMsivar_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("ElSalvador.aspx");
-        }
-
-        protected void LBMpanama_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Panamap.aspx");
-        }
-
-        protected void LBMhonduras_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Hondurasp.aspx");
-        }
-
-        protected void LBMcosta_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Costaricap.aspx");
         }
     }
 }

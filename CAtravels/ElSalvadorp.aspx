@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="El Salvadorp.aspx.cs" Inherits="CAtravels.El_Salvadorp" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ElSalvadorp.aspx.cs" Inherits="CAtravels.El_Salvadorp" %>
 
 <!DOCTYPE html>
 
@@ -40,16 +40,16 @@
 			<div class="menudelapagina">
 				<ul id="palabras">
 				  <li>
-                      <asp:LinkButton ID="LBinicio" runat="server">INICIO</asp:LinkButton>
+                      <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click">INICIO</asp:LinkButton>
                     </li>
 				  <li>
-                      <asp:LinkButton ID="LBvuelos" runat="server">VUELOS</asp:LinkButton>
+                      <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click1">VUELOS</asp:LinkButton>
                     </li>
 					<li>
-                        <asp:LinkButton ID="LBpromociones" runat="server">PROMOCIONES</asp:LinkButton>
+                        <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">PROMOCIONES</asp:LinkButton>
                     </li>
 				   <li>
-                       <asp:LinkButton ID="LBpaquetes" runat="server">PAQUETES</asp:LinkButton>
+                       <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PAQUETES</asp:LinkButton>
                     </li>
 				</ul>
 			</div>	

@@ -89,7 +89,7 @@
     <Content Include="botones\n70a.png" />
     <Content Include="botones\visa.jpg" />
     <Content Include="botones\visa2.png" />
-    <Content Include="Costa Ricap.aspx" />
+    <Content Include="CostaRicap.aspx" />
     <Content Include="costarica70.aspx" />
     <Content Include="css\bootstrap-4.4.1.1.css" />
     <Content Include="css\bootstrap-4.4.1.css" />
@@ -112,7 +112,7 @@
     <Content Include="css\reset.css" />
     <Content Include="css\resettt.css" />
     <Content Include="css\style.css" />
-    <Content Include="El Salvadorp.aspx" />
+    <Content Include="ElSalvadorp.aspx" />
     <Content Include="Honduras45.aspx" />
     <Content Include="Hondurasp.aspx" />
     <Content Include="imagenes\1.png" />
@@ -232,12 +232,12 @@
     <Compile Include="conexionA.cs" />
     <Compile Include="conexionB.cs" />
     <Compile Include="conexionBD.cs" />
-    <Compile Include="Costa Ricap.aspx.cs">
-      <DependentUpon>Costa Ricap.aspx</DependentUpon>
+    <Compile Include="CostaRicap.aspx.cs">
+      <DependentUpon>CostaRicap.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Costa Ricap.aspx.designer.cs">
-      <DependentUpon>Costa Ricap.aspx</DependentUpon>
+    <Compile Include="CostaRicap.aspx.designer.cs">
+      <DependentUpon>CostaRicap.aspx</DependentUpon>
     </Compile>
     <Compile Include="costarica70.aspx.cs">
       <DependentUpon>costarica70.aspx</DependentUpon>
@@ -246,12 +246,12 @@
     <Compile Include="costarica70.aspx.designer.cs">
       <DependentUpon>costarica70.aspx</DependentUpon>
     </Compile>
-    <Compile Include="El Salvadorp.aspx.cs">
-      <DependentUpon>El Salvadorp.aspx</DependentUpon>
+    <Compile Include="ElSalvadorp.aspx.cs">
+      <DependentUpon>ElSalvadorp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="El Salvadorp.aspx.designer.cs">
-      <DependentUpon>El Salvadorp.aspx</DependentUpon>
+    <Compile Include="ElSalvadorp.aspx.designer.cs">
+      <DependentUpon>ElSalvadorp.aspx</DependentUpon>
     </Compile>
     <Compile Include="Honduras45.aspx.cs">
       <DependentUpon>Honduras45.aspx</DependentUpon>

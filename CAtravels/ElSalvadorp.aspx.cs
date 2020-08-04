@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace CAtravels
 {
-    public partial class Hondurasp : System.Web.UI.Page
+    public partial class El_Salvadorp : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,6 +18,7 @@ namespace CAtravels
         {
             Response.Redirect("inicio.aspx");
         }
+
         protected void LBpromociones_Click(object sender, EventArgs e)
         {
             Response.Redirect("Promociones.aspx");
@@ -33,5 +34,5 @@ namespace CAtravels
             Response.Redirect("Vuelos.aspx");
         }
     }
-}
+    
 }
