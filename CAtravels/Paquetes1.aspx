@@ -79,7 +79,7 @@
         </div>
         <div class="card-action" id="img2.12" >
           <a href="" id="masinfo2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            <asp:LinkButton ID="LBMsivar" runat="server" OnClick="LBMsivar_Click">Más información</asp:LinkButton>
+            <asp:LinkButton ID="LBMsivar" runat="server">Más información</asp:LinkButton>
             &nbsp; </a>&nbsp;</div>
       </div>
     </div>			
@@ -94,7 +94,7 @@
           <p align="justify">Este Paquete hacia la ciudad de Panama permite explorar un maximo de 4 lugares especiales con 3 comidas pagadas en el hotel, el paquete le permitira 3 acompañantes por 5 dias y 4 noches. </p>
         </div>
         <div class="card-action" id="img4">
-          <a href="" id="masinfo4"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:LinkButton ID="LBMpanama" runat="server" OnClick="LBMpanama_Click">Más información</asp:LinkButton>
+          <a href="" id="masinfo4"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:LinkButton ID="LBMpanama" runat="server">Más información</asp:LinkButton>
 &nbsp;&nbsp;</a>
         </div>
       </div>
@@ -111,7 +111,7 @@
         </div>
         <div class="card-action" id="img6">
           <a href="" id="masinfo6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            <asp:LinkButton ID="LBMhonduras" runat="server" OnClick="LBMhonduras_Click">Más información</asp:LinkButton>
+            <asp:LinkButton ID="LBMhonduras" runat="server">Más información</asp:LinkButton>
             &nbsp; &nbsp;</a>
         </div>
       </div>
@@ -128,7 +128,7 @@
         </div>
         <div class="card-action" id="img8">
           <a href="" id="masinfo8">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            <asp:LinkButton ID="LBMcosta" runat="server" OnClick="LBMcosta_Click">Más información</asp:LinkButton>
+            <asp:LinkButton ID="LBMcosta" runat="server">Más información</asp:LinkButton>
             &nbsp;</a>
         </div>
       </div>
@@ -170,7 +170,6 @@
       </form>
   </body>
 </html>
- 
 	   
 
 

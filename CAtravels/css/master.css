@@ -8,16 +8,16 @@ height: 99vh;
 }
 
 .login-box {
-  width: 320px;
-  height: 478px;
-  background: #0000e0;
-  color: #fff;
-  top: 48%;
-  left: 52%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  box-sizing: border-box;
-  padding: 70px 30px;
+    width: 320px;
+    height: 478px;
+    background: #0277bd;
+    color: #fff;
+    top: 48%;
+    left: 52%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
 }
 
 .login-box .avatar {

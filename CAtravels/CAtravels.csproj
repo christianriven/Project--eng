@@ -89,6 +89,7 @@
     <Content Include="botones\n70a.png" />
     <Content Include="botones\visa.jpg" />
     <Content Include="botones\visa2.png" />
+    <Content Include="Bvuelos.aspx" />
     <Content Include="CostaRicap.aspx" />
     <Content Include="costarica70.aspx" />
     <Content Include="css\bootstrap-4.4.1.1.css" />
@@ -116,6 +117,8 @@
     <Content Include="Honduras45.aspx" />
     <Content Include="Hondurasp.aspx" />
     <Content Include="imagenes\1.png" />
+    <Content Include="imagenes\256127.jpg" />
+    <Content Include="imagenes\4-of-the-compound-space.jpg" />
     <Content Include="imagenes\7-rotado.jpg" />
     <Content Include="imagenes\7.png" />
     <Content Include="imagenes\8caf7c92-bad4-44d1-a6cc-c5306d8a2d97.jpg" />
@@ -129,6 +132,7 @@
     <Content Include="imagenes\Costa-Rica.jpg" />
     <Content Include="imagenes\costaricAAAAA.jpg" />
     <Content Include="imagenes\destino-san-salvador-para-conocer-el-volcan.jpg" />
+    <Content Include="imagenes\dsdsdsdsdsdsasa.jpg" />
     <Content Include="imagenes\dt.common.streams.StreamServer.jpg" />
     <Content Include="imagenes\el-salvador.jpg" />
     <Content Include="imagenes\guate-CATravels.png" />
@@ -139,13 +143,17 @@
     <Content Include="imagenes\haciendadelmar2.jpg" />
     <Content Include="imagenes\hondurasSSSS.jpg" />
     <Content Include="imagenes\Logo.png" />
+    <Content Include="imagenes\lugares-turisticos-de-costa-rica-1024x684.jpg" />
     <Content Include="imagenes\L_5c1a36f633303_Honduras-turismo.jpg" />
     <Content Include="imagenes\nicaragua.jpg" />
     <Content Include="imagenes\nicaraguAAAAA.jpg" />
+    <Content Include="imagenes\playa-roatan-honduras.jpg" />
     <Content Include="imagenes\Plaza-barrios-san-salvador.png" />
     <Content Include="imagenes\pngtree-background-of-a-sunset-landscape-in-the-rocky-mountains-image_309829.jpg" />
+    <Content Include="imagenes\portada-revista-Costa-Rica-EF_ELFIMA20131008_0015_1.jpg" />
     <Content Include="imagenes\Que-hacer-en-Ciudad-de-Panamá-Conocer-lugares-y-destinos-turísticos-1-1.png" />
     <Content Include="imagenes\shutterstock_317547605.jpg" />
+    <Content Include="imagenes\turismo-nicaragua.jpg" />
     <Content Include="imagenes\ver-centroamerica-guatemala-antigua-guatemala-02.jpg" />
     <Content Include="imagenes\vuelos-san-jose_b1-san-jose_es.jpg" />
     <Content Include="imagenes\yojoa-lake-honduras.jpg" />
@@ -228,6 +236,13 @@
     </Compile>
     <Compile Include="AntiguaGuatemala.aspx.designer.cs">
       <DependentUpon>AntiguaGuatemala.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bvuelos.aspx.cs">
+      <DependentUpon>Bvuelos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bvuelos.aspx.designer.cs">
+      <DependentUpon>Bvuelos.aspx</DependentUpon>
     </Compile>
     <Compile Include="conexionA.cs" />
     <Compile Include="conexionB.cs" />

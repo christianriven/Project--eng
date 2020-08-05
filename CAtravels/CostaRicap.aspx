@@ -62,10 +62,10 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-4">
-			<img  src="imagenes/guate-rotado.jpg"/>
+			&nbsp;<asp:Image ID="Image1" runat="server" Height="252px" ImageUrl="~/imagenes/Costa-Rica.jpg" Width="299px" />
 		</div>
 		<div class="col-md-4">
-			<img src="imagenes/guate1-rotado.jpg" />
+			&nbsp;<asp:Image ID="Image2" runat="server" Height="237px" ImageUrl="~/imagenes/portada-revista-Costa-Rica-EF_ELFIMA20131008_0015_1.jpg" Width="294px" />
 		</div>
 		<div class="col-md-4">
 				<div class="form-group">
