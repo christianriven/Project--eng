@@ -37,11 +37,12 @@ namespace CAtravels
         protected void LBMantigua_Click(object sender, EventArgs e)
         {
             Response.Redirect("AntiguaGuatemala.aspx");
+            //Response.Redirect("ElSalvadorp.aspx");
         }
 
         protected void LBMsivar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ElSalvador.aspx");
+            Response.Redirect("ElSalvadorp.aspx");
         }
 
         protected void LBMpanama_Click(object sender, EventArgs e)

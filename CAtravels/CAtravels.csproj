@@ -247,6 +247,7 @@
     <Compile Include="conexionA.cs" />
     <Compile Include="conexionB.cs" />
     <Compile Include="conexionBD.cs" />
+    <Compile Include="conexiónE.cs" />
     <Compile Include="CostaRicap.aspx.cs">
       <DependentUpon>CostaRicap.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

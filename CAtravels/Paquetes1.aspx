@@ -40,9 +40,8 @@
 					<li>
                         <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">PROMOCIONES</asp:LinkButton>
                     </li>
-				   <li></li>
-				    <li>
-                        <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PAQUETES</asp:LinkButton>
+				   <li>
+                       <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PAQUETES</asp:LinkButton>
                     </li>
 				</ul>
 			</div>	
@@ -62,7 +61,8 @@
           <p>La bella y hermosa capital de Guatemala, disfrutela con 3 acompañantes 3 dias y 2 noches.</p>
         </div>
         <div class="card-action col-md-7" id="img2">
-          <a href="PAQUETES-2.html" id="masinfo" >&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:LinkButton ID="LBMantigua" runat="server" OnClick="LBMantigua_Click">Más información</asp:LinkButton>
+          <a href="GUATEMALA.html" id="masinfo" >&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              <asp:LinkButton ID="LBMantigua" runat="server" OnClick="LBMantigua_Click">Más información</asp:LinkButton>
 &nbsp;</a>
         </div>
       </div>
@@ -78,9 +78,12 @@
           <p >El paquete incluye dos viajes personalizados hacia lugares de San Salvador, incluye transporte y dos opciones de hotel. Disfruta este hermozo paisaje con 2 acompañantes por 4 dias y 3 noches. </p>
         </div>
         <div class="card-action" id="img2.12" >
-          <a href="" id="masinfo2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            <asp:LinkButton ID="LBMsivar" runat="server">Más información</asp:LinkButton>
-            &nbsp; </a>&nbsp;</div>
+          <a href="PAQUETES-2.html" id="masinfo2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <asp:LinkButton ID="LBMsivar" runat="server" OnClick="LBMsivar_Click">Más información</asp:LinkButton>
+            &nbsp; </a>&nbsp;
+            
+                                
+        </div>
       </div>
     </div>			
 	   
@@ -94,7 +97,7 @@
           <p align="justify">Este Paquete hacia la ciudad de Panama permite explorar un maximo de 4 lugares especiales con 3 comidas pagadas en el hotel, el paquete le permitira 3 acompañantes por 5 dias y 4 noches. </p>
         </div>
         <div class="card-action" id="img4">
-          <a href="" id="masinfo4"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:LinkButton ID="LBMpanama" runat="server">Más información</asp:LinkButton>
+          <a href="" id="masinfo4"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:LinkButton ID="LBMpanama" runat="server" OnClick="LBMpanama_Click">Más información</asp:LinkButton>
 &nbsp;&nbsp;</a>
         </div>
       </div>
@@ -111,7 +114,7 @@
         </div>
         <div class="card-action" id="img6">
           <a href="" id="masinfo6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            <asp:LinkButton ID="LBMhonduras" runat="server">Más información</asp:LinkButton>
+            <asp:LinkButton ID="LBMhonduras" runat="server" OnClick="LBMhonduras_Click">Más información</asp:LinkButton>
             &nbsp; &nbsp;</a>
         </div>
       </div>
@@ -128,7 +131,7 @@
         </div>
         <div class="card-action" id="img8">
           <a href="" id="masinfo8">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            <asp:LinkButton ID="LBMcosta" runat="server">Más información</asp:LinkButton>
+            <asp:LinkButton ID="LBMcosta" runat="server" OnClick="LBMcosta_Click">Más información</asp:LinkButton>
             &nbsp;</a>
         </div>
       </div>

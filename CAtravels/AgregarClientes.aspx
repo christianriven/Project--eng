@@ -18,38 +18,38 @@
 
 	<div class="container">
 		&nbsp;<div class="form__top">
-			<h1><span>CA</span></h1><h2><span>Registro</span><img class="avatar" src="css/logo2.png" alt="logo C.A."></h2>
+			<h1><span>CA</span></h1><h2><span>Registro</span></h2>
 		</div>
 		<form id="form1" runat="server">
-            Nombre de la empresa:<br />
+            Name of the company :<br />
             <br />
             <asp:TextBox ID="txtNempresa" runat="server" cssClass="input"  Width="433px"></asp:TextBox>
 			<br />
 			<br />
-            Correo:<br />
+            E-mail:<br />
             <br />
 			<asp:TextBox ID="txtEmailEmpresa" runat="server" cssClass="input" Width="433px" TextMode="Password" ></asp:TextBox>
             <br />
             <br />
-            Nombre del representante:<br />
+            Name of the representative:<br />
             <br />
 
             <asp:TextBox ID="txtrepresentante" runat="server" cssClass="input" Width="433px" OnTextChanged="txtrepresentante_TextChanged" ></asp:TextBox>
             <br />
             <br />
-            Correo del represtante:<br />
+            E-mail of the representative:<br />
             <br />
             <asp:TextBox ID="txtEmailRepresentante" runat="server" cssClass="input" Width="433px" TextMode="Email"  ></asp:TextBox>
 
             <br />
 
             <br />
-            Contraseña:<br />
+            Password:<br />
             <br />
             <asp:TextBox ID="txtEcontra" runat="server" cssClass="input" Width="433px" placeholder="" TextMode="Password" ></asp:TextBox>
             <br />
             <br />
-            Verificar contraseña:<br />
+            verify password:<br />
             <br />
             <br />
             <asp:TextBox ID="txtEVcontra" runat="server" cssClass="input" Width="433px" TextMode="Password"></asp:TextBox>

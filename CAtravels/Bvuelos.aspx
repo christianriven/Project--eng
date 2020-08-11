@@ -76,6 +76,16 @@
     </p>
 	
 	&nbsp;<asp:Button ID="Button1" runat="server" Height="47px" Text="Buscar" cssClass="waves-effect waves-light btn-large"/>
+	 <br />
+    <br />
+    <asp:GridView ID="GridView1" runat="server">
+    </asp:GridView>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 	 <br>
 	  <br>
 	  <br>
