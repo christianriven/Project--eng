@@ -28,7 +28,7 @@
 			<br />
             E-mail:<br />
             <br />
-			<asp:TextBox ID="txtEmailEmpresa" runat="server" cssClass="input" Width="433px" TextMode="Password" ></asp:TextBox>
+			<asp:TextBox ID="txtEmailEmpresa" runat="server" cssClass="input" Width="433px" TextMode="Email" ></asp:TextBox>
             <br />
             <br />
             Representative Name:<br />
