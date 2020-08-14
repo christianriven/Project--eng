@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 #franja{
 	background-color: #0d47a1 ;
@@ -473,3 +473,6 @@ padding-left: 190px;
 	font-family: "Porky's";
 }
 
+#franja {
+	color #e1f5fe
+}

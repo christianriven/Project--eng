@@ -21,13 +21,13 @@
   <body>
 
 <div class="login-box">
-  &nbsp;<h1>Ingresar <img class="avatar" src="img/logo.jpeg" alt="logo C.A."></h1>
+  &nbsp;<h1>Log In <img class="avatar" src="img/logo.jpeg" alt="logo C.A."></h1>
     <form id="form1" runat="server">
-    <label for="username">Nombre de usuarios<asp:TextBox ID="txtUname" runat="server"></asp:TextBox>
+    <label for="username">User Name<asp:TextBox ID="txtUname" runat="server"></asp:TextBox>
         </label>
     &nbsp;
 
-        <label for="password">Contraseña<asp:TextBox ID="txtLcontra" runat="server" TextMode="Password"></asp:TextBox>
+        <label for="password">Password<asp:TextBox ID="txtLcontra" runat="server" TextMode="Password"></asp:TextBox>
         </label>
     &nbsp;
         &nbsp;
@@ -35,18 +35,18 @@
         <asp:Button ID="btnlogin" runat="server" Text="Log in" Height="29px" Width="251px" OnClick="btnlogin_Click" />
         </a>
         <br />
-    &nbsp;<asp:LinkButton ID="LinkButton1" runat="server" ForeColor="White" OnClick="LinkButton1_Click">Crear una cuenta</asp:LinkButton>
+    &nbsp;<asp:LinkButton ID="LinkButton1" runat="server" ForeColor="White" OnClick="LinkButton1_Click">Create an Account</asp:LinkButton>
 
 
 
         <br />
-        &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" ForeColor="White" OnClick="LinkButton2_Click" >Registrar Compañia</asp:LinkButton>
+        &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" ForeColor="White" OnClick="LinkButton2_Click" >Register an Enterprise</asp:LinkButton>
 
          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script src="js/bootstrap.min.js"></script>
         <asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
         <br />
-        &nbsp;<asp:LinkButton ID="LinkButton3" runat="server" ForeColor="White" OnClick="LinkButton3_Click">Ingresar como compañia</asp:LinkButton>
+        &nbsp;<asp:LinkButton ID="LinkButton3" runat="server" ForeColor="White" OnClick="LinkButton3_Click">Log in as Company</asp:LinkButton>
     </form>
   </div>
       

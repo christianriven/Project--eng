@@ -39,15 +39,15 @@
 			<div class="menudelapagina">
 				<ul id="palabras" >
 			  <li>
-                  <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click">INICIO</asp:LinkButton>
+                  <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click">HOME</asp:LinkButton>
                     </li>
-                    <li>&nbsp;<asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">VUELOS</asp:LinkButton>
+                    <li>&nbsp;<asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">FLIGHTS</asp:LinkButton>
                     </li>
 					<li>
-                        <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">PROMOCIONES</asp:LinkButton>
+                        <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">PROMOTIONS</asp:LinkButton>
                     </li>
                     <li>
-                        <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PAQUETES</asp:LinkButton>
+                        <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PACKAGES</asp:LinkButton>
                     </li>
 				</ul>
 			</div>	
@@ -59,32 +59,32 @@
       <td height="131" colspan="3"><img src="Logo.png" width="204" height="185" alt=""/><img src="proms.png" width="1066" height="192" alt=""/></td>
     </tr>
     <tr>
-      <td height="49" colspan="3" align="center" valign="top"><strong style="color: #000000">Promociones Disponibles este Mes:</strong></td>
+      <td height="49" colspan="3" align="center" valign="top"><strong style="color: #000000">Available Promotions this Month:</strong></td>
     </tr>
     <tr>
       <td width="474" height="97" align="center" valign="top"><a href="honduras45.html" target="_self" onMouseOver="MM_swapImage('45','','botones/cr45a.png',1)" onMouseOut="MM_swapImgRestore()"><br>
       </a>
-          <asp:ImageButton ID="ImageButton1" runat="server" Height="60px" ImageUrl="~/botones/cr45.png" Width="300px" OnClick="ImageButton1_Click" />
+          <asp:ImageButton ID="ImageButton1" runat="server" Height="60px" ImageUrl="~/botones/45%,eng.png" Width="300px" OnClick="ImageButton1_Click" />
         </td>
       <td width="422" height="97" align="center" valign="top">
-          <asp:ImageButton ID="ImageButton2" runat="server" Height="62px" ImageUrl="~/botones/n70.png" Width="274px" />
+          <asp:ImageButton ID="ImageButton2" runat="server" Height="62px" ImageUrl="~/botones/70%-eng.png" Width="274px" />
         </td>
       <td width="366" height="97" align="center" valign="top">
-          <asp:ImageButton ID="ImageButton3" runat="server" Height="60px" ImageUrl="~/botones/es60.png" Width="246px" />
+          <asp:ImageButton ID="ImageButton3" runat="server" Height="60px" ImageUrl="~/botones/60%-eng.png" Width="246px" />
         </td>
     </tr>
     <tr>
       <td height="153" align="center" valign="top"><p><em><strong>Honduras</strong></em></p>
-        <p><em><strong>INCLUYE:<br>
-          -Exclusividad en Vuelos.<br>
-      -Opciones Variadas de Hospedaje.</strong></em></p></td>
+        <p><em><strong>INCLUDES:<br>
+          -Flight Exclusivity.<br>
+      -Various Hosting Options.</strong></em></p></td>
       <td height="153" align="center" valign="top"><p><strong><em>Costa Rica<br>
-        INCLUYE:</em></strong></p>
-        <p><em><strong>-Elección opcional deGuías Turísticos.</strong><strong></strong></em></p></td>
+        INCLUDES:</em></strong></p>
+        <p><em><strong>-Optional Touristic Guides </strong><strong></strong></em></p></td>
       <td height="153" align="center" valign="top"><p><em><strong>Nicaragua</strong></em></p>
-      <p><strong><em>INCLUYE:</em></strong></p>
-      <p><strong><em>-Opciones/sugerencias de </em></strong></p>
-      <p><strong><em>Alimentación y Recreación.</em></strong><em></em></p></td>
+      <p><strong><em>INCLUDES:</em></strong></p>
+      <p><strong><em>-Sugestions/Options Recreation </em></strong></p>
+      <p><strong><em>Recreation & Alimentation.</em></strong><em></em></p></td>
     </tr>
     <tr>
       <td height="129" colspan="3">&nbsp;</td>

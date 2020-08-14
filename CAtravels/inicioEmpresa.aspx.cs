@@ -36,7 +36,7 @@ namespace CAtravels
                     
                     if (conexiónE.EmpresaRpetida(Ename, Uempresa, Dempresa, Pempresa, Tempresa, Eempresa) == 0)
                     {
-                        alerta.Text = "<script>Swal.fire('Registrado exitosamente', 'Bienvenido', 'success'); </script>";
+                        alerta.Text = "<script>Swal.fire('Succesfully Register', 'Welcome', 'success'); </script>";
                      TxtEname.Text = "";
                     TxtUempresa.Text = "";
                     TxtDempresa.Text = "";
@@ -47,10 +47,25 @@ namespace CAtravels
                     }
                     else
                     {
-                        alerta.Text = "<script>Swal.fire('Empresa Registrada', 'Al parece esta empresa ya esta registrada', 'error'); </script>";
+                        alerta.Text = "<script>Swal.fire('Register Company', 'The Company name already exists', 'error'); </script>";
                     }
                 
                 
         }   }
+
+        protected void LBturismo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("inicioEmpresa.aspx");
+        }
+
+        protected void LBvuelos_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("inicioEmpresa2.aspx");
+        }
+
+        protected void TxtDempresa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -13,7 +13,7 @@
   </head>
   <body>
 <div class="login-box">
-  &nbsp;<h1>Log in as administror<img class="avatar" src="img/logo.jpeg" alt="logo C.A."></h1>
+  &nbsp;<h1>Log in as Administrator<img class="avatar" src="img/logo.jpeg" alt="logo C.A."></h1>
     <form id="form1" runat="server">
     <label for="username">Name of the company <asp:TextBox ID="txtAname" runat="server"></asp:TextBox>
         </label>

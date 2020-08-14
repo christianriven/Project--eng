@@ -55,7 +55,7 @@ namespace CAtravels
                 else
                 {
                    
-                    alerta.Text = "<script>Swal.fire('Error de credenciales', 'Su nombre de usuario contraseña no son correctos', 'error') </script>";
+                    alerta.Text = "<script>Swal.fire('Credential Error', 'Your User Name or Password are not correct', 'error') </script>";
                     txtUname.Text = "";
                     txtLcontra.Text = "";
                 }
@@ -64,7 +64,7 @@ namespace CAtravels
             }
             else
             {
-                alerta.Text = "<script>Swal.fire('ADVERTENCIA', 'Llene todos los campos requeridos', 'error') </script>";
+                alerta.Text = "<script>Swal.fire('WARNING', 'Fill all the required files', 'error') </script>";
             }
 
         }

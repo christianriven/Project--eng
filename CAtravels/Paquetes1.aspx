@@ -32,16 +32,16 @@
 			<div class="menudelapagina">
 				<ul id="palabras" >
 			  <li>
-                  <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click">INICIO</asp:LinkButton>
+                  <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click">HOME</asp:LinkButton>
                     </li>
 				  <li>
-                      <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">VUELOS</asp:LinkButton>
+                      <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">FLIGHTS</asp:LinkButton>
                     </li>
 					<li>
-                        <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">PROMOCIONES</asp:LinkButton>
+                        <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">PROMOTIONS</asp:LinkButton>
                     </li>
 				   <li>
-                       <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PAQUETES</asp:LinkButton>
+                       <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PACKAGES</asp:LinkButton>
                     </li>
 				</ul>
 			</div>	
@@ -58,11 +58,11 @@
       </div>
       <div class="card-stacked">
         <div class="card-content">
-          <p>La bella y hermosa capital de Guatemala, disfrutela con 3 acompañantes 3 dias y 2 noches.</p>
+          <p>The beatiful Guatemala Capital City, enjoy it with 3 companionsfor 3 days and 2 nights.</p>
         </div>
         <div class="card-action col-md-7" id="img2">
           <a href="GUATEMALA.html" id="masinfo" >&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              <asp:LinkButton ID="LBMantigua" runat="server" OnClick="LBMantigua_Click">Más información</asp:LinkButton>
+              <asp:LinkButton ID="LBMantigua" runat="server" OnClick="LBMantigua_Click">More Information</asp:LinkButton>
 &nbsp;</a>
         </div>
       </div>
@@ -75,11 +75,11 @@
       </div>
       <div class="card-stacked">
         <div class="card-content">
-          <p >El paquete incluye dos viajes personalizados hacia lugares de San Salvador, incluye transporte y dos opciones de hotel. Disfruta este hermozo paisaje con 2 acompañantes por 4 dias y 3 noches. </p>
+          <p >This package includes 2 customizable trips around San Salvador, includes transport and 2 hotel options. enjoy this gorgeus landscapes with 2 companions for 4 days and 3 nights iones de hotel. </p>
         </div>
         <div class="card-action" id="img2.12" >
           <a href="PAQUETES-2.html" id="masinfo2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            <asp:LinkButton ID="LBMsivar" runat="server" OnClick="LBMsivar_Click">Más información</asp:LinkButton>
+            <asp:LinkButton ID="LBMsivar" runat="server" OnClick="LBMsivar_Click">More Information</asp:LinkButton>
             &nbsp; </a>&nbsp;
             
                                 
@@ -94,10 +94,10 @@
       </div>
       <div class="card-stacked">
         <div class="card-content">
-          <p align="justify">Este Paquete hacia la ciudad de Panama permite explorar un maximo de 4 lugares especiales con 3 comidas pagadas en el hotel, el paquete le permitira 3 acompañantes por 5 dias y 4 noches. </p>
+          <p align="justify">This Package to Panama City allows you to explore a maximum of 4 special places with 3 meals paid at the hotel, the package will allow you 3 companions for 5 days and 4 nights.</p>
         </div>
         <div class="card-action" id="img4">
-          <a href="" id="masinfo4"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:LinkButton ID="LBMpanama" runat="server" OnClick="LBMpanama_Click">Más información</asp:LinkButton>
+          <a href="" id="masinfo4"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:LinkButton ID="LBMpanama" runat="server" OnClick="LBMpanama_Click">More Information</asp:LinkButton>
 &nbsp;&nbsp;</a>
         </div>
       </div>
@@ -110,11 +110,11 @@
       </div>
       <div class="card-stacked">
         <div class="card-content">
-          <p align="justify">Este lujoso paquete le provee estadia en Tegucigalpa  y le traera 6 comidas en el hotel con transporte incluido a 5 lugares de su preferencia. Disfruta este coloquial estado para 4 acompañantes 6 dias y 5 noches.</p>
+          <p align="justify">This luxurious package provides you with accommodation in Tegucigalpa and will bring you 6 meals at the hotel with transportation included to 5 places of your choice. Enjoy this colloquial state for 4 companions 6 days and 5 nights.</p>
         </div>
         <div class="card-action" id="img6">
           <a href="" id="masinfo6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            <asp:LinkButton ID="LBMhonduras" runat="server" OnClick="LBMhonduras_Click">Más información</asp:LinkButton>
+            <asp:LinkButton ID="LBMhonduras" runat="server" OnClick="LBMhonduras_Click">More Information</asp:LinkButton>
             &nbsp; &nbsp;</a>
         </div>
       </div>
@@ -127,11 +127,11 @@
       </div>
       <div class="card-stacked">
         <div class="card-content">
-          <p align="justify">El paquete que lo lleva directo a San Diego donde podra disfrutar de el modernismo con 3 comidas pagadas y entradas a 3 lugares a su eleccion. Disfruta este hermoso paisaje con 4 acompañantes por 3 dias y 3 noches.</p>
+          <p align="justify">The package that takes you straight to San Diego where you can enjoy modernism with 3 paid meals and tickets to 3 places of your choice. Enjoy this beautiful landscape with 4 companions for 3 days and 3 nights.</p>
         </div>
         <div class="card-action" id="img8">
           <a href="" id="masinfo8">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            <asp:LinkButton ID="LBMcosta" runat="server" OnClick="LBMcosta_Click">Más información</asp:LinkButton>
+            <asp:LinkButton ID="LBMcosta" runat="server" OnClick="LBMcosta_Click">More Information</asp:LinkButton>
             &nbsp;</a>
         </div>
       </div>
@@ -141,11 +141,6 @@
   </div>
 	  
 	<ul class="pagination" id="numer">
-    <li class="disabled"><a href="#!"><i class="material-icons">Atras</i></a></li>
-    <li class="active" id="cuadrito"><a href="#!">1</a></li>
-    <li class="waves-effect"><a href="#!">2</a></li>
-    <li class="waves-effect"><a href="#!">3</a></li>
-    <li class="waves-effect"><a href="#!"><i class="material-icons">Siguiente</i></a></li>
   </ul>
 	
     <div class="col-md-12">

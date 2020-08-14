@@ -63,31 +63,31 @@
 
 	<div class="container">
 		<div class="form__top">
-			<h1><span>CA TRAVELS</span></h1><h2><span>Registro</span></h2>
+			<h1><span>CA TRAVELS</span></h1><h2><span>Register</span></h2>
 		</div>
 		<form id="form1" runat="server">
 			<asp:Label ID="LUsername" runat="server" Text="User name:"></asp:Label>
             <br />
             <asp:TextBox ID="Txtusername" runat="server" cssClass="input" Width="433px"></asp:TextBox>
             <br />
-			Nombre:<br />
+			Name:<br />
 			<asp:TextBox ID="TxtName" runat="server" cssClass="input" Width="433px"  required autofocus onpaste="return false" 
              onkeypress="return validar(event)" ></asp:TextBox>
 			&nbsp;<br />
-&nbsp;Correo:<br />
+&nbsp;E-mail:<br />
 			<asp:TextBox ID="TxtEmail" runat="server" cssClass="input" Width="433px"  required TextMode="Email"></asp:TextBox>
 			<br />
-			&nbsp;Numero de telefono:<br />
+			&nbsp;Telephone Number<br />
             <asp:TextBox ID="TxtCell" runat="server" cssClass="input" Width="433px"  required TextMode="Phone"  minlength="5" MaxLength="20"></asp:TextBox>
             <br />
-            Contraseña:<br />
+            Password<br />
             <asp:TextBox ID="Txtcontra" runat="server" cssClass="input" Width="433px"  required TextMode="Password"></asp:TextBox>
 			&nbsp;<br />
-            Verificar Contraseña<br />
+            Verify Password<br />
             <asp:TextBox ID="TxtVcontra" runat="server" cssClass="input" Width="433px"  required TextMode="Password"></asp:TextBox>
 			&nbsp;
 &nbsp;<div class="btn__form">
-                <asp:Button ID="Button1" runat="server" Text="Agregar usuarios" OnClick="Button1_Click" cssClass="btn__submit" Width="372px" Height="34px" />
+                <asp:Button ID="Button1" runat="server" Text="Add User" OnClick="Button1_Click" cssClass="btn__submit" Width="372px" Height="34px" />
 				<asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
             	&nbsp;
 	           

@@ -73,6 +73,11 @@
     <Content Include="AgregarClientes.aspx" />
     <Content Include="agregarusuarios.aspx" />
     <Content Include="AntiguaGuatemala.aspx" />
+    <Content Include="botones\25%25-eng.png" />
+    <Content Include="botones\30%25-eng.png" />
+    <Content Include="botones\45%25,eng.png" />
+    <Content Include="botones\60%25-eng.png" />
+    <Content Include="botones\70%25-eng.png" />
     <Content Include="botones\cr25.png" />
     <Content Include="botones\cr25a.png" />
     <Content Include="botones\cr45.png" />
@@ -87,6 +92,7 @@
     <Content Include="botones\n30a.png" />
     <Content Include="botones\n70.png" />
     <Content Include="botones\n70a.png" />
+    <Content Include="botones\proms-ENG.png" />
     <Content Include="botones\visa.jpg" />
     <Content Include="botones\visa2.png" />
     <Content Include="Bvuelos.aspx" />
@@ -164,6 +170,7 @@
     <Content Include="img\logo.jpeg" />
     <Content Include="inicio.aspx" />
     <Content Include="inicioEmpresa.aspx" />
+    <Content Include="InicioEmpresa2.aspx" />
     <Content Include="js\bootstrap.bundle.js" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\bootstrap.js" />
@@ -248,6 +255,7 @@
     <Compile Include="conexionB.cs" />
     <Compile Include="conexionBD.cs" />
     <Compile Include="conexiónE.cs" />
+    <Compile Include="ConexiónV.cs" />
     <Compile Include="CostaRicap.aspx.cs">
       <DependentUpon>CostaRicap.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -296,6 +304,13 @@
     </Compile>
     <Compile Include="inicioEmpresa.aspx.designer.cs">
       <DependentUpon>inicioEmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InicioEmpresa2.aspx.cs">
+      <DependentUpon>InicioEmpresa2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InicioEmpresa2.aspx.designer.cs">
+      <DependentUpon>InicioEmpresa2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -376,6 +391,7 @@
     <Content Include="css\bootstrap-reboot.min.css.map" />
     <Content Include="css\bootstrap.css.map" />
     <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="botones\botones.psd" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -12,16 +12,16 @@
     <script src="SweetAlert/sweetalert2.all.min.js"></script>
     <script src="SweetAlert/sweetalert2.js"></script>
 
-	<title>Resgistro</title>
+	<title>Resgister</title>
 </head>
 <body>
 
 	<div class="container">
 		&nbsp;<div class="form__top">
-			<h1><span>CA</span></h1><h2><span>Registro</span></h2>
+			<h1><span>CA</span></h1><h2><span>Register</span></h2>
 		</div>
 		<form id="form1" runat="server">
-            Name of the company :<br />
+            Company name:<br />
             <br />
             <asp:TextBox ID="txtNempresa" runat="server" cssClass="input"  Width="433px"></asp:TextBox>
 			<br />
@@ -31,13 +31,13 @@
 			<asp:TextBox ID="txtEmailEmpresa" runat="server" cssClass="input" Width="433px" TextMode="Password" ></asp:TextBox>
             <br />
             <br />
-            Name of the representative:<br />
+            Representative Name:<br />
             <br />
 
             <asp:TextBox ID="txtrepresentante" runat="server" cssClass="input" Width="433px" OnTextChanged="txtrepresentante_TextChanged" ></asp:TextBox>
             <br />
             <br />
-            E-mail of the representative:<br />
+            Representative E-mail:<br />
             <br />
             <asp:TextBox ID="txtEmailRepresentante" runat="server" cssClass="input" Width="433px" TextMode="Email"  ></asp:TextBox>
 
@@ -49,7 +49,7 @@
             <asp:TextBox ID="txtEcontra" runat="server" cssClass="input" Width="433px" placeholder="" TextMode="Password" ></asp:TextBox>
             <br />
             <br />
-            verify password:<br />
+            Verify Password:<br />
             <br />
             <br />
             <asp:TextBox ID="txtEVcontra" runat="server" cssClass="input" Width="433px" TextMode="Password"></asp:TextBox>

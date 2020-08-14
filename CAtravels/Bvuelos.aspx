@@ -27,35 +27,42 @@
 		<div class="col-12">
 			<div class="menudelapagina">
 				<ul id="palabras">
-				  <li><a href="javascript:__doPostBack('LinkButton1','')">INICIO</a></li>
-				  <li><a href="javascript:__doPostBack('LinkButton2','')">VUELOS</a></li>
-					<li><a href="javascript:__doPostBack('LinkButton3','')">PROMOCIONES</a></li>
-				   <li><a href="javascript:__doPostBack('LinkButton4','')">PAQUETES</a></li>
+				  <li>
+                      <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">HOME</asp:LinkButton>
+                    </li>
+				  <li>
+                      <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">FLIGHTS</asp:LinkButton>
+                    </li>
+					<li>
+                        <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">PROMOTIONS</asp:LinkButton>
+                    </li>
+				   <li>
+                       <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">PACKAGES</asp:LinkButton>
+                    </li>
 				</ul>
 			</div>	
 		</div>
 	</div>
 	
 	<div class="col-4 col-xl-12">
-	  <h1 align="justify" id="encuentra" class="">Configuracion del Vuelo</h1>
+	  <h1 align="justify" id="encuentra" class="">Flight Configuration</h1>
   </div>
 	
 	<div class="container-fluid">
 	<div class="row">
 		<div class="col-md-4">
-  <p class="col-xl-10">Fecha de Salida: 
-	  <asp:TextBox ID="TextBox7" runat="server" Width="264px"></asp:TextBox>
+  <p class="col-xl-10">Departure Date: <asp:TextBox ID="TextBox7" runat="server" Width="264px"></asp:TextBox>
             </p>
-  <p class="col-xl-10">Fecha de Regreso: 
+  <p class="col-xl-10">Return Date: 
     <asp:TextBox ID="TextBox6" runat="server" Width="264px"></asp:TextBox>
             </p>
 	    </div>
 			
 			
 		<div class="col-md-8">
-			<p>Desde: <asp:TextBox ID="TextBox5" runat="server" Width="264px"></asp:TextBox>
+			<p>From: <asp:TextBox ID="TextBox5" runat="server" Width="264px"></asp:TextBox>
             </p>
-			<p>Hasta: <asp:TextBox ID="TextBox4" runat="server" Width="264px"></asp:TextBox>
+			<p>Until: <asp:TextBox ID="TextBox4" runat="server" Width="264px"></asp:TextBox>
             </p>			
 		</div>
 	</div>
@@ -63,19 +70,19 @@
 	
 				<br>
 				<br>
-<p class="col-xl-12">Cantidad de Adultos 
+<p class="col-xl-12">Number of Adults: 
   <asp:TextBox ID="TextBox3" runat="server" Width="264px"></asp:TextBox>
     </p>
 
-<p class="col-xl-12">Cantidad de Menores (3-14)
+<p class="col-xl-12">Number Youth (3-14)
   <asp:TextBox ID="TextBox2" runat="server" Width="264px"></asp:TextBox>
     </p>
 
-<p class="col-xl-12">Cantidad de Infantes (0-2)<asp:TextBox ID="TextBox1" runat="server" Width="264px"></asp:TextBox>
+<p class="col-xl-12">Number of Infant (0-2)<asp:TextBox ID="TextBox1" runat="server" Width="264px"></asp:TextBox>
     <br> 
     </p>
 	
-	&nbsp;<asp:Button ID="Button1" runat="server" Height="47px" Text="Buscar" cssClass="waves-effect waves-light btn-large"/>
+	&nbsp;<asp:Button ID="Button1" runat="server" Height="47px" Text="Search" cssClass="waves-effect waves-light btn-large"/>
 	 <br />
     <br />
     <asp:GridView ID="GridView1" runat="server">

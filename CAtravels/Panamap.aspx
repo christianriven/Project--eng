@@ -43,17 +43,17 @@
 			<div class="menudelapagina">
 				<ul id="palabras">
 				  <li>
-                      <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click">INICIO</asp:LinkButton>
+                      <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click">HOME</asp:LinkButton>
                     </li>
 				  <li>
-                      <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">VUELOS</asp:LinkButton>
+                      <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">FLIGHTS</asp:LinkButton>
                     </li>
 				  <li></li>
 					<li>
-                        <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">PROMOCIONES</asp:LinkButton>
+                        <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">PROMOTIONS</asp:LinkButton>
                     </li>
 				   <li>
-                       <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PAQUETES</asp:LinkButton>
+                       <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PACKAGES</asp:LinkButton>
                     </li>
 				</ul>
 			</div>	
@@ -61,7 +61,7 @@
 	</div>
 	
 			
-<h2>DIRECTO A PANAMÁ</h2>
+<h2>DIRECT TO PANAMA</h2>
 			
 <div class="container-fluid">
 	<div class="row">
@@ -88,29 +88,17 @@
 				</div>
 				<div class="form-group">
 					 
-					<label for="exampleInputFile">
-						File input
-					</label>
-					<input type="file" class="form-control-file" id="exampleInputFile" />
 					<p class="help-block">
-						Example block-level help text here.
-					</p>
+						&nbsp;</p>
 				</div>
-				<div class="checkbox">
-					 
-					<label>
-						<input type="checkbox" /> Check me out
-					</label>
-				</div> 
 				<button type="submit" class="btn btn-primary">
-					Submit
-				</button>
+					Submit</button>
 		</div>
 	</div>
 	<div class="row">
 	  <div class="col-md-8">
 			<p class="text-muted text-left">
-		    Este unico paquete lo llevara a usted y 3 acompanantes a una intrepida aventura por 3 increibles y pacificos lugares de interes a su eleccio; contara con transporte dentro de la ciudad y por supuesto obtendra pases en el hotel para comer un maximo de 4 veces en su estadia para todos los que lo acompanen en cualquiera de las 3 opciones de hoteles que usted tendra con todo incluido, el paquete le incluira tambien un total de 3 dias y 2 noches en el hotel que elija.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </p>
+		    This unique package will take you and 3 companions on an intrepid adventure through 3 incredible and peaceful places of interest of your choice; You will have transportation within the city and of course you will get passes at the hotel to eat a maximum of 4 times during your stay for all those who accompany you in any of the 3 hotel options that you will have all-inclusive, the package will include you also a total of 3 days and 2 nights at the hotel of your choice.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </p>
 		</div>
 	  <div class="col-md-4">
 		</div>

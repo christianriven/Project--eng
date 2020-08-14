@@ -39,15 +39,15 @@
 			<div class="menudelapagina">
 				<ul id="palabras" >
 			  <li>
-                  <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click">INICIO</asp:LinkButton>
+                  <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click">HOME</asp:LinkButton>
                     </li>
-                    <li>&nbsp;<asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">VUELOS</asp:LinkButton>
+                    <li>&nbsp;<asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">FLIGHTS</asp:LinkButton>
                     </li>
 					<li>
-                        <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">PROMOCIONES</asp:LinkButton>
+                        <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">PROMOTIONS</asp:LinkButton>
                     </li>
                     <li>
-                        <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PAQUETES</asp:LinkButton>
+                        <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PACKAGES</asp:LinkButton>
                     </li>
 				</ul>
 			</div>	
@@ -60,26 +60,26 @@
         <table width="597" border="0" cellpadding="0" cellspacing="10">
         <tbody>
           <tr>
-            <td width="224" style="font-size: 24px; color: #FFF500;">Número de Tarjeta</td>
+            <td width="224" style="font-size: 24px; color: #1565c0;">Credit Card Numer:</td>
             <td width="248">
                 <asp:TextBox ID="txtntarjetavisa" runat="server"></asp:TextBox>
               </td>
           </tr>
           <tr>
-            <td height="50" style="font-size: 24px; color: #FFF500;">Fecha de Expiración</td>
+            <td height="50" style="font-size: 24px; color: #1565c0;">Expiration Date:</td>
             <td>
                 <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
               </td>
           </tr>
           <tr>
-            <td height="55" align="left" style="font-size: 24px; color: #FFF500;">CVV</td>
+            <td height="55" align="left" style="font-size: 24px; color: #1565c0;">CVV</td>
             <td>
                 <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
               </td>
           </tr>
         </tbody>
     </table>
-          <asp:Button ID="btnEnviar" runat="server" Text="Enviar" />
+          <asp:Button ID="btnEnviar" runat="server" Text="Send:" />
         </td>
     </tr>
   </tbody>

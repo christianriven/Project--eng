@@ -43,16 +43,16 @@
 			<div class="menudelapagina">
 				<ul id="palabras" >
 			  <li>
-                  <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click" >INICIO</asp:LinkButton>
+                  <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click" >HOME</asp:LinkButton>
 &nbsp;</li>
 				  <li>
-                      <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">VUELOS</asp:LinkButton>
+                      <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">FLIGHTS</asp:LinkButton>
                     </li>
 					<li>
-                        <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">PROMOCIONES</asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">PROMOTIONS</asp:LinkButton>
                     </li>
 				   <li>
-                       <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PAQUETES</asp:LinkButton>
+                       <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PACKAGES</asp:LinkButton>
                     </li>
 				</ul>
 			</div>	
@@ -61,7 +61,7 @@
 	
 	
   <div class="col-5"> 
-	<img class="tp-kbimg" src="imagenes/BANNER 1.png" style="position: absolute; height: 356px; width: 846px; transform: translate3d(-30px, 0px, 0px) scale(1.1, 1.1); transform-origin: 0% 0% 0px; top: 3px; left: 15px;"></div>
+	<img class="tp-kbimg" src="imagenes/BANNER 1.png" style="position: absolute; height: 327px; width: 971px; transform: translate3d(-30px, 0px, 0px) scale(1.1, 1.1); transform-origin: 0% 0% 0px; top: 147px; left: 80px;"></div>
 		<!-- LAYERS -->
 	<br>
 	<br>
@@ -71,6 +71,14 @@
 	<br>
 	<br>
 	<br>
+	<br />
+    <br />
+    <br />
+    <br />
+    <br />
+	<br>
+	<br>
+	<br>
 	<br>
 	<br>
 	<br>
@@ -83,17 +91,17 @@
 	<br>
 	<div class="col-10">
 	<br>
-	<h1 id="vuelos"> Vuelos en Oferta</h1>
+	<h1 id="vuelos"> Flights with Discount</h1>
 		
 	</div>
 	
 	<div class="col-10">
-	<h1 align="center" id="pregunta">¿Está buscando vuelos baratos desde El Salvador o promociones aéreas para tus vacaciones? </h1>
+	<h1 align="center" id="pregunta">Are you searching for cheap flights from El Salvador or promotions for your Vacations?</h1>
 		
 	</div>
 	
 	<div class="col-12">
-	<h1   align="justify" id="encuentra">Encuentra una amplia oferta de boletos aéreos baratos para tu destino favorito. La Agencia de Viajes Amate Travel te ofrece las mejores promociones aéreas para que pueda disfrutar de tu viaje a los mejores destinos. Vuelos a Costa Rica,Honduras,Panama y Guatemala no importa a donde estés planeando volar, aquí podrá encontrar promociones aéreas a todos los destinos. Reserva ahora tu vuelo en la mejor Agencia de Viajes en El Salvador. </h1>
+	<h1   align="justify" id="encuentra">Find a wide number of flight ticket offers for your favorite destiny. CATravels offer to you packages that includes transports, and recreation to reduce the total cost. Flights to Costa Rica, Honduras, Panama, El Salvador and Guatemala, here you can find Airline Promotions to these destinies.</h1>
 		
 	</div>
 	
@@ -125,8 +133,7 @@
 								&nbsp;<asp:LinkButton ID="LBesa" runat="server" ForeColor="Black">El Salvador</asp:LinkButton>
 							</h5>
 							<p class="card-text">
-								<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Conocido como<span>&nbsp;rl&nbsp;</span>país de las distancias cortas,<span>&nbsp;</span></span><b style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">El 
-                                Salvador</b><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><span>&nbsp;</span>le permite<span>&nbsp;al </span>turística desayunar en la playa, almorzar en la ciudad y cenar en la montaña, todo en un mismo dia. Un destino ideal para disfrutar de unas magníficas vacaciones y su experto local tiene todo lo que usted necesita.</span></p>
+								Known as the &quot;short distances country&quot;<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">, El Salvador allows the tourist eat the breakfast on the beach, take the lunch in the city and have a delicious dinner on the mountains, all in one day. An ideal destiny to enjoy a really memorable vacations, CATravels offers your everything you need with the El Salvador Package.</span></p>
 							
 						</div>
 					</div>
@@ -139,24 +146,20 @@
 								<asp:LinkButton ID="Lbguatemala2" runat="server" ForeColor="Black">Guatemala</asp:LinkButton>
 							</h5>
 							<p class="card-text">
-								<b style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">Guatemala</b><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><span>&nbsp;</span>está bañada por dos 
-                                océanos, el Atlántico al norte y el Pacífico al sur <span>&nbsp;</span></span><b style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">Guatemala</b><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><span>&nbsp;</span>es 
-                                quizás la zona de mayor concentración volcánica de toda América. El país cuenta con numerosos volcanes, más de 30, entre los que se encuentra el Tajumulco, con 4.220 mts., siendo el más elevado del país</span></p>
+								<b style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">Guatemala</b><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><span>&nbsp;</span>
+									it is surounded by the Atlantic Ocean and the Pacific Ocean, </span><b style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">Guatemala</b><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><span>&nbsp;it 
+                                is maybe de country with the highest volcanic concetration of all America. This magnificent country has more than 30, where Tajumulco, with 4.220 mts, being the highest of the country.</span></span></p>
 							
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-  <div class="col-10">
-	<h1 align="center" id="pregunta">Paquetes turisticos al mejor precio </h1>
-		
+        <h1 align="center" id="pregunta">Touristics packages at the best price </h1>
 	</div>
 	
 		<div class="col-12">
-	<h1   align="justify" id="encuentra">En agencia de viajes Amate Travel puedes encontrar la mejor oferta de paquetes turísticos. Puedes elegir paquetes de viajes a una amplia variedad de destinos, somos tu puerta de entrada para vivir las mejores vacaciones. Nuestros paquetes turísticos económicos poseen la mejor combinación de vuelos, hoteles y traslados al precio más barato para que disfrutes al máximo tus vacaciones en familia, con amigos, en pareja o quien quieras. Vive cada rincón del mundo con agencia de viajes Amate Travel!</h1>
+	<h1   align="justify" id="encuentra">In CATravels travel agency you can find the best offer of tourist packages. You can choose travel packages to a wide variety of destinations, we are your gateway to experience the best vacations. Our economic tourist packages have the best combination of flights and transfers at the cheapest price so that you can fully enjoy your holidays with family, friends, as a couple or whoever you want. Live every corner of the world with CATravels travel agency</h1>
 		
 	</div>
 	

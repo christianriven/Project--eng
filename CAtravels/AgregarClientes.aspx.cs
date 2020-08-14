@@ -32,7 +32,7 @@ namespace CAtravels
                     encriptada = encriptada = EncryptString(txtEcontra.Text, initVector);
                     if (conexionB.UsuariosRepetidos(Nempresa, Cempresa, Nrepresentante, Crepresentante, encriptada) == 0)
                     {
-                        alerta.Text = "<script>Swal.fire('Registrado con éxito', 'success'); </script>";
+                        alerta.Text = "<script>Swal.fire('Company Succesfully Added', 'success'); </script>";
 
                         txtNempresa.Text = "";
                         txtEmailEmpresa.Text = "";
@@ -46,12 +46,12 @@ namespace CAtravels
                     }
                     else
                     {
-                        alerta.Text = "<script>Swal.fire('El correo de esta empresa ya esta registrado' 'error'); </script>";
+                        alerta.Text = "<script>Swal.fire('This company E-mail has already been used' 'error'); </script>";
                     }
                 }
                 else
                 {
-                    alerta.Text = "<script>Swal.fire('Las contraseñas no coinciden', 'Repita su contraseña.', 'error');</script>";
+                    alerta.Text = "<script>Swal.fire('The Passwords Do Not Match', 'Repeat your Password', 'error');</script>";
                 }
 
 
@@ -59,7 +59,7 @@ namespace CAtravels
             }
             else
             {
-                alerta.Text = "<script>Swal.fire('ADVERTENCIA', 'No deje espacios en blanco', 'error') </script>";
+                alerta.Text = "<script>Swal.fire('WARNINGS', 'Do not leave empty fields', 'error') </script>";
             }
         }
         private const string initVector = "pemgail9uzpgzl88";

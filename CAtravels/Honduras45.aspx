@@ -39,16 +39,16 @@
 			<div class="menudelapagina">
 				<ul id="palabras" >
 			  <li>
-                  <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click">INICIO</asp:LinkButton>
+                  <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click">HOME</asp:LinkButton>
                     </li>
-                    <li>&nbsp;<asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">VUELOS</asp:LinkButton>
+                    <li>&nbsp;<asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">FLIGHTS</asp:LinkButton>
                     </li>
 					<li></li>
 				   <li>
-                       <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">PROMOCIONES</asp:LinkButton>
+                       <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">PROMOTIONS</asp:LinkButton>
                     </li>
                     <li>
-                        <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PAQUETES</asp:LinkButton>
+                        <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PACKAGES</asp:LinkButton>
                     </li>
 				</ul>
 			</div>	
@@ -58,16 +58,17 @@
  <table width="1631" border="0" cellpadding="0" cellspacing="10">
   <tbody>
     <tr>
-      <td width="1302" align="center"><strong style="color: #000000">Ha Seleccionado vuelo con destino a Honduras<br>
-        Con un 45% de Descuento.</strong></td>
+      <td width="1302" align="center">Y<strong style="color: #000000">ou have selected a flight to Honduras<br>
+          With a 45% Discount.</strong></td>
     </tr>
     <tr>
-      <td align="center"><p style="color: #000000">Este Incluye:</p>
-      <p style="color: #FFC600"><em><strong>-Exclusividad en Vuelos.<br>
-      -Opciones Variadas de Hospedaje</strong></em><strong>.</strong></p></td>
+      <td align="center"><p style="color: #000000">This Includes:</p>
+      <p style="color: #FFC600"><em><strong>-Flights Exlusivity.<br>
+          -Varied Accommodation Options</strong></em><strong>.</strong></p>
+        </td>
     </tr>
     <tr>
-      <td align="center"><p style="color: #000000">Seleccione Método de Pago:</p>
+      <td align="center"><p style="color: #000000">Select a Payment Method:</p>
         <p>
             <asp:ImageButton ID="IBmastercard" runat="server" Height="148px" ImageUrl="~/botones/mastercard-logo-e1572361966389.jpg" Width="392px" OnClick="IBmastercard_Click" />
           </p>
