@@ -13,5 +13,50 @@ namespace CAtravels
         {
 
         }
+        protected void LBinicio_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("inicio-esp.aspx");
+        }
+
+        protected void LBvuelos_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Vuelos-esp.aspx");
+        }
+
+        protected void LBpromociones_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Promociones-esp.aspx");
+        }
+
+        protected void LBpaquetes_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Paquetes1-esp.aspx");
+        }
+
+        protected void LBMantigua_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AntiguaGuatemala-esp.aspx");
+            //Response.Redirect("ElSalvadorp.aspx");
+        }
+
+        protected void LBMsivar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ElSalvadorp-esp.aspx");
+        }
+
+        protected void LBMpanama_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Panamap-esp.aspx");
+        }
+
+        protected void LBMhonduras_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Hondurasp-esp.aspx");
+        }
+
+        protected void LBMcosta_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Costaricap-esp.aspx");
+        }
     }
 }

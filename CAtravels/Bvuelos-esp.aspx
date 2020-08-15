@@ -6,7 +6,7 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Untitled Document</title>
+    <title>VUELOS</title>
     <!-- Bootstrap -->
 	<link href="../Plantilla Vuelos/css/bootstrap-4.4.1.css" rel="stylesheet">
 	<link href="css/mi-estilo.css" rel="stylesheet">

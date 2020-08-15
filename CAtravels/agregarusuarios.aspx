@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="./css/main.css">
 	<script src="SweetAlert/sweetalert2.all.min.js"></script>
     <script src="SweetAlert/sweetalert2.js"></script>
-	<title>Resgistro</title>
+	<title>Resgister</title>
     <style type="text/css">
         #Button1 {
         }

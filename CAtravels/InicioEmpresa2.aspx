@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="./css/main.css">
 	<link href="css/materialize.css" rel="stylesheet">
     <link href="css/mi-estilo.css" rel="stylesheet">
-	<title>Vuelos</title>
+	<title>FLIGHTS</title>
 </head>
 <body>
 

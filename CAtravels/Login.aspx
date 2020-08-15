@@ -19,10 +19,20 @@
       
   </head>
   <body>
+      <form id="form1" runat="server">
+      <div style="height: 83px">
+
+          <asp:Label ID="Label1" runat="server" Text="CHOOSE THE LANGUAGE"></asp:Label>
+          <br />
+          <asp:ImageButton ID="IMB_language" runat="server" Height="62px" ImageUrl="~/imagenes/españa.png" OnClick="IMB_language_Click" Width="117px" />
+          <br />
+          <br />
+
+      </div>
 
 <div class="login-box">
   &nbsp;<h1>Log In <img class="avatar" src="img/logo.jpeg" alt="logo C.A."></h1>
-    <form id="form1" runat="server">
+    
     <label for="username">User Name<asp:TextBox ID="txtUname" runat="server"></asp:TextBox>
         </label>
     &nbsp;

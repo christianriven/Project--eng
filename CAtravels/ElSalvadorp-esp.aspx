@@ -7,7 +7,7 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EL-SAlVADOR</title>
+    <title>EL SAlVADOR</title>
     <!-- Bootstrap -->
 	<link href="../CATravels/css/bootstrap-4.4.1.css" rel="stylesheet">
 	

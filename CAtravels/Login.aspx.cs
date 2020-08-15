@@ -93,5 +93,10 @@ namespace CAtravels
         {
             Response.Redirect("LoginEmpresa.aspx");
         }
+
+        protected void IMB_language_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("login-esp.aspx");
+        }
     }
 }

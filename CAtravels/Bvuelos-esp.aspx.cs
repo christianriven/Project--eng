@@ -13,5 +13,24 @@ namespace CAtravels
         {
 
         }
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("inicio-esp.aspx");
+        }
+
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Vuelos-esp.aspx");
+        }
+
+        protected void LinkButton3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Promociones-esp.aspx");
+        }
+
+        protected void LinkButton4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Paquetes1-esp.aspx");
+        }
     }
 }

@@ -7,7 +7,7 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Untitled Document</title>
+    <title>COSTA RICA</title>
     <!-- Bootstrap -->
 <link href="css/mi-estilo.css" rel="stylesheet">
 	  

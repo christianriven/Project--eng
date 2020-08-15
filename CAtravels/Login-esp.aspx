@@ -19,10 +19,20 @@
       
   </head>
   <body>
+      <form id="form1" runat="server">
+      <div style="height: 83px">
+
+          <asp:Label ID="Label1" runat="server" Text="CHOOSE THE LANGUAGE"></asp:Label>
+          <br />
+          <asp:ImageButton ID="IMB_language" runat="server" Height="62px" ImageUrl="~/imagenes/bandera estados unidos.png" OnClick="IMB_language_Click" Width="117px" />
+          <br />
+          <br />
+
+      </div>
 
 <div class="login-box">
   &nbsp;<h1>Ingresar <img class="avatar" src="img/logo.jpeg" alt="logo C.A."></h1>
-    <form id="form1" runat="server">
+    
     <label for="username">Nombre de usuarios<asp:TextBox ID="txtUname" runat="server"></asp:TextBox>
         </label>
     &nbsp;
@@ -32,21 +42,21 @@
     &nbsp;
         &nbsp;
     <a href="#">
-        <asp:Button ID="btnlogin" runat="server" Text="Ingresar" Height="29px" Width="251px" OnClick="btnlogin_Click" />
+        <asp:Button ID="btnloginESP" runat="server" Text="Ingresar" Height="29px" Width="251px" OnClick="btnloginESP_Click"  />
         </a>
         <br />
-    &nbsp;<asp:LinkButton ID="LinkButton1" runat="server" ForeColor="White" OnClick="LinkButton1_Click">Crear una cuenta</asp:LinkButton>
+    &nbsp;<asp:LinkButton ID="LB_crearcuenta" runat="server" ForeColor="White" OnClick="LB_crearcuenta_Click" >Crear una cuenta</asp:LinkButton>
 
 
 
         <br />
-        &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" ForeColor="White" OnClick="LinkButton2_Click" >Registrar Compañia</asp:LinkButton>
+        &nbsp;<asp:LinkButton ID="LB_ingresarcompañia" runat="server" ForeColor="White" OnClick="LB_ingresarcompañia_Click"  >Registrar Compañia</asp:LinkButton>
 
          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script src="js/bootstrap.min.js"></script>
         <asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
         <br />
-        &nbsp;<asp:LinkButton ID="LinkButton3" runat="server" ForeColor="White" OnClick="LinkButton3_Click">Ingresar como compañia</asp:LinkButton>
+        &nbsp;<asp:LinkButton ID="LB_ingresarempresa" runat="server" ForeColor="White" OnClick="LB_ingresarempresa_Click" >Ingresar como compañia</asp:LinkButton>
     </form>
   </div>
       

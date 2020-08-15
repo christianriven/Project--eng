@@ -32,7 +32,7 @@
             Nombre de Representante:<br />
             <br />
 
-            <asp:TextBox ID="txtrepresentante" runat="server" cssClass="input" Width="433px" OnTextChanged="txtrepresentante_TextChanged" ></asp:TextBox>
+            <asp:TextBox ID="txtrepresentante" runat="server" cssClass="input" Width="433px"  ></asp:TextBox>
             <br />
             <br />
             Correo de Representante:<br />

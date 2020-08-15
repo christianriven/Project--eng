@@ -24,6 +24,24 @@ namespace CAtravels
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Control Label1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+
+        /// <summary>
+        /// Control IMB_language.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton IMB_language;
+
+        /// <summary>
         /// Control txtUname.
         /// </summary>
         /// <remarks>
@@ -42,31 +60,31 @@ namespace CAtravels
         protected global::System.Web.UI.WebControls.TextBox txtLcontra;
 
         /// <summary>
-        /// Control btnlogin.
+        /// Control btnloginESP.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnlogin;
+        protected global::System.Web.UI.WebControls.Button btnloginESP;
 
         /// <summary>
-        /// Control LinkButton1.
+        /// Control LB_crearcuenta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.LinkButton LB_crearcuenta;
 
         /// <summary>
-        /// Control LinkButton2.
+        /// Control LB_ingresarcompañia.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
+        protected global::System.Web.UI.WebControls.LinkButton LB_ingresarcompañia;
 
         /// <summary>
         /// Control alerta.
@@ -78,12 +96,12 @@ namespace CAtravels
         protected global::System.Web.UI.WebControls.Literal alerta;
 
         /// <summary>
-        /// Control LinkButton3.
+        /// Control LB_ingresarempresa.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton3;
+        protected global::System.Web.UI.WebControls.LinkButton LB_ingresarempresa;
     }
 }

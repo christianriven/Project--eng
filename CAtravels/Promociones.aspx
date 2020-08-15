@@ -7,7 +7,7 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Untitled Document</title>
+    <title>PROMOTIONS</title>
     <!-- Bootstrap -->
 <link href="css/mi-estilo.css" rel="stylesheet">
 	  
@@ -67,10 +67,10 @@
           <asp:ImageButton ID="ImageButton1" runat="server" Height="60px" ImageUrl="~/botones/45%,eng.png" Width="300px" OnClick="ImageButton1_Click" />
         </td>
       <td width="422" height="97" align="center" valign="top">
-          <asp:ImageButton ID="ImageButton2" runat="server" Height="62px" ImageUrl="~/botones/70%-eng.png" Width="274px" />
+          <asp:ImageButton ID="ImageButton2" runat="server" Height="62px" ImageUrl="~/botones/70%-eng.png" Width="274px" OnClick="ImageButton2_Click" />
         </td>
       <td width="366" height="97" align="center" valign="top">
-          <asp:ImageButton ID="ImageButton3" runat="server" Height="60px" ImageUrl="~/botones/60%-eng.png" Width="246px" />
+          <asp:ImageButton ID="ImageButton3" runat="server" Height="60px" ImageUrl="~/botones/60%-eng.png" Width="246px" OnClick="ImageButton3_Click" />
         </td>
     </tr>
     <tr>
