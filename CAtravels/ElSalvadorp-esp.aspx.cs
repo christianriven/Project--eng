@@ -31,7 +31,7 @@ namespace CAtravels
 
         protected void LBvuelos_Click1(object sender, EventArgs e)
         {
-            Response.Redirect("Vuelos.aspx-esp");
+            Response.Redirect("Vuelos-esp.aspx");
         }
     }
 }

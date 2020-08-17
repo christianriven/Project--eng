@@ -25,25 +25,31 @@ namespace CAtravels
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (Txtvempresa.Text.Trim() != "" && Txtvsalida.Text.Trim() != "" && Txtvllegada.Text != "" && Txtprecio.Text != "" && Txttelefono.Text != "" && Txtemail.Text.Trim() != "")
+            if (Txtvempresa.Text.Trim() != "" && Txtvsalida.Text.Trim() != "" && Txtvllegada.Text != "" && TxtSalida.Text != "" && Txtllegada.Text != "" && Txtprecio.Text != "" && Txttelefono.Text != "" && Txtemail.Text.Trim() != "")
             {
 
-                string VEname, Psalida, Pdestino, Preciovuelo, TVempresa, EVempresa;
+                string VEname, Psalida, Pdestino, regreso,salida, Preciovuelo, EVempresa;
+                int Telefono;
+                //DateTime salida = Convert.ToDateTime(TxtSalida.Text);
 
                 VEname = Txtvempresa.Text;
                 Psalida = Txtvsalida.Text;
                 Pdestino = Txtvllegada.Text;
+                salida = TxtSalida.Text;
+                regreso = Txtllegada.Text;
                 Preciovuelo = Txtprecio.Text;
-                TVempresa = Txttelefono.Text;
+                Telefono = Convert.ToInt32(Txttelefono.Text);
                 EVempresa = Txtemail.Text;
+                
 
-
-                if (ConexiónV.EmpresaRpetida(VEname, Psalida, Pdestino, Preciovuelo, TVempresa, EVempresa) == 0)
+                if (ConexiónV.EmpresaRpetida(VEname, Psalida, Pdestino, salida, regreso, Preciovuelo, Telefono, EVempresa) == 0)
                 {
                     alerta.Text = "<script>Swal.fire('Se agrego de una manera exitosa', 'Bienvenido', 'success'); </script>";
                     Txtvempresa.Text = "";
                     Txtvsalida.Text = "";
                     Txtvllegada.Text = "";
+                    TxtSalida.Text = "";
+                    Txtllegada.Text = "";
                     Txtprecio.Text = "";
                     Txttelefono.Text = "";
                     Txtemail.Text = "";
@@ -51,7 +57,7 @@ namespace CAtravels
                 }
                 else
                 {
-                    alerta.Text = "<script>Swal.fire('compañia registrada', 'Essta compañia ya fue regiustrada', 'error'); </script>";
+                    alerta.Text = "<script>Swal.fire('compañia registrada', 'Esta compañia ya fue registrada', 'error'); </script>";
                 }
 
             }

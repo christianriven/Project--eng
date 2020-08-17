@@ -33,24 +33,27 @@
 		<div class="col-12">
 			<div class="menudelapagina">
 				<ul id="palabras">
-				    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li>
+				    <li>
                         <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">Empresa Vuelos</asp:LinkButton>
                     </li>
                     <li>
                         <asp:LinkButton ID="LBturismo" runat="server" OnClick="LBturismo_Click">Empresa Turismo</asp:LinkButton>
+                    &nbsp;</li>
+                    <li>
+                        <asp:LinkButton ID="LBedit" runat="server" >EDITAR</asp:LinkButton>
+                    </li>
+					<li>
+                        <asp:LinkButton ID="LBdelete" runat="server" >BORRAR</asp:LinkButton>
                     </li>
 				</ul>
-			</div>	
+			</div>
 		</div>
 	</div>
 
                 
     <div class="container">
 		&nbsp;<div class="form__top">
-			<h1><span>CA</span></h1><h2>Empresa de Transporte</h2>
+			<h1><span>Empresa de Transporte</h2>
             <p>Este formulario esta dirigido solamente a Empresas de Vuelos si usted va a promocionar turismo dirijase a la barra de navegación en la parte superior que dice: &quot;Empresa Turismo&quot;</p>
             <p>&nbsp;</p>
 		</div>
@@ -63,7 +66,16 @@
         <br />
         Pais de Llegada<br />
 			<asp:TextBox ID="Txtvllegada" runat="server" Height="49px" Width="417px"></asp:TextBox>
-&nbsp;&nbsp;<p>Precio</p>
+&nbsp;&nbsp;<br />
+        <br />
+        Fecha de salida<br />
+        <asp:TextBox ID="TxtSalida" runat="server" TextMode="Date"></asp:TextBox>
+        <br />
+        <br />
+        <br />
+        Fecha de llegada<br />
+        <asp:TextBox ID="Txtllegada" runat="server" TextMode="Date"></asp:TextBox>
+        <p>Precio</p>
 			<asp:TextBox ID="Txtprecio" runat="server"></asp:TextBox>
 &nbsp;&nbsp;
 

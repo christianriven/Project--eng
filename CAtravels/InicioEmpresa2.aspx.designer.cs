@@ -69,6 +69,24 @@ namespace CAtravels
         protected global::System.Web.UI.WebControls.TextBox Txtvllegada;
 
         /// <summary>
+        /// Control TxtSalida.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtSalida;
+
+        /// <summary>
+        /// Control Txtllegada.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txtllegada;
+
+        /// <summary>
         /// Control Txtprecio.
         /// </summary>
         /// <remarks>

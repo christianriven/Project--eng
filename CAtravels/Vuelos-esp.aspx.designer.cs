@@ -42,15 +42,6 @@ namespace CAtravels
         protected global::System.Web.UI.WebControls.LinkButton LBvuelos;
 
         /// <summary>
-        /// Control LBpaquetes.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LBpaquetes;
-
-        /// <summary>
         /// Control LBpromociones.
         /// </summary>
         /// <remarks>
@@ -58,6 +49,15 @@ namespace CAtravels
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LBpromociones;
+
+        /// <summary>
+        /// Control LBpaquetes.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LBpaquetes;
 
         /// <summary>
         /// Control ImageButton1.

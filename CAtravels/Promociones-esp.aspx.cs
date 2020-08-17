@@ -35,7 +35,7 @@ namespace CAtravels
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("Honfuras45-esp.aspx");
+            Response.Redirect("Honduras45-esp.aspx");
         }
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)

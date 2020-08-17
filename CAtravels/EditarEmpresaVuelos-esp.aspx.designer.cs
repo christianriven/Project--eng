@@ -11,7 +11,7 @@ namespace CAtravels
 {
 
 
-    public partial class inicioEmpresa_esp
+    public partial class EditarEmpresa
     {
 
         /// <summary>
@@ -60,67 +60,103 @@ namespace CAtravels
         protected global::System.Web.UI.WebControls.LinkButton LBdelete;
 
         /// <summary>
-        /// Control TxtEname.
+        /// Control Txtvempresa.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtEname;
+        protected global::System.Web.UI.WebControls.TextBox Txtvempresa;
 
         /// <summary>
-        /// Control TxtUempresa.
+        /// Control txtid.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtUempresa;
+        protected global::System.Web.UI.WebControls.TextBox txtid;
 
         /// <summary>
-        /// Control TxtDempresa.
+        /// Control Txtvsalida.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtDempresa;
+        protected global::System.Web.UI.WebControls.TextBox Txtvsalida;
 
         /// <summary>
-        /// Control TxtPempresa.
+        /// Control Txtvllegada.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtPempresa;
+        protected global::System.Web.UI.WebControls.TextBox Txtvllegada;
 
         /// <summary>
-        /// Control TxtTempresa.
+        /// Control TxtSalida.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtTempresa;
+        protected global::System.Web.UI.WebControls.TextBox TxtSalida;
 
         /// <summary>
-        /// Control TxtEempresa.
+        /// Control Txtllegada.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtEempresa;
+        protected global::System.Web.UI.WebControls.TextBox Txtllegada;
 
         /// <summary>
-        /// Control Btnadd.
+        /// Control Txtprecio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btnadd;
+        protected global::System.Web.UI.WebControls.TextBox Txtprecio;
+
+        /// <summary>
+        /// Control Txttelefono.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txttelefono;
+
+        /// <summary>
+        /// Control Txtemail.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txtemail;
+
+        /// <summary>
+        /// Control Button1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
+
+        /// <summary>
+        /// Control btnAgregar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAgregar;
 
         /// <summary>
         /// Control alerta.
@@ -130,5 +166,14 @@ namespace CAtravels
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal alerta;
+
+        /// <summary>
+        /// Control gvdlista.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvdlista;
     }
 }

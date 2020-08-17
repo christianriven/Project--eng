@@ -125,6 +125,7 @@
     <Content Include="css\reset.css" />
     <Content Include="css\resettt.css" />
     <Content Include="css\style.css" />
+    <Content Include="EditarEmpresaVuelos-esp.aspx" />
     <Content Include="ElSalvadorp-esp.aspx" />
     <Content Include="ElSalvadorp.aspx" />
     <Content Include="Honduras45-esp.aspx" />
@@ -334,6 +335,13 @@
     </Compile>
     <Compile Include="costarica70.aspx.designer.cs">
       <DependentUpon>costarica70.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarEmpresaVuelos-esp.aspx.cs">
+      <DependentUpon>EditarEmpresaVuelos-esp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarEmpresaVuelos-esp.aspx.designer.cs">
+      <DependentUpon>EditarEmpresaVuelos-esp.aspx</DependentUpon>
     </Compile>
     <Compile Include="ElSalvadorp-esp.aspx.cs">
       <DependentUpon>ElSalvadorp-esp.aspx</DependentUpon>

@@ -27,7 +27,7 @@ namespace CAtravels
 
         protected void LB_crearcuenta_Click(object sender, EventArgs e)
         {
-            Response.Redirect("agregarusuarios-esp.aspx");
+            Response.Redirect("AgregarUsuarios-esp.aspx");
         }
 
         protected void LB_ingresarcompañia_Click(object sender, EventArgs e)

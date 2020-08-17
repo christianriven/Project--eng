@@ -59,13 +59,16 @@
 			<div class="menudelapagina">
 				<ul id="palabras">
 				    <li></li>
-                    <li>&nbsp;</li>
-                    <li></li>
-                    <li>
-                        <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">Empresa Vuelos</asp:LinkButton>
+                    <li>&nbsp;<asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">Empresa Vuelos</asp:LinkButton>
                     </li>
                     <li>
                         <asp:LinkButton ID="LBturismo" runat="server" OnClick="LBturismo_Click">Empresa Turismo</asp:LinkButton>
+                    </li>
+                    <li>
+                        <asp:LinkButton ID="LBedit" runat="server" >EDITAR</asp:LinkButton>
+                    </li>
+					<li>
+                        <asp:LinkButton ID="LBdelete" runat="server" >BORRAR</asp:LinkButton>
                     </li>
 				</ul>
 			</div>	

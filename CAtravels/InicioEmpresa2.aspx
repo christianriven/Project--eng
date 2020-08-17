@@ -62,7 +62,20 @@
         <br />
        Arrival Country<br />
 			<asp:TextBox ID="Txtvllegada" runat="server" Height="49px" Width="417px"></asp:TextBox>
-&nbsp;&nbsp;<p>Price</p>
+&nbsp;&nbsp;<br />
+        <br />
+        Departure day<br />
+        <asp:TextBox ID="TxtSalida" runat="server" TextMode="Date"></asp:TextBox>
+        <br />
+        <br />
+        <br />
+        Retur day<br />
+        <asp:TextBox ID="Txtllegada" runat="server" TextMode="Date"></asp:TextBox>
+        <br />
+        <br />
+        <br />
+        <br />
+        <p>Price</p>
 			<asp:TextBox ID="Txtprecio" runat="server"></asp:TextBox>
 &nbsp;&nbsp;
 
