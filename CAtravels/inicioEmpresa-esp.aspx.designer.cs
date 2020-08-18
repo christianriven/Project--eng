@@ -78,15 +78,6 @@ namespace CAtravels
         protected global::System.Web.UI.WebControls.TextBox TxtUempresa;
 
         /// <summary>
-        /// Control TxtDempresa.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtDempresa;
-
-        /// <summary>
         /// Control TxtPempresa.
         /// </summary>
         /// <remarks>
@@ -94,6 +85,15 @@ namespace CAtravels
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtPempresa;
+
+        /// <summary>
+        /// Control TxtDempresa.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtDempresa;
 
         /// <summary>
         /// Control TxtTempresa.

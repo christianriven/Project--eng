@@ -51,23 +51,27 @@
 	
   <div class="row" id="fondo">
 		<div class="col-4">
-			<h2 style="font-size: 180%" align="center" id="titulos"> Guatemala </h2>
+			<h2 style="font-size: 180%" align="center" id="titulos"> 
+                Guatemala</h2>
+            <p style="font-size: 180%" align="center"> 
+                &nbsp;</p>
+			<asp:ImageButton ID="ImageButton5" runat="server" Height="471px" ImageUrl="~/imagenes/1.png" Width="391px" OnClick="ImageButton5_Click" />
 			<br>
 			<a href="">
-				<img id="ant1" src="imagenes/1.png" width="85%" height="62%"> </a>
-	
-		</div>
-		<div class="col-4">
+				&nbsp;</a></div>
+	  			<div class="col-4"> </a>
 			<h2 style="font-size: 180%" align="center" id="titulos"> Honduras </h2>
 			<br>
-			<a href="">&nbsp;<asp:ImageButton ID="ImageButton1" runat="server" />
+			    <a href="">
+				&nbsp;<asp:ImageButton ID="ImageButton1" runat="server" Height="471px" ImageUrl="~/imagenes/dt.common.streams.StreamServer.jpg" Width="391px" OnClick="ImageButton1_Click" />
+                </a>
 		</div>
 			
 			<div class="col-4"> </a>
 			<h2 style="font-size: 180%" align="center" id="titulos"> El Salvador </h2>
 			<br>
 			    <a href="">
-				&nbsp;<asp:ImageButton ID="ImageButton2" runat="server" Height="341px" ImageUrl="~/imagenes/7-rotado.jpg" Width="440px" />
+				&nbsp;<asp:ImageButton ID="ImageButton2" runat="server" Height="471px" ImageUrl="~/imagenes/7-rotado.jpg" Width="391px" OnClick="ImageButton2_Click" />
                 </a>
 		</div>
 		
@@ -81,7 +85,7 @@
 			<h2 style="font-size: 180%" align="center" id="titulos"> Costa Rica </h2>
 			<br>
 			<a href="">
-				&nbsp;<asp:ImageButton ID="ImageButton3" runat="server" Height="349px" ImageUrl="~/imagenes/Costa-Rica.jpg" Width="471px" />
+				&nbsp;<asp:ImageButton ID="ImageButton3" runat="server" Height="471px" ImageUrl="~/imagenes/Costa-Rica.jpg" Width="391px" OnClick="ImageButton3_Click" />
             </a>
 		</div>
 		<div class="col-4">
@@ -89,7 +93,7 @@
 			<h2 style="font-size: 180%" align="center" id="titulos">Panamá</h2>
 			<br>
 			<a href="">
-				&nbsp;<asp:ImageButton ID="ImageButton4" runat="server" Height="350px" ImageUrl="~/imagenes/Que-hacer-en-Ciudad-de-Panamá-Conocer-lugares-y-destinos-turísticos-1-1.png" Width="479px" />
+				&nbsp;<asp:ImageButton ID="ImageButton4" runat="server" Height="471px" ImageUrl="~/imagenes/Que-hacer-en-Ciudad-de-Panamá-Conocer-lugares-y-destinos-turísticos-1-1.png" Width="391px" OnClick="ImageButton4_Click" />
             </a>
 		</div>
 		

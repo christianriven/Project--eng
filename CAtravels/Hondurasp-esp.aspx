@@ -72,31 +72,56 @@
 		<div class="col-md-4">
 				<div class="form-group">
 					 
-					<label for="exampleInputEmail1">
-						Email address
-					</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" />
+					&nbsp;Nombre de Usuario:</div>
+				<div class="form-group">
+					 
+					&nbsp;<br />
+                    <asp:TextBox ID="TxtU" runat="server" Width="313px"></asp:TextBox>
+                    <br />
+                    Contraseña:<br />
+                    <asp:TextBox ID="TxtP" runat="server" Width="315px" TextMode="Password"></asp:TextBox>
+                    <br />
 				</div>
 				<div class="form-group">
 					 
-					<label for="exampleInputPassword1">
-						Password
-					</label>
-					<input type="password" class="form-control" id="exampleInputPassword1" />
-				    <label>&nbsp;</label></div>
-				<button type="submit" class="btn btn-primary">
-					PAGAR
-				</button>
+				    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Validar" Width="100px" cssClass="btn btn-primary" Height="40px"/>
+					 
+				</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-8">
-			<p class="text-muted text-left">
-		    Este unico paquete lo llevara a usted y 3 acompanantes a una intrepida aventura por 3 increibles y pacificos lugares de interes a su eleccio; contara con transporte dentro de la ciudad y por supuesto obtendra pases en el hotel para comer un maximo de 4 veces en su estadia para todos los que lo acompanen en cualquiera de las 3 opciones de hoteles que usted tendra con todo incluido, el paquete le incluira tambien un total de 3 dias y 2 noches en el hotel que elija.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  </p>
-		</div>
-		<div class="col-md-4">
-		</div>
-	</div>
+
+	<br />
+    <br />
+    <asp:GridView ID="gvdlista" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" >
+		<AlternatingRowStyle BackColor="White" />
+		 <Columns>
+                    
+                    <asp:BoundField DataField="Id_empresa" HeaderText="ID" />
+                    <asp:BoundField DataField="Nombre_empresa" HeaderText="Nombre" />
+                    <asp:BoundField DataField="Ubicacion_empresa" HeaderText="Ubicacion" />
+                    <asp:BoundField DataField="Promocion_mes" HeaderText="Paquete" />
+			        <asp:BoundField DataField="Precio" HeaderText="Precio" />
+                    <asp:BoundField DataField="Telefono_contacto" HeaderText="Telefono" />                   
+			        <asp:BoundField DataField="Email_contacto" HeaderText="Email" />
+         </Columns>
+		 <EditRowStyle BackColor="#2461BF" />
+                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                <RowStyle BackColor="#EFF3FB" />
+                <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                <SortedDescendingHeaderStyle BackColor="#4870BE" />
+    </asp:GridView>
+    <asp:Label ID="Label1" runat="server" Text="Seleccione el ID del paquete que desee:"></asp:Label>
+    <br />
+    <asp:TextBox ID="txtid" runat="server"></asp:TextBox>
+    <br />
+    <br />
+	<asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Seleccionar" cssClass="btn btn-primary" Height="42px" Width="126px"/>
+	
 	<div class="row">
 		<div class="col-md-12">
 		</div>
@@ -119,6 +144,9 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="../CATravels/js/popper.min.js"></script> 
   <script src="../CATravels/js/bootstrap-4.4.1.js"></script>
+						 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
       </form>
   </body>
 </html>

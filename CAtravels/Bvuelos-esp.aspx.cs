@@ -29,12 +29,12 @@ namespace CAtravels
 
         protected void LinkButton3_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Promociones-esp.aspx");
+            Response.Redirect("Paquetes1-esp.aspx");
         }
 
         protected void LinkButton4_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Paquetes1-esp.aspx");
+            Response.Redirect("Promociones-esp.aspx");
         }
 
         protected void Btn_buscar_Click(object sender, EventArgs e)

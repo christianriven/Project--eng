@@ -33,5 +33,35 @@ namespace CAtravels
 
             Response.Redirect("Promociones-esp.aspx");
         }
+
+        protected void lbGuate_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Bvuelos-esp.aspx");
+        }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Bvuelos-esp.aspx");
+        }
+
+        protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Bvuelos-esp.aspx");
+        }
+
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Bvuelos-esp.aspx");
+        }
+
+        protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Bvuelos-esp.aspx");
+        }
+
+        protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Bvuelos-esp.aspx");
+        }
     }
 }

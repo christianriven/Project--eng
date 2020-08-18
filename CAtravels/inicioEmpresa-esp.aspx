@@ -91,13 +91,14 @@
             <p>
                 <asp:TextBox ID="TxtUempresa" runat="server" Height="28px" Width="138px"></asp:TextBox>
             </p>
-			&nbsp;<p>Descripción:</p>
-            <p>
-                <asp:TextBox ID="TxtDempresa" runat="server" Height="120px" TextMode="MultiLine" Width="428px" OnTextChanged="TxtDempresa_TextChanged"></asp:TextBox>
-            </p>
+			
 			&nbsp;<p>Paquete a Ofrecer:</p>
             <p>
                 <asp:TextBox ID="TxtPempresa" runat="server"  Height="119px" TextMode="MultiLine"  Width="434px"></asp:TextBox>
+            </p>
+        &nbsp;<p>Precio:</p>
+            <p>
+                <asp:TextBox ID="TxtDempresa" runat="server" Height="26px" Width="251px" OnTextChanged="TxtDempresa_TextChanged"></asp:TextBox>
             </p>
 			&nbsp;<p>Teléfono de Contacto:</p>
             <p>

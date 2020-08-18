@@ -22,7 +22,6 @@
       <form id="form1" runat="server">
       <div style="height: 83px">
 
-          <asp:Label ID="Label1" runat="server" Text="CHOOSE THE LANGUAGE"></asp:Label>
           <br />
           <asp:ImageButton ID="IMB_language" runat="server" Height="62px" ImageUrl="~/imagenes/bandera estados unidos.png" OnClick="IMB_language_Click" Width="117px" />
           <br />

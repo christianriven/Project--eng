@@ -5166,15 +5166,16 @@ small {
 
 .btn, .btn-large, .btn-small,
 .btn-flat {
-  border: none;
-  border-radius: 2px;
-  display: inline-block;
-  height: 36px;
-  line-height: 36px;
-  padding: 0 16px;
-  text-transform: uppercase;
-  vertical-align: middle;
-  -webkit-tap-highlight-color: transparent;
+  border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    border-radius: 2px;
+    display: inline-block;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btn.disabled, .disabled.btn-large, .disabled.btn-small,

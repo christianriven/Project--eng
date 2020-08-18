@@ -70,17 +70,17 @@
 			<div class="menudelapagina">
 				<ul id="palabras">
 				  <li>
-                      <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">HOME</asp:LinkButton>
+                      <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">INICIO</asp:LinkButton>
                     </li>
 				  <li>
-                      <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">FLIGHTS</asp:LinkButton>
+                      <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">VUELOS</asp:LinkButton>
                     </li>
 					<li>
-                        <asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton4_Click">PACKAGES</asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton4_Click">PROMOCIONES</asp:LinkButton>
                         
                     </li>
 				   <li>
-                       <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">PROMOTIONS</asp:LinkButton>
+                       <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">PAQUETES</asp:LinkButton>
                     </li>
 				</ul>
 			</div>	
@@ -88,24 +88,24 @@
 	</div>
 	
 	<div class="col-4 col-xl-12">
-	  <h1 align="justify" id="encuentra" class="">Flight Configuration</h1>
+	  <h1 align="justify" id="encuentra" class="">Configuracion de Vuelos</h1>
   </div>
 	
 	<div class="container-fluid">
 	<div class="row">
 		<div class="col-md-4">
-  <p class="col-xl-10">Departure Date: <asp:TextBox ID="txt_dsalida" runat="server" Width="264px" TextMode="Date" ></asp:TextBox>
+  <p class="col-xl-10">Fecha de Salida: <asp:TextBox ID="txt_dsalida" runat="server" Width="264px" TextMode="Date" ></asp:TextBox>
             </p>
-  <p class="col-xl-10">Return Date: 
+  <p class="col-xl-10">Fecha de Regreso: 
     <asp:TextBox ID="txt_Dregreso" runat="server" Width="264px" TextMode="Date" ></asp:TextBox>
             </p>
 	    </div>
 			
 			
 		<div class="col-md-8">
-			<p>From: <asp:TextBox ID="Txt_desde" runat="server" Width="264px" onkeypress="return validar(event)"></asp:TextBox>
+			<p>Desde: <asp:TextBox ID="Txt_desde" runat="server" Width="264px" onkeypress="return validar(event)"></asp:TextBox>
             </p>
-			<p>Until: <asp:TextBox ID="txt_hasta" runat="server" Width="264px" onkeypress="return validar(event)"></asp:TextBox>
+			<p>Hasta: <asp:TextBox ID="txt_hasta" runat="server" Width="264px" onkeypress="return validar(event)"></asp:TextBox>
             </p>			
 		</div>
 	</div>
@@ -113,19 +113,19 @@
 	
 				<br>
 				<br>
-<p class="col-xl-12">Number of Adults: 
+<p class="col-xl-12">Numero de Adultos: 
   <asp:TextBox ID="txtNadultos" runat="server" Width="264px" onkeypress="return NumCheck(event, this)" minlength="1" MaxLength="10"></asp:TextBox>
     </p>
 
-<p class="col-xl-12">Number Youth (3-14)
+<p class="col-xl-12">Numero de Jovenes (3-14)
   <asp:TextBox ID="TxtAdolecentes" runat="server" Width="264px" onkeypress="return NumCheck(event, this)" minlength="1" MaxLength="10"></asp:TextBox>
     </p>
 
-<p class="col-xl-12">Number of Infant (0-2)<asp:TextBox ID="Txtniños" runat="server" Width="264px" onkeypress="return NumCheck(event, this)" minlength="1" MaxLength="2"></asp:TextBox>
+<p class="col-xl-12">Numeros de Infantes (0-2)<asp:TextBox ID="Txtniños" runat="server" Width="264px" onkeypress="return NumCheck(event, this)" minlength="1" MaxLength="2"></asp:TextBox>
     <br> 
     </p>
 	
-	&nbsp;<asp:Button ID="Btn_buscar" runat="server" Height="47px" Text="Search" cssClass="waves-effect waves-light btn-large" OnClick="Btn_buscar_Click"/>
+	&nbsp;<asp:Button ID="Btn_buscar" runat="server" Height="47px" Text="Buscar" cssClass="waves-effect waves-light btn-large" OnClick="Btn_buscar_Click"/>
 	 <br />
     <br />
     <asp:GridView ID="gvdlista" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" >
