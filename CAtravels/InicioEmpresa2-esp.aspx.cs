@@ -15,12 +15,12 @@ namespace CAtravels
         }
         protected void LBvuelos_Click(object sender, EventArgs e)
         {
-            Response.Redirect("inicioEmpresa2.aspx");
+            Response.Redirect("inicioEmpresa2-esp.aspx");
         }
 
         protected void LBturismo_Click(object sender, EventArgs e)
         {
-            Response.Redirect("inicioEmpresa.aspx");
+            Response.Redirect("inicioEmpresa-esp.aspx");
         }
 
         protected void btnAgregar_Click(object sender, EventArgs e)
@@ -61,6 +61,16 @@ namespace CAtravels
                 }
 
             }
+        }
+
+        protected void LBedit_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EditarEmpresaVuelos-esp.aspx");
+        }
+
+        protected void LBdelete_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EliminarEmpresa-esp.aspx");
         }
     }
 }

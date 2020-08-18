@@ -34,5 +34,27 @@ namespace CAtravels
 
             return retorno;
         }
+        public static int Eliminar(int pId)
+        {
+            int retorno = 0;
+            MySqlConnection conexion = conexionBD.ObtenerConexion();
+            MySqlCommand comando = new MySqlCommand(string.Format("Delete From empresavuelos where Id_Vempresa={0}", pId), conexion);
+
+            retorno = comando.ExecuteNonQuery();
+            conexion.Close();
+
+            return retorno;
+        }
+        public static int Eliminar2(int pId)
+        {
+            int retorno = 0;
+            MySqlConnection conexion = conexionBD.ObtenerConexion();
+            MySqlCommand comando = new MySqlCommand(string.Format("Delete From empresa where Id_empresa={0}", pId), conexion);
+
+            retorno = comando.ExecuteNonQuery();
+            conexion.Close();
+
+            return retorno;
+        }
     }
 }

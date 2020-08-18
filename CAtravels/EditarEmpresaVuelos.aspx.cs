@@ -9,7 +9,7 @@ using System.Data;
 
 namespace CAtravels
 {
-    public partial class EditarEmpresa : System.Web.UI.Page
+    public partial class EditarEmpresa_ : System.Web.UI.Page
     {
         MySqlConnection conec = new MySqlConnection("server=127.0.0.1; database=catravels; Uid=root; pwd=;");
         protected void Page_Load(object sender, EventArgs e)
@@ -113,17 +113,17 @@ namespace CAtravels
 
         protected void LBvuelos_Click(object sender, EventArgs e)
         {
-            Response.Redirect("InicioEmpresa2-esp.aspx");
+            Response.Redirect("inicioEmpresa.aspx");
         }
 
         protected void LBturismo_Click(object sender, EventArgs e)
         {
-            Response.Redirect("inicioEmpresa-esp.aspx");
+            Response.Redirect("inicioEmpresa2.aspx");
         }
 
         protected void LBdelete_Click(object sender, EventArgs e)
         {
-            Response.Redirect("EliminarEmpresa-esp.aspx");
+            Response.Redirect("inicioEmpresa2.aspx");
         }
     }
 }

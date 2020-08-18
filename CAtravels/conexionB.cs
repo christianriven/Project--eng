@@ -12,7 +12,7 @@ namespace CAtravels
         {
             int valor = 0;
             MySqlConnection conexion = conexionBD.ObtenerConexion();
-            MySqlCommand cmd = new MySqlCommand("SELECT Id_clientes FROM clientes WHERE Email_empresa='" + Cempresa + "'", conexion);
+            MySqlCommand cmd = new MySqlCommand("SELECT Id_cliente FROM clientes WHERE Email_empresa='" + Cempresa + "'", conexion);
             valor = Convert.ToInt32(cmd.ExecuteScalar());
             if (valor != 0)
             {

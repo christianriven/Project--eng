@@ -40,10 +40,10 @@
                         <asp:LinkButton ID="LBturismo" runat="server" OnClick="LBturismo_Click">Empresa Turismo</asp:LinkButton>
                     &nbsp;</li>
                     <li>
-                        <asp:LinkButton ID="LBedit" runat="server" >EDITAR</asp:LinkButton>
+                        <asp:LinkButton ID="LBedit" runat="server" OnClick="LBedit_Click" >EDITAR</asp:LinkButton>
                     </li>
 					<li>
-                        <asp:LinkButton ID="LBdelete" runat="server" >BORRAR</asp:LinkButton>
+                        <asp:LinkButton ID="LBdelete" runat="server" OnClick="LBdelete_Click" >BORRAR</asp:LinkButton>
                     </li>
 				</ul>
 			</div>
@@ -53,7 +53,7 @@
                 
     <div class="container">
 		&nbsp;<div class="form__top">
-			<h1><span>Empresa de Transporte</h2>
+			<h1><span>Empresa de Vuelos</h2>
             <p>Este formulario esta dirigido solamente a Empresas de Vuelos si usted va a promocionar turismo dirijase a la barra de navegación en la parte superior que dice: &quot;Empresa Turismo&quot;</p>
             <p>&nbsp;</p>
 		</div>

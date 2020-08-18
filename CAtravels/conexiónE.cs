@@ -29,7 +29,7 @@ namespace CAtravels
         public static int AgregarUsuario(string Ename, string Uempresa, string Dempresa, string Pempresa, string Tempresa, string Eempresa)
         {
             int retorno = 0;
-            MySqlCommand comando = new MySqlCommand(string.Format("Insert into empresa (Nombre_empresa,	Ubicacion_Empresa,	Descripcion_ empresa,	Promocion_mes,	Telefono_contacto,	Email_contacto) values ('{0}','{1}','{2}','{3}','{4}','{5}')", Ename, Uempresa, Dempresa, Pempresa, Tempresa, Eempresa), conexionBD.ObtenerConexion());
+            MySqlCommand comando = new MySqlCommand(string.Format("Insert into empresa (Nombre_empresa,	Ubicacion_Empresa, Descripcion_empresa, Promocion_mes, Telefono_contacto, Email_contacto) values ('{0}','{1}','{2}','{3}','{4}','{5}')", Ename, Uempresa, Dempresa, Pempresa, Tempresa, Eempresa), conexionBD.ObtenerConexion());
             retorno = comando.ExecuteNonQuery();
 
             return retorno;

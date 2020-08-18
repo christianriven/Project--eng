@@ -64,6 +64,11 @@ namespace CAtravels
         {
 
         }
+
+        protected void LBedit_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EditarTurismo-esp.aspx");
+        }
     }
     
 }

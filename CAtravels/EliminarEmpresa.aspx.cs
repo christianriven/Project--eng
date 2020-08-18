@@ -9,9 +9,10 @@ using System.Data;
 
 namespace CAtravels
 {
-    public partial class EditarEmpresa : System.Web.UI.Page
+    public partial class EliminarEmpresa : System.Web.UI.Page
     {
         MySqlConnection conec = new MySqlConnection("server=127.0.0.1; database=catravels; Uid=root; pwd=;");
+
         protected void Page_Load(object sender, EventArgs e)
         {
             conec.Open();
@@ -54,12 +55,6 @@ namespace CAtravels
                 alerta.Text = "<script>Swal.fire('Algo salio mal Intentalo otra vez', 'Verifique que ID se correcto', 'error') </script>";
 
             }
-
-        }
-
-        protected void Txtprecio_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         protected void btnAgregar_Click(object sender, EventArgs e)
@@ -67,23 +62,8 @@ namespace CAtravels
             if (Txtvempresa.Text.Trim() != "" && Txtvsalida.Text.Trim() != "" && Txtvllegada.Text.Trim() != "" && TxtSalida.Text.Trim() != "" && Txtllegada.Text.Trim() != "" && Txtprecio.Text.Trim() != "" && Txttelefono.Text.Trim() != "" && Txtemail.Text.Trim() != "" && txtid.Text.Trim() != "")
             {
 
-                MySqlConnection conexion = conexionBD.ObtenerConexion();
-                string query = "UPDATE empresavuelos SET Nombre_Vempresa = @empresa,  Pais_Salida = @paisSalida, Pais_llegada = @paisLlegada, Salida = @Diasalida, Regreso= @Diaregreso, Precio=@precio, Telefono = @telefono, Email= @email WHERE Id_Vempresa=@id";
-                MySqlCommand comando = new MySqlCommand(query, conexion);
-
-                comando.Parameters.AddWithValue("@empresa", Txtvempresa.Text);
-                comando.Parameters.AddWithValue("@paisSalida", Txtvsalida.Text);
-                comando.Parameters.AddWithValue("@paisLlegada", Txtvllegada.Text);
-                comando.Parameters.AddWithValue("@Diasalida", TxtSalida.Text);
-                comando.Parameters.AddWithValue("@Diaregreso", Txtllegada.Text);
-                comando.Parameters.AddWithValue("@precio", Txtprecio.Text);
-                comando.Parameters.AddWithValue("@telefono", Txttelefono.Text);
-                comando.Parameters.AddWithValue("@email", Txtemail.Text);
-                comando.Parameters.AddWithValue("@id", txtid.Text);
-                comando.ExecuteNonQuery();
-                conexion.Close();
+                conexionA.Eliminar(Convert.ToInt32(txtid.Text));
                 conec.Open();
-
                 MySqlCommand cmd = conec.CreateCommand();
                 cmd.CommandText = "select * from empresavuelos";
                 cmd.ExecuteNonQuery();
@@ -92,7 +72,8 @@ namespace CAtravels
                 da.Fill(dt);
                 gvdlista.DataSource = dt;
                 gvdlista.DataBind();
-                conec.Close();
+
+
 
                 Txtvempresa.Text = "";
                 Txtvsalida.Text = "";
@@ -103,27 +84,24 @@ namespace CAtravels
                 Txttelefono.Text = "";
                 Txtemail.Text = "";
                 txtid.Text = "";
-                alerta.Text = "<script>Swal.fire('Su producto se Editado con exito.', '¡Gracias por preferirnos!', 'success'); </script>";
+                alerta.Text = "<script>Swal.fire('Su vueloo se Eliminado con exito.', '¡Gracias por preferirnos!', 'success'); </script>";
+
+
             }
             else
             {
-                alerta.Text = "<script>Swal.fire('ADVERTENCIA', 'No deje espacios en blanco', 'error') </script>";
+                alerta.Text = "<script>Swal.fire('OOPS', 'No deje espacios en blanco', 'error') </script>";
             }
-        }
-
-        protected void LBvuelos_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("InicioEmpresa2-esp.aspx");
-        }
-
-        protected void LBturismo_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("inicioEmpresa-esp.aspx");
         }
 
         protected void LBdelete_Click(object sender, EventArgs e)
         {
-            Response.Redirect("EliminarEmpresa-esp.aspx");
+            Response.Redirect("EliminarEmpresa.aspx");
+        }
+
+        protected void LBedit_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EditarEmpresaVuelos.aspx");
         }
     }
 }

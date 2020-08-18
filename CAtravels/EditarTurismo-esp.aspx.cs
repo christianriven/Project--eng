@@ -6,17 +6,16 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient;
 using System.Data;
-
 namespace CAtravels
 {
-    public partial class EditarEmpresa : System.Web.UI.Page
+    public partial class EditarTurismo_esp : System.Web.UI.Page
     {
         MySqlConnection conec = new MySqlConnection("server=127.0.0.1; database=catravels; Uid=root; pwd=;");
         protected void Page_Load(object sender, EventArgs e)
         {
             conec.Open();
             MySqlCommand cmd = conec.CreateCommand();
-            cmd.CommandText = "select * from empresavuelos";
+            cmd.CommandText = "select * from empresa";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
@@ -31,21 +30,19 @@ namespace CAtravels
             try
             {
                 MySqlConnection conexion = conexionBD.ObtenerConexion();
-                MySqlCommand comand = new MySqlCommand("SELECT * FROM empresavuelos WHERE Id_Vempresa=@ID", conexion);
+                MySqlCommand comand = new MySqlCommand("SELECT * FROM empresa WHERE Id_empresa=@ID", conexion);
                 comand.Parameters.AddWithValue("@ID", txtid.Text);
                 MySqlDataReader registro = comand.ExecuteReader();
                 if (registro.Read())
                 {
                     alerta.Text = "<script>Swal.fire('Sea seleccionado con exito.', '', 'success'); </script>";
 
-                    Txtvempresa.Text = registro["Nombre_Vempresa"].ToString();
-                    Txtvsalida.Text = registro["Pais_Salida"].ToString();
-                    Txtvllegada.Text = registro["Pais_llegada"].ToString();
-                    TxtSalida.Text = registro["Salida"].ToString();
-                    Txtllegada.Text = registro["Regreso"].ToString();
-                    Txtprecio.Text = registro["Precio"].ToString();
-                    Txttelefono.Text = registro["Telefono"].ToString();
-                    Txtemail.Text = registro["Email"].ToString();
+                    TxtEname.Text = registro["Nombre_empresa"].ToString();
+                    TxtUempresa.Text = registro["Ubicacion_Empresa"].ToString();
+                    TxtDempresa.Text = registro["Descripcion_empresa"].ToString();
+                    TxtPempresa.Text = registro["Promocion_mes"].ToString();
+                    TxtTempresa.Text = registro["Telefono_contacto"].ToString();
+                    TxtEempresa.Text = registro["Email_contacto"].ToString();
                 }
                 conexion.Close();
             }
@@ -54,38 +51,30 @@ namespace CAtravels
                 alerta.Text = "<script>Swal.fire('Algo salio mal Intentalo otra vez', 'Verifique que ID se correcto', 'error') </script>";
 
             }
-
         }
 
-        protected void Txtprecio_TextChanged(object sender, EventArgs e)
+        protected void Btnadd_Click(object sender, EventArgs e)
         {
-
-        }
-
-        protected void btnAgregar_Click(object sender, EventArgs e)
-        {
-            if (Txtvempresa.Text.Trim() != "" && Txtvsalida.Text.Trim() != "" && Txtvllegada.Text.Trim() != "" && TxtSalida.Text.Trim() != "" && Txtllegada.Text.Trim() != "" && Txtprecio.Text.Trim() != "" && Txttelefono.Text.Trim() != "" && Txtemail.Text.Trim() != "" && txtid.Text.Trim() != "")
+            if (TxtEname.Text.Trim() != "" && TxtUempresa.Text.Trim() != "" && TxtDempresa.Text.Trim() != "" && TxtPempresa.Text.Trim() != "" && TxtTempresa.Text.Trim() != "" && TxtEempresa.Text.Trim() != "" && txtid.Text.Trim() != "")
             {
 
                 MySqlConnection conexion = conexionBD.ObtenerConexion();
-                string query = "UPDATE empresavuelos SET Nombre_Vempresa = @empresa,  Pais_Salida = @paisSalida, Pais_llegada = @paisLlegada, Salida = @Diasalida, Regreso= @Diaregreso, Precio=@precio, Telefono = @telefono, Email= @email WHERE Id_Vempresa=@id";
+                string query = "UPDATE empresa SET Nombre_empresa = @empresa,  Ubicacion_Empresa = @Ubicacion, Descripcion_Empresa = @Descripcion, Promocion_mes = @Promocion, Telefono_contacto= @Telefono, Email_contacto=@email WHERE Id_empresa=@id";
                 MySqlCommand comando = new MySqlCommand(query, conexion);
 
-                comando.Parameters.AddWithValue("@empresa", Txtvempresa.Text);
-                comando.Parameters.AddWithValue("@paisSalida", Txtvsalida.Text);
-                comando.Parameters.AddWithValue("@paisLlegada", Txtvllegada.Text);
-                comando.Parameters.AddWithValue("@Diasalida", TxtSalida.Text);
-                comando.Parameters.AddWithValue("@Diaregreso", Txtllegada.Text);
-                comando.Parameters.AddWithValue("@precio", Txtprecio.Text);
-                comando.Parameters.AddWithValue("@telefono", Txttelefono.Text);
-                comando.Parameters.AddWithValue("@email", Txtemail.Text);
+                comando.Parameters.AddWithValue("@empresa", TxtEname.Text);
+                comando.Parameters.AddWithValue("@Ubicacion", TxtUempresa.Text);
+                comando.Parameters.AddWithValue("@Descripcion", TxtDempresa.Text);
+                comando.Parameters.AddWithValue("@Promocion", TxtPempresa.Text);
+                comando.Parameters.AddWithValue("@Telefono", TxtTempresa.Text);
+                comando.Parameters.AddWithValue("@email", TxtEempresa.Text);
                 comando.Parameters.AddWithValue("@id", txtid.Text);
                 comando.ExecuteNonQuery();
                 conexion.Close();
                 conec.Open();
 
                 MySqlCommand cmd = conec.CreateCommand();
-                cmd.CommandText = "select * from empresavuelos";
+                cmd.CommandText = "select * from empresa";
                 cmd.ExecuteNonQuery();
                 DataTable dt = new DataTable();
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);
@@ -94,14 +83,12 @@ namespace CAtravels
                 gvdlista.DataBind();
                 conec.Close();
 
-                Txtvempresa.Text = "";
-                Txtvsalida.Text = "";
-                Txtvllegada.Text = "";
-                TxtSalida.Text = "";
-                Txtllegada.Text = "";
-                Txtprecio.Text = "";
-                Txttelefono.Text = "";
-                Txtemail.Text = "";
+                TxtEname.Text = "";
+                TxtUempresa.Text = "";
+                TxtDempresa.Text = "";
+                TxtPempresa.Text = "";
+                TxtTempresa.Text = "";
+                TxtEempresa.Text = "";
                 txtid.Text = "";
                 alerta.Text = "<script>Swal.fire('Su producto se Editado con exito.', '¡Gracias por preferirnos!', 'success'); </script>";
             }
@@ -121,9 +108,9 @@ namespace CAtravels
             Response.Redirect("inicioEmpresa-esp.aspx");
         }
 
-        protected void LBdelete_Click(object sender, EventArgs e)
+        protected void LinkButton2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("EliminarEmpresa-esp.aspx");
+            Response.Redirect("EliminarTurismo-esp.aspx");
         }
     }
 }

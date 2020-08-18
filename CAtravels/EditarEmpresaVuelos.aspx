@@ -1,5 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditarEmpresaVuelos-esp.aspx.cs" Inherits="CAtravels.EditarEmpresa" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditarEmpresaVuelos.aspx.cs" Inherits="CAtravels.EditarEmpresa_" %>
 
 <!DOCTYPE html>
 <html lang="en">

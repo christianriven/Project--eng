@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="inicioEmpresa-esp.aspx.cs" Inherits="CAtravels.inicioEmpresa_esp" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditarTurismo-esp.aspx.cs" Inherits="CAtravels.EditarTurismo_esp" %>
 
 <!DOCTYPE html>
 
@@ -59,16 +59,19 @@
 			<div class="menudelapagina">
 				<ul id="palabras">
 				    <li></li>
-                    <li>&nbsp;<asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">Empresa Vuelos</asp:LinkButton>
+                    <li>&nbsp;</li>
+                    <li></li>
+                    <li>
+                        <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">Empresa Vuelos</asp:LinkButton>
                     </li>
                     <li>
                         <asp:LinkButton ID="LBturismo" runat="server" OnClick="LBturismo_Click">Empresa Turismo</asp:LinkButton>
                     </li>
-                    <li>
-                        <asp:LinkButton ID="LBedit" runat="server" OnClick="LBedit_Click" >EDITAR</asp:LinkButton>
+				    <li>
+                        <asp:LinkButton ID="LinkButton1" runat="server">EDITAR</asp:LinkButton>
                     </li>
-					<li>
-                        <asp:LinkButton ID="LBdelete" runat="server" >BORRAR</asp:LinkButton>
+                    <li>
+                        <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">BORRAR</asp:LinkButton>
                     </li>
 				</ul>
 			</div>	
@@ -86,14 +89,18 @@
 			<p>Nombre de la Compañía </p>
             <p>
                 <asp:TextBox ID="TxtEname" runat="server" cssCLaa="input"></asp:TextBox>
-            </p>
+            &nbsp;</p>
+			<p>ID de la Compañia </p>
+            <p>
+                <asp:TextBox ID="txtid" runat="server" cssCLaa="input"></asp:TextBox>
+            &nbsp;</p>
 			<p>Localizacion de la Compañía</p>
             <p>
                 <asp:TextBox ID="TxtUempresa" runat="server" Height="28px" Width="138px"></asp:TextBox>
             </p>
 			&nbsp;<p>Descripción:</p>
             <p>
-                <asp:TextBox ID="TxtDempresa" runat="server" Height="120px" TextMode="MultiLine" Width="428px" OnTextChanged="TxtDempresa_TextChanged"></asp:TextBox>
+                <asp:TextBox ID="TxtDempresa" runat="server" Height="120px" TextMode="MultiLine" Width="428px" ></asp:TextBox>
             </p>
 			&nbsp;<p>Paquete a Ofrecer:</p>
             <p>
@@ -111,12 +118,37 @@
 
 
             <div class="btn__form">
-            	&nbsp;
-                <asp:Button ID="Btnadd" runat="server" Text="Agregar" cssClass="btn__submit" Width="255px" OnClick="Btnadd_Click" />
+            	&nbsp;<asp:Button ID="Button1" runat="server" Text="Seleccionar" cssClass="btn__reset" Height="34px" OnClick="Button1_Click" Width="261px"/>
+&nbsp;<asp:Button ID="Btnadd" runat="server" Text="Editar" cssClass="btn__submit" Width="289px" OnClick="Btnadd_Click" Height="37px" />
             </div>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script src="js/bootstrap.min.js"></script>
         <asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
+         <br />
+            <asp:GridView ID="gvdlista" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" >
+		<AlternatingRowStyle BackColor="White" />
+		 <Columns>
+                    <asp:BoundField DataField="Id_empresa" HeaderText="ID" />
+                    <asp:BoundField DataField="Nombre_empresa" HeaderText="Nombre de la Compañia" />
+                    <asp:BoundField DataField="Ubicacion_Empresa" HeaderText="Ubicacion" />
+                    <asp:BoundField DataField="Descripcion_Empresa" HeaderText="Descripcion" />
+                    <asp:BoundField DataField="Promocion_mes" HeaderText="Promocion" />
+                    <asp:BoundField DataField="Telefono_contacto" HeaderText="Telefono" />
+                    <asp:BoundField DataField="Email_contacto" HeaderText="Email" />
+         </Columns>
+		 <EditRowStyle BackColor="#2461BF" />
+                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                <RowStyle BackColor="#EFF3FB" />
+                <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                <SortedDescendingHeaderStyle BackColor="#4870BE" />
+    </asp:GridView>
+            <br />
+            <br />
 		</form>
 	</div>
 

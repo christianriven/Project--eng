@@ -1,5 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditarEmpresaVuelos-esp.aspx.cs" Inherits="CAtravels.EditarEmpresa" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EliminarEmpresa-esp.aspx.cs" Inherits="CAtravels.EliminarEmpresa_esp" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,13 +33,13 @@
 			<div class="menudelapagina">
 				<ul id="palabras">
 				    <li>
-                        <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click" >Empresa Vuelos</asp:LinkButton>
+                        <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click"  >Empresa Vuelos</asp:LinkButton>
                     </li>
                     <li>
                         <asp:LinkButton ID="LBturismo" runat="server" OnClick="LBturismo_Click" >Empresa Turismo</asp:LinkButton>
                     </li>
 					<li>
-                        <asp:LinkButton ID="LBedit" runat="server" >EDITAR</asp:LinkButton>
+                        <asp:LinkButton ID="LBedit" runat="server" OnClick="LBedit_Click" >EDITAR</asp:LinkButton>
                     </li>
 					<li>
                         <asp:LinkButton ID="LBdelete" runat="server" OnClick="LBdelete_Click" >BORRAR</asp:LinkButton>
@@ -78,7 +77,7 @@
         Fecha de llegada<br />
         <asp:TextBox ID="Txtllegada" runat="server" TextMode="Date"></asp:TextBox>
 &nbsp;&nbsp;<p>Precio</p>
-			<asp:TextBox ID="Txtprecio" runat="server" OnTextChanged="Txtprecio_TextChanged"></asp:TextBox>
+			<asp:TextBox ID="Txtprecio" runat="server" ></asp:TextBox>
 &nbsp;&nbsp;
 
 </select><p>Teléfono </p>
@@ -89,7 +88,7 @@
 &nbsp;<div class="btn__form">
             	&nbsp;&nbsp;
                 <asp:Button ID="Button1" runat="server" Text="SELECCIONAR" CssClass="btn__reset" Height="25px" Width="293px" OnClick="Button1_Click" />
-                &nbsp;&nbsp;<asp:Button ID="btnAgregar" runat="server" Height="25px" Text="EDITAR" Width="323px" CssClass="btn__submit" OnClick="btnAgregar_Click"/>
+                &nbsp;&nbsp;<asp:Button ID="btnAgregar" runat="server" Height="25px" Text="ELIMINAR" Width="323px" CssClass="btn__submit" OnClick="btnAgregar_Click" />
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
             </div>
 	</div>
