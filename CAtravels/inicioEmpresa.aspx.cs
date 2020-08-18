@@ -67,5 +67,15 @@ namespace CAtravels
         {
 
         }
+
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EliminarTurismo.aspx");
+        }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EditarTurismo.aspx");
+        }
     }
 }

@@ -9,7 +9,7 @@ using System.Data;
 
 namespace CAtravels
 {
-    public partial class EliminarTurismo : System.Web.UI.Page
+    public partial class EliminarTurismo1 : System.Web.UI.Page
     {
         MySqlConnection conec = new MySqlConnection("server=127.0.0.1; database=catravels; Uid=root; pwd=;");
         protected void Page_Load(object sender, EventArgs e)
@@ -26,6 +26,26 @@ namespace CAtravels
             conec.Close();
         }
 
+        protected void LBvuelos_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("InicioEmpresa2.aspx");
+        }
+
+        protected void LBturismo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("inicioEmpresa.aspx");
+        }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EditarTurismo.aspx");
+        }
+
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EliminarTurismo.aspx");
+        }
+
         protected void Button1_Click(object sender, EventArgs e)
         {
             try
@@ -36,7 +56,7 @@ namespace CAtravels
                 MySqlDataReader registro = comand.ExecuteReader();
                 if (registro.Read())
                 {
-                    alerta.Text = "<script>Swal.fire('Se ha seleccionado con exito.', '', 'success'); </script>";
+                    alerta.Text = "<script>Swal.fire('It has been selected succesfully', '', 'success'); </script>";
 
                     TxtEname.Text = registro["Nombre_empresa"].ToString();
                     TxtUempresa.Text = registro["Ubicacion_Empresa"].ToString();
@@ -49,7 +69,7 @@ namespace CAtravels
             }
             catch
             {
-                alerta.Text = "<script>Swal.fire('Algo salio mal Intentalo otra vez', 'Verifique que ID se correcto', 'error') </script>";
+                alerta.Text = "<script>Swal.fire('Something went Wrong', 'Verify your ID', 'error') </script>";
 
             }
         }
@@ -87,26 +107,6 @@ namespace CAtravels
             {
                 alerta.Text = "<script>Swal.fire('OOPS', 'No deje espacios en blanco', 'error') </script>";
             }
-        }
-
-        protected void LBvuelos_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("InicioEmpresa2-esp.aspx");
-        }
-
-        protected void LBturismo_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("inicioEmpresa-esp.aspx");
-        }
-
-        protected void LinkButton1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("EditarTurismo-esp.aspx");
-        }
-
-        protected void LinkButton2_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("EliminarTurismo-esp.aspx");
         }
     }
 }

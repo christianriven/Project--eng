@@ -69,6 +69,11 @@ namespace CAtravels
         {
             Response.Redirect("EditarTurismo-esp.aspx");
         }
+
+        protected void LBdelete_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EliminarTurismo-esp.aspx");
+        }
     }
     
 }

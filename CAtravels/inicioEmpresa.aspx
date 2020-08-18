@@ -67,6 +67,12 @@
                     <li>
                         <asp:LinkButton ID="LBturismo" runat="server" OnClick="LBturismo_Click">Tourism Company</asp:LinkButton>
                     </li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">EDIT</asp:LinkButton>
+                    </li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">DELETE</asp:LinkButton>
+                    </li>
 				</ul>
 			</div>	
 		</div>

@@ -41,6 +41,10 @@
                     <li>
                         <asp:LinkButton ID="LBturismo" runat="server" OnClick="LBturismo_Click">Tourism Company</asp:LinkButton>
                     </li>
+				    <li><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">EDIT</asp:LinkButton>
+                        </li>
+                    <li><asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">DELETE</asp:LinkButton>
+                    </li>
 				</ul>
 			</div>	
 		</div>
@@ -49,7 +53,7 @@
                 
     <div class="container">
 		&nbsp;<div class="form__top">
-			<h1><span>CA</span></h1><h2>Transport Enterprise</h2>
+			<h1><span>CA</span></h1><h2>Airline Flight Company</h2>
             <p>This form is directed only to Flight Companies if you are going to promote tourism go to the nav bar at the top that says: &quot;Tourism Company&quot;</p>
             <p>&nbsp;</p>
 		</div>
@@ -69,7 +73,7 @@
         <br />
         <br />
         <br />
-        Retur day<br />
+        Return day<br />
         <asp:TextBox ID="Txtllegada" runat="server" TextMode="Date"></asp:TextBox>
         <br />
         <br />

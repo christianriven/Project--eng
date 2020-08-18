@@ -45,7 +45,17 @@ namespace CAtravels
 
         protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("Nicargua60-esp.aspx");
+            Response.Redirect("Honduras45-esp.aspx");
+        }
+
+        protected void ImageButton2_Click1(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("costarica70-esp.aspx");
+        }
+
+        protected void ImageButton3_Click1(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Nicaragua60-esp.aspx");
         }
     }
 }

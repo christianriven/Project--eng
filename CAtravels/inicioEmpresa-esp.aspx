@@ -68,7 +68,7 @@
                         <asp:LinkButton ID="LBedit" runat="server" OnClick="LBedit_Click" >EDITAR</asp:LinkButton>
                     </li>
 					<li>
-                        <asp:LinkButton ID="LBdelete" runat="server" >BORRAR</asp:LinkButton>
+                        <asp:LinkButton ID="LBdelete" runat="server" OnClick="LBdelete_Click" >BORRAR</asp:LinkButton>
                     </li>
 				</ul>
 			</div>	

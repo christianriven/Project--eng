@@ -128,9 +128,11 @@
     <Content Include="EditarEmpresaVuelos-esp.aspx" />
     <Content Include="EditarEmpresaVuelos.aspx" />
     <Content Include="EditarTurismo-esp.aspx" />
+    <Content Include="EditarTurismo.aspx" />
     <Content Include="EliminarEmpresa-esp.aspx" />
     <Content Include="EliminarEmpresa.aspx" />
     <Content Include="EliminarTurismo-esp.aspx" />
+    <Content Include="EliminarTurismo.aspx" />
     <Content Include="ElSalvadorp-esp.aspx" />
     <Content Include="ElSalvadorp.aspx" />
     <Content Include="Honduras45-esp.aspx" />
@@ -362,6 +364,13 @@
     <Compile Include="EditarTurismo-esp.aspx.designer.cs">
       <DependentUpon>EditarTurismo-esp.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EditarTurismo.aspx.cs">
+      <DependentUpon>EditarTurismo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarTurismo.aspx.designer.cs">
+      <DependentUpon>EditarTurismo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EliminarEmpresa-esp.aspx.cs">
       <DependentUpon>EliminarEmpresa-esp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -382,6 +391,13 @@
     </Compile>
     <Compile Include="EliminarTurismo-esp.aspx.designer.cs">
       <DependentUpon>EliminarTurismo-esp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarTurismo.aspx.cs">
+      <DependentUpon>EliminarTurismo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EliminarTurismo.aspx.designer.cs">
+      <DependentUpon>EliminarTurismo.aspx</DependentUpon>
     </Compile>
     <Compile Include="ElSalvadorp-esp.aspx.cs">
       <DependentUpon>ElSalvadorp-esp.aspx</DependentUpon>

@@ -47,9 +47,9 @@ namespace CAtravels
                 EVempresa = Txtemail.Text;
 
 
-                if (ConexiónV.EmpresaRpetida(VEname, Psalida, Pdestino, salida, regreso, Preciovuelo, Telefono, EVempresa) == 0)
+                if (ConexiónV.AgregarVempresa(VEname, Psalida, Pdestino, salida, regreso, Preciovuelo, Telefono, EVempresa) == 0)
                 {
-                    alerta.Text = "<script>Swal.fire('Se agrego de una manera exitosa', 'Bienvenido', 'success'); </script>";
+                    alerta.Text = "<script>Swal.fire('It has been added succesfully', 'welcome', 'success'); </script>";
                     Txtvempresa.Text = "";
                     Txtvsalida.Text = "";
                     Txtvllegada.Text = "";
@@ -62,10 +62,20 @@ namespace CAtravels
                 }
                 else
                 {
-                    alerta.Text = "<script>Swal.fire('compañia registrada', 'Esta compañia ya fue registrada', 'error'); </script>";
+                    alerta.Text = "<script>Swal.fire('Company Not Registered', 'This company has already been added', 'error'); </script>";
                 }
 
             }
+        }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EditarEmpresaVuelos.aspx");
+        }
+
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EliminarEmpresa.aspx");
         }
     }
 }

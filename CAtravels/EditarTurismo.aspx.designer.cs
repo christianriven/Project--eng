@@ -11,7 +11,7 @@ namespace CAtravels
 {
 
 
-    public partial class Panamap
+    public partial class EditarTurismo
     {
 
         /// <summary>
@@ -24,15 +24,6 @@ namespace CAtravels
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control LBinicio.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LBinicio;
-
-        /// <summary>
         /// Control LBvuelos.
         /// </summary>
         /// <remarks>
@@ -42,58 +33,85 @@ namespace CAtravels
         protected global::System.Web.UI.WebControls.LinkButton LBvuelos;
 
         /// <summary>
-        /// Control LBpaquetes.
+        /// Control LBturismo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LBpaquetes;
+        protected global::System.Web.UI.WebControls.LinkButton LBturismo;
 
         /// <summary>
-        /// Control LBpromociones.
+        /// Control LinkButton1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LBpromociones;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
 
         /// <summary>
-        /// Control ImageButton1.
+        /// Control LinkButton2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
 
         /// <summary>
-        /// Control ImageButton2.
+        /// Control TxtEname.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton2;
+        protected global::System.Web.UI.WebControls.TextBox TxtEname;
 
         /// <summary>
-        /// Control TxtU.
+        /// Control TxtUempresa.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtU;
+        protected global::System.Web.UI.WebControls.TextBox TxtUempresa;
 
         /// <summary>
-        /// Control TxtP.
+        /// Control TxtDempresa.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtP;
+        protected global::System.Web.UI.WebControls.TextBox TxtDempresa;
+
+        /// <summary>
+        /// Control TxtPempresa.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtPempresa;
+
+        /// <summary>
+        /// Control TxtTempresa.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtTempresa;
+
+        /// <summary>
+        /// Control TxtEempresa.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtEempresa;
 
         /// <summary>
         /// Control Button1.
@@ -105,40 +123,13 @@ namespace CAtravels
         protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// Control gvdlista.
+        /// Control Btnadd.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvdlista;
-
-        /// <summary>
-        /// Control Label1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-
-        /// <summary>
-        /// Control txtid.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtid;
-
-        /// <summary>
-        /// Control Button2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button Btnadd;
 
         /// <summary>
         /// Control alerta.
@@ -148,5 +139,14 @@ namespace CAtravels
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal alerta;
+
+        /// <summary>
+        /// Control gvdlista.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvdlista;
     }
 }

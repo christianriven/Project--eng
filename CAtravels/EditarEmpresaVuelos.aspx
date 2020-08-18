@@ -33,16 +33,16 @@
 			<div class="menudelapagina">
 				<ul id="palabras">
 				    <li>
-                        <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click" >Empresa Vuelos</asp:LinkButton>
+                        <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click1"  >Airline Flight Company</asp:LinkButton>
                     </li>
                     <li>
-                        <asp:LinkButton ID="LBturismo" runat="server" OnClick="LBturismo_Click" >Empresa Turismo</asp:LinkButton>
+                        <asp:LinkButton ID="LBturismo" runat="server" OnClick="LBturismo_Click1" >Tourism Company</asp:LinkButton>
                     </li>
 					<li>
-                        <asp:LinkButton ID="LBedit" runat="server" >EDITAR</asp:LinkButton>
+                        <asp:LinkButton ID="LBedit" runat="server" OnClick="LBedit_Click" >EDIT</asp:LinkButton>
                     </li>
 					<li>
-                        <asp:LinkButton ID="LBdelete" runat="server" OnClick="LBdelete_Click" >BORRAR</asp:LinkButton>
+                        <asp:LinkButton ID="LBdelete" runat="server" OnClick="LBdelete_Click1" >DELETE</asp:LinkButton>
                     </li>
 				</ul>
 			</div>	
@@ -52,43 +52,44 @@
                 
     <div class="container">
 		&nbsp;<div class="form__top">
-		  <h1><span>CA</span></h1><h2>Empresa de Vuelos</h2>
+		  <h1><span>CA</span></h1><h2>Airline Flight Company</h2>
+             <p>This form is directed only to tourism businesses, if you are going to promote flights go to the navbar at the top that says:&quot;Airline Flight Company&quot;</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
 		</div>
 	
-			<p>Nombre de la empresa de vuelos</p>
+			<p>Airline Flight Name</p>
 			<asp:TextBox ID="Txtvempresa" runat="server" Height="24px" Width="238px"></asp:TextBox>
 		<br />
-		<p>ID de vuelo</p>
+		<p>Flight ID</p>
 			<asp:TextBox ID="txtid" runat="server" Height="24px" Width="238px"></asp:TextBox>
-&nbsp;<p>Pais de Salida del Vuelo</p>
+&nbsp;<p>Departure Country Flight</p>
 			<asp:TextBox ID="Txtvsalida" runat="server" Height="49px" Width="417px"></asp:TextBox>
 &nbsp;<br />
         <br />
-        Pais de Llegada<br />
+        Arrival Country<br />
 			<asp:TextBox ID="Txtvllegada" runat="server" Height="49px" Width="417px"></asp:TextBox>
         <br />
-        Fecha de salida<br />
+        Departure Date<br />
         <asp:TextBox ID="TxtSalida" runat="server" TextMode="Date"></asp:TextBox>
         <br />
         <br />
         <br />
-        Fecha de llegada<br />
+        Arrival Date<br />
         <asp:TextBox ID="Txtllegada" runat="server" TextMode="Date"></asp:TextBox>
-&nbsp;&nbsp;<p>Precio</p>
-			<asp:TextBox ID="Txtprecio" runat="server" OnTextChanged="Txtprecio_TextChanged"></asp:TextBox>
+&nbsp;&nbsp;<p>Price</p>
+			<asp:TextBox ID="Txtprecio" runat="server" ></asp:TextBox>
 &nbsp;&nbsp;
 
-</select><p>Teléfono </p>
+</select><p>Phone Number</p>
 			<asp:TextBox ID="Txttelefono" runat="server" Height="29px" Width="256px"></asp:TextBox>
-&nbsp;<p>Correo electrónico</p>
+&nbsp;<p>Email</p>
 			<asp:TextBox ID="Txtemail" runat="server" Height="29px" Width="256px"></asp:TextBox>
         <br />
 &nbsp;<div class="btn__form">
             	&nbsp;&nbsp;
-                <asp:Button ID="Button1" runat="server" Text="SELECCIONAR" CssClass="btn__reset" Height="25px" Width="293px" OnClick="Button1_Click" />
-                &nbsp;&nbsp;<asp:Button ID="btnAgregar" runat="server" Height="25px" Text="EDITAR" Width="323px" CssClass="btn__submit" OnClick="btnAgregar_Click"/>
+                <asp:Button ID="Button1" runat="server" Text="SELECT" CssClass="btn__reset" Height="25px" Width="293px" OnClick="Button1_Click" />
+                &nbsp;&nbsp;<asp:Button ID="btnAgregar" runat="server" Height="25px" Text="EDIT" Width="323px" CssClass="btn__submit" OnClick="btnAgregar_Click" />
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
             </div>
 	</div>
@@ -96,18 +97,19 @@
         <script src="js/bootstrap.min.js"></script>
         <asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
             <br />
-            <asp:GridView ID="gvdlista" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" >
+            <br />
+    <br />
+    <asp:GridView ID="gvdlista" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" >
 		<AlternatingRowStyle BackColor="White" />
 		 <Columns>
-                    <asp:BoundField DataField="Id_Vempresa" HeaderText="ID" />
-                    <asp:BoundField DataField="Nombre_Vempresa" HeaderText="Nombre de la Compañia" />
-                    <asp:BoundField DataField="Pais_Salida" HeaderText="País de salida" />
-                    <asp:BoundField DataField="Pais_llegada" HeaderText="País de llegada" />
-                    <asp:BoundField DataField="Salida" HeaderText="Día de salida" />
-                    <asp:BoundField DataField="Regreso" HeaderText="Día de llegada" />
-                    <asp:BoundField DataField="Precio" HeaderText="Precio" />
-			        <asp:BoundField DataField="Telefono" HeaderText="Numero de telefono" />
-			        <asp:BoundField DataField="Email" HeaderText="Email" />
+                    
+                    <asp:BoundField DataField="Id_empresa" HeaderText="ID" />
+                    <asp:BoundField DataField="Nombre_empresa" HeaderText="Name" />
+                    <asp:BoundField DataField="Ubicacion_empresa" HeaderText="Location" />
+                    <asp:BoundField DataField="Promocion_mes" HeaderText="Package" />
+			        <asp:BoundField DataField="Precio" HeaderText="Price" />
+                    <asp:BoundField DataField="Telefono_contacto" HeaderText="Phone Number" />                   
+			        <asp:BoundField DataField="Email_contacto" HeaderText="Email" />
          </Columns>
 		 <EditRowStyle BackColor="#2461BF" />
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

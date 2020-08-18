@@ -131,7 +131,7 @@
                     <asp:BoundField DataField="Id_empresa" HeaderText="ID" />
                     <asp:BoundField DataField="Nombre_empresa" HeaderText="Nombre de la Compañia" />
                     <asp:BoundField DataField="Ubicacion_Empresa" HeaderText="Ubicacion" />
-                    <asp:BoundField DataField="Descripcion_Empresa" HeaderText="Descripcion" />
+                    <asp:BoundField DataField="Precio" HeaderText="Precio" />
                     <asp:BoundField DataField="Promocion_mes" HeaderText="Promocion" />
                     <asp:BoundField DataField="Telefono_contacto" HeaderText="Telefono" />
                     <asp:BoundField DataField="Email_contacto" HeaderText="Email" />

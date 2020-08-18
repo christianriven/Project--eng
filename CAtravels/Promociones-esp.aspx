@@ -67,10 +67,10 @@
           <asp:ImageButton ID="ImageButton1" runat="server" Height="60px" ImageUrl="~/botones/cr45.png" Width="300px" OnClick="ImageButton1_Click" />
         </td>
       <td width="422" height="97" align="center" valign="top">
-          <asp:ImageButton ID="ImageButton2" runat="server" Height="62px" ImageUrl="~/botones/n70.png" Width="274px" />
+          <asp:ImageButton ID="ImageButton2" runat="server" Height="62px" ImageUrl="~/botones/n70.png" Width="274px" OnClick="ImageButton2_Click1" />
         </td>
       <td width="366" height="97" align="center" valign="top">
-          <asp:ImageButton ID="ImageButton3" runat="server" Height="60px" ImageUrl="~/botones/es60.png" Width="246px" />
+          <asp:ImageButton ID="ImageButton3" runat="server" Height="60px" ImageUrl="~/botones/es60.png" Width="246px" OnClick="ImageButton3_Click1" />
         </td>
     </tr>
     <tr>

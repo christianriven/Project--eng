@@ -125,5 +125,25 @@ namespace CAtravels
         {
             Response.Redirect("inicioEmpresa2.aspx");
         }
+
+        protected void LBvuelos_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("InicioEmpresa2.aspx");
+        }
+
+        protected void LBturismo_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("inicioEmpresa.aspx");
+        }
+
+        protected void LBedit_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EditarEmpresaVuelos.aspx");
+        }
+
+        protected void LBdelete_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("EliminarEmpresa.aspx");
+        }
     }
 }
