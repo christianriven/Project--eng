@@ -81,7 +81,7 @@
 			<asp:TextBox ID="Txtprecio" runat="server" ></asp:TextBox>
 &nbsp;&nbsp;
 
-</select><p>Phone Number</p>
+<p>Phone Number</p>
 			<asp:TextBox ID="Txttelefono" runat="server" Height="29px" Width="256px"></asp:TextBox>
 &nbsp;<p>Email</p>
 			<asp:TextBox ID="Txtemail" runat="server" Height="29px" Width="256px"></asp:TextBox>
@@ -97,19 +97,18 @@
         <script src="js/bootstrap.min.js"></script>
         <asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
             <br />
-            <br />
-    <br />
-    <asp:GridView ID="gvdlista" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" >
+            <asp:GridView ID="gvdlista" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" >
 		<AlternatingRowStyle BackColor="White" />
 		 <Columns>
-                    
-                    <asp:BoundField DataField="Id_empresa" HeaderText="ID" />
-                    <asp:BoundField DataField="Nombre_empresa" HeaderText="Name" />
-                    <asp:BoundField DataField="Ubicacion_empresa" HeaderText="Location" />
-                    <asp:BoundField DataField="Promocion_mes" HeaderText="Package" />
-			        <asp:BoundField DataField="Precio" HeaderText="Price" />
-                    <asp:BoundField DataField="Telefono_contacto" HeaderText="Phone Number" />                   
-			        <asp:BoundField DataField="Email_contacto" HeaderText="Email" />
+                    <asp:BoundField DataField="Id_Vempresa" HeaderText="ID" />
+                    <asp:BoundField DataField="Nombre_Vempresa" HeaderText="Company Name" />
+                    <asp:BoundField DataField="Pais_Salida" HeaderText="Departure Country" />
+                    <asp:BoundField DataField="Pais_llegada" HeaderText="Arrival Country" />
+                    <asp:BoundField DataField="Salida" HeaderText="Departure Date" />
+                    <asp:BoundField DataField="Regreso" HeaderText="Return Date" />
+                    <asp:BoundField DataField="Precio" HeaderText="Price" />
+			        <asp:BoundField DataField="Telefono" HeaderText="Phone Number" />
+			        <asp:BoundField DataField="Email" HeaderText="Email" />
          </Columns>
 		 <EditRowStyle BackColor="#2461BF" />
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

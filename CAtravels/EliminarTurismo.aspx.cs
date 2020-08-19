@@ -60,7 +60,7 @@ namespace CAtravels
 
                     TxtEname.Text = registro["Nombre_empresa"].ToString();
                     TxtUempresa.Text = registro["Ubicacion_Empresa"].ToString();
-                    TxtDempresa.Text = registro["Descripcion_empresa"].ToString();
+                    TxtDempresa.Text = registro["Precio"].ToString();
                     TxtPempresa.Text = registro["Promocion_mes"].ToString();
                     TxtTempresa.Text = registro["Telefono_contacto"].ToString();
                     TxtEempresa.Text = registro["Email_contacto"].ToString();

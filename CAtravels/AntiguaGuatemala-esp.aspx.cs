@@ -70,7 +70,7 @@ namespace CAtravels
                 if (retorno != 0)
                 {
                     Session["usermane"] = TxtU;
-                    alerta.Text = "<script>Swal.fire('Credenciales correctas', 'Puede Escoger el Paquete', 'error') </script>";
+                    alerta.Text = "<script>Swal.fire('Credenciales correctas', 'Puede Escoger el Paquete', 'success') </script>";
 
                 }
                 else

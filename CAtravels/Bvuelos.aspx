@@ -135,8 +135,8 @@
                     <asp:BoundField DataField="Nombre_Vempresa" HeaderText="Company Name" />
                     <asp:BoundField DataField="Pais_Salida" HeaderText="Depurate Country" />
                     <asp:BoundField DataField="Pais_llegada" HeaderText="Country of arrival" />
-                    <asp:BoundField DataField="Salida" HeaderText="day of exit" />
-                    <asp:BoundField DataField="Regreso" HeaderText="Day of arrival" />
+                    <asp:BoundField DataField="Salida" HeaderText="Departure day" />
+                    <asp:BoundField DataField="Regreso" HeaderText="Arrival Date" />
                     <asp:BoundField DataField="Precio" HeaderText="Price" />
 			        <asp:BoundField DataField="Telefono" HeaderText="phone number" />
 			        <asp:BoundField DataField="Email" HeaderText="Email" />

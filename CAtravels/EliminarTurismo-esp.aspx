@@ -98,9 +98,9 @@
             <p>
                 <asp:TextBox ID="TxtUempresa" runat="server" Height="28px" Width="138px"></asp:TextBox>
             </p>
-			&nbsp;<p>Descripción:</p>
+			&nbsp;<p>Precio:</p>
             <p>
-                <asp:TextBox ID="TxtDempresa" runat="server" Height="120px" TextMode="MultiLine" Width="428px" ></asp:TextBox>
+                <asp:TextBox ID="TxtDempresa" runat="server" Height="18px" Width="378px" ></asp:TextBox>
             </p>
 			&nbsp;<p>Paquete a Ofrecer:</p>
             <p>

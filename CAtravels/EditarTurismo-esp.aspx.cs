@@ -39,7 +39,7 @@ namespace CAtravels
 
                     TxtEname.Text = registro["Nombre_empresa"].ToString();
                     TxtUempresa.Text = registro["Ubicacion_Empresa"].ToString();
-                    TxtDempresa.Text = registro["Descripcion_empresa"].ToString();
+                    TxtDempresa.Text = registro["Precio"].ToString();
                     TxtPempresa.Text = registro["Promocion_mes"].ToString();
                     TxtTempresa.Text = registro["Telefono_contacto"].ToString();
                     TxtEempresa.Text = registro["Email_contacto"].ToString();
@@ -59,7 +59,7 @@ namespace CAtravels
             {
 
                 MySqlConnection conexion = conexionBD.ObtenerConexion();
-                string query = "UPDATE empresa SET Nombre_empresa = @empresa,  Ubicacion_Empresa = @Ubicacion, Descripcion_Empresa = @Descripcion, Promocion_mes = @Promocion, Telefono_contacto= @Telefono, Email_contacto=@email WHERE Id_empresa=@id";
+                string query = "UPDATE empresa SET Nombre_empresa = @empresa,  Ubicacion_Empresa = @Ubicacion, Precio = @Descripcion, Promocion_mes = @Promocion, Telefono_contacto= @Telefono, Email_contacto=@email WHERE Id_empresa=@id";
                 MySqlCommand comando = new MySqlCommand(query, conexion);
 
                 comando.Parameters.AddWithValue("@empresa", TxtEname.Text);

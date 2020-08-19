@@ -69,7 +69,7 @@ namespace CAtravels
                 if (retorno != 0)
                 {
                     Session["usermane"] = TxtU;
-                    alerta.Text = "<script>Swal.fire('The Credentials are Correct, 'You can choose your Package', 'error') </script>";
+                    alerta.Text = "<script>Swal.fire('The Credentials are Correct, 'You can choose your Package', 'success') </script>";
 
                 }
                 else

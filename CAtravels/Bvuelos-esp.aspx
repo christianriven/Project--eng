@@ -128,7 +128,7 @@
 	&nbsp;<asp:Button ID="Btn_buscar" runat="server" Height="47px" Text="Buscar" cssClass="waves-effect waves-light btn-large" OnClick="Btn_buscar_Click"/>
 	 <br />
     <br />
-    <asp:GridView ID="gvdlista" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" >
+    <asp:GridView ID="gvdlista" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gvdlista_SelectedIndexChanged" >
 		<AlternatingRowStyle BackColor="White" />
 		 <Columns>
                     

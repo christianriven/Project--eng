@@ -90,13 +90,17 @@
             <p>
                 <asp:TextBox ID="TxtEname" runat="server" cssCLaa="input"></asp:TextBox>
             </p>
+        <p>Company ID</p>
+            <p>
+                <asp:TextBox ID="txtid" runat="server" cssCLaa="input"></asp:TextBox>
+            </p>
 			<p>Company Location</p>
             <p>
                 <asp:TextBox ID="TxtUempresa" runat="server" Height="28px" Width="138px"></asp:TextBox>
             </p>
-			&nbsp;<p>Description: </p>
+			&nbsp;<p>Price: </p>
             <p>
-                <asp:TextBox ID="TxtDempresa" runat="server" Height="120px" TextMode="MultiLine" Width="428px" OnTextChanged="TxtDempresa_TextChanged"></asp:TextBox>
+                <asp:TextBox ID="TxtDempresa" runat="server" Height="16px" Width="370px" ></asp:TextBox>
             </p>
 			&nbsp;<p>Package to be offer: </p>
             <p>

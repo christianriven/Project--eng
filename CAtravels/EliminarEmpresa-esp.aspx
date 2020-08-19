@@ -96,6 +96,8 @@
         <script src="js/bootstrap.min.js"></script>
         <asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
             <br />
+            <br />
+    <br />
             <asp:GridView ID="gvdlista" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" >
 		<AlternatingRowStyle BackColor="White" />
 		 <Columns>
@@ -121,7 +123,7 @@
                 <SortedDescendingHeaderStyle BackColor="#4870BE" />
     </asp:GridView>
             <br />
-            <br />
+            <br />         
             <br />
             <br />
             <br />

@@ -54,21 +54,22 @@
 			<h2 style="font-size: 180%" align="center" id="titulos"> Guatemala </h2>
 			<br>
 			<a href="">
-				<img id="ant1" src="imagenes/1.png" width="85%" height="62%"> </a>
+				&nbsp;<asp:ImageButton ID="ImageButton1" runat="server" Height="62%" ImageUrl="~/imagenes/1.png" Width="89%" OnClick="ImageButton1_Click" />
+            </a>
 	
 		</div>
 		<div class="col-4">
 			<h2 style="font-size: 180%" align="center" id="titulos"> Honduras </h2>
 			<br>
-			<a href="">
-			<img id="ant1" src="imagenes/dt.common.streams.StreamServer.jpg" width="89%" height="62%">
+			<a href="">&nbsp;<asp:ImageButton ID="ImageButton2" runat="server" Height="62%" ImageUrl="~/imagenes/dt.common.streams.StreamServer.jpg" Width="89%" />
 		</div>
 			
 			<div class="col-4"> </a>
 			<h2 style="font-size: 180%" align="center" id="titulos"> El Salvador </h2>
 			<br>
-			<a href="">
-				<img src="imagenes/7-rotado.jpg" width="89%" height="62%"> </a>
+			    <a href="">
+				&nbsp;<asp:ImageButton ID="ImageButton3" runat="server" Height="62%" ImageUrl="~/imagenes/7-rotado.jpg" Width="89%" OnClick="ImageButton3_Click" />
+                </a>
 		</div>
 		
 	</div>
@@ -81,14 +82,14 @@
 			<h2 style="font-size: 180%" align="center" id="titulos"> Costa Rica </h2>
 			<br>
 			<a href="">
-				<img src="imagenes/vuelos-san-jose_b1-san-jose_es.jpg" width="90%" height="67%"> </a>
+				&nbsp;<asp:ImageButton ID="ImageButton4" runat="server" Height="62%" ImageUrl="~/imagenes/Costa-Rica.jpg" Width="89%" OnClick="ImageButton4_Click" />
 		</div>
 		<div class="col-4">
 			
 			<h2 style="font-size: 180%" align="center" id="titulos">Panamá</h2>
 			<br>
 			<a href="">
-				<img src="imagenes/Que-hacer-en-Ciudad-de-Panamá-Conocer-lugares-y-destinos-turísticos-1-1.png" width="90%" height="67%"> </a>
+				&nbsp;<asp:ImageButton ID="ImageButton5" runat="server" Height="62%" ImageUrl="~/imagenes/Que-hacer-en-Ciudad-de-Panamá-Conocer-lugares-y-destinos-turísticos-1-1.png" Width="89%" OnClick="ImageButton5_Click" /> </a>
 		</div>
 		
 		<div class="col-4">

@@ -63,8 +63,13 @@ namespace CAtravels
             }
             else
             {
-                alerta.Text = "<script>Swal.fire('There are no flights available for this date.', 'try looking at other dates', 'error'); </script>";
+                alerta.Text = "<script>Swal.fire('No hay vuelos disponibles.', 'Intenta buscar otro vuelo', 'error'); </script>";
             }
+        }
+
+        protected void gvdlista_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
