@@ -18,7 +18,7 @@ namespace CAtravels
         MySqlConnection conec = new MySqlConnection("server=127.0.0.1; database=catravels; Uid=root; pwd=;");
         protected void Page_Load(object sender, EventArgs e)
         {
-            string pais = "Guatemala";
+            string pais = "Honduras";
             conec.Open();
             MySqlCommand cmd = conec.CreateCommand();
             cmd.CommandText = "select * from empresa WHERE Ubicacion_Empresa ='" + pais + "';";
@@ -132,6 +132,43 @@ namespace CAtravels
             {
                 alerta.Text = "<script>Swal.fire('Algo salio mal Intentalo otra vez', 'Verifique que ID se correcto', 'error') </script>";
 
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (TxtU.Text != "" && TxtP.Text != "")
+            {
+                string contra, username;
+                contra = EncryptString(TxtP.Text, initVector);
+                username = TxtU.Text;
+                valores.valorGlobal = username;
+
+                //int retorno = 0;
+                MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1; database= catravels; Uid=root; pwd=;");
+                var cmd = "SELECT Id_usuarios from usuarios WHERE User_name='" + username + "' AND Password='" + contra + "';";
+                MySqlCommand comando = new MySqlCommand(cmd, conexion);
+                conexion.Open();
+                int retorno = Convert.ToInt32(comando.ExecuteScalar());
+                if (retorno != 0)
+                {
+                    Session["usermane"] = TxtU;
+                    alerta.Text = "<script>Swal.fire('Credenciales correctas', 'Puede Escoger el Paquete', 'success') </script>";
+
+                }
+                else
+                {
+
+                    alerta.Text = "<script>Swal.fire('Error de Credenciales, 'Su Nombre o Usuario estan incorrectos', 'error') </script>";
+                    TxtU.Text = "";
+                    TxtP.Text = "";
+                }
+
+
+            }
+            else
+            {
+                alerta.Text = "<script>Swal.fire('Cuidado', 'Rellene todos los espacios', 'error') </script>";
             }
         }
     }

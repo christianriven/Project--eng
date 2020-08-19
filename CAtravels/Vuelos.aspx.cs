@@ -59,5 +59,10 @@ namespace CAtravels
         {
             Response.Redirect("Bvuelos.aspx");
         }
+
+        protected void ImageButton2_Click1(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Bvuelos.aspx");
+        }
     }
 }

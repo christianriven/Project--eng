@@ -18,7 +18,17 @@ namespace CAtravels
         MySqlConnection conec = new MySqlConnection("server=127.0.0.1; database=catravels; Uid=root; pwd=;");
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string pais = "Honduras";
+            conec.Open();
+            MySqlCommand cmd = conec.CreateCommand();
+            cmd.CommandText = "select * from empresa WHERE Ubicacion_Empresa ='" + pais + "';";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+            gvdlista.DataSource = dt;
+            gvdlista.DataBind();
+            conec.Close();
         }
 
         protected void LBinicio_Click(object sender, EventArgs e)

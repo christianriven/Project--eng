@@ -84,7 +84,7 @@
 				</div>
 				<div class="form-group">
 					 
-				    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Validar" Width="100px" cssClass="btn btn-primary" Height="40px"/>
+				    <asp:Button ID="Button1" runat="server"  Text="Validar" Width="100px" cssClass="btn btn-primary" Height="40px" OnClick="Button1_Click"/>
 					 
 				</div>
 		</div>

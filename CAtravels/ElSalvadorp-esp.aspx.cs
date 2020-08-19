@@ -18,7 +18,7 @@ namespace CAtravels
         MySqlConnection conec = new MySqlConnection("server=127.0.0.1; database=catravels; Uid=root; pwd=;");
         protected void Page_Load(object sender, EventArgs e)
         {
-            string pais = "Guatemala";
+            string pais = "El Salvador";
             conec.Open();
             MySqlCommand cmd = conec.CreateCommand();
             cmd.CommandText = "select * from empresa WHERE Ubicacion_Empresa ='" + pais + "';";
