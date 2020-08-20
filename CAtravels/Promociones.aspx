@@ -56,7 +56,7 @@
  <table width="1280" height="650" border="0" cellpadding="0" cellspacing="5">
   <tbody>
     <tr>
-      <td height="131" colspan="3"><img src="Logo.png" width="204" height="185" alt=""/><img src="proms.png" width="1066" height="192" alt=""/></td>
+      <td height="131" colspan="3"><img src="Logo.png" width="204" height="185" alt=""/><img src="botones/proms-ENG.png" width="1066" height="192" alt=""/></td>
     </tr>
     <tr>
       <td height="49" colspan="3" align="center" valign="top"><strong style="color: #000000">Available Promotions this Month:</strong></td>

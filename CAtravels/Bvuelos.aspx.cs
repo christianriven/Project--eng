@@ -52,9 +52,10 @@ namespace CAtravels
                 adultos = txtNadultos.Text;
                 adolecentes = TxtAdolecentes.Text;
                 niños = Txtniños.Text;
+
                 conec.Open();
                 MySqlCommand cmd = conec.CreateCommand();
-                cmd.CommandText = "select * from empresavuelos WHERE Pais_Salida ='"+ desde +"' AND Salida= '"+ Dida + "' AND Regreso= '"+ hasta +"'AND Pais_llegada = '"+hasta+"';";
+                cmd.CommandText = "select * from empresavuelos WHERE Pais_Salida ='"+ desde +"' AND Salida= '"+ Dida + "' AND Regreso= '"+ Dregreso +"'AND Pais_llegada = '"+hasta+"';";
                 cmd.ExecuteNonQuery();
                 DataTable dt = new DataTable();
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);
