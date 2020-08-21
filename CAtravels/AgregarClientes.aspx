@@ -55,7 +55,7 @@
             <asp:TextBox ID="txtEVcontra" runat="server" cssClass="input" Width="433px" TextMode="Password"></asp:TextBox>
             <br />
             <div class="btn__form">
-            	&nbsp;<asp:Button ID="btnAgregar" runat="server" Text="Agregar" cssClass="btn__submit" OnClick="btnAgregar_Click" Height="33px" Width="448px" />
+            	&nbsp;<asp:Button ID="btnAgregar" runat="server" Text="Add" cssClass="btn__submit" OnClick="btnAgregar_Click" Height="33px" Width="448px" />
             	&nbsp;<asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
             </div>
             <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>

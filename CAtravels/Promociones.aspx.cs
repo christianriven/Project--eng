@@ -36,7 +36,7 @@ namespace CAtravels
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("Honfuras45.aspx");
+            Response.Redirect("Honduras45.aspx");
         }
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
@@ -46,7 +46,7 @@ namespace CAtravels
 
         protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("Nicargua60.aspx");
+            Response.Redirect("Nicaraga60.aspx");
         }
     }
 }

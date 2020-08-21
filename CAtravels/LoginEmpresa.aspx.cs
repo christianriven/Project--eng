@@ -32,7 +32,7 @@ namespace CAtravels
 
                 //int retorno = 0;
                 MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1; database= catravels; Uid=root; pwd=;");
-                var cmd = "SELECT Id_clientes from clientes WHERE Nombre_Empresa='" + username + "' AND Contraseña='" + contra + "';";
+                var cmd = "SELECT Id_cliente from clientes WHERE Nombre_Empresa='" + username + "' AND Contraseña='" + contra + "';";
                 MySqlCommand comando = new MySqlCommand(cmd, conexion);
                 conexion.Open();
                 int retorno = Convert.ToInt32(comando.ExecuteScalar());

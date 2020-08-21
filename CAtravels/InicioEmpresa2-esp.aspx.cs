@@ -45,6 +45,7 @@ namespace CAtravels
                 if (ConexiónV.EmpresaRpetida(VEname, Psalida, Pdestino, salida, regreso, Preciovuelo, Telefono, EVempresa) == 0)
                 {
                     alerta.Text = "<script>Swal.fire('Se agrego de una manera exitosa', 'Bienvenido', 'success'); </script>";
+
                     Txtvempresa.Text = "";
                     Txtvsalida.Text = "";
                     Txtvllegada.Text = "";
@@ -57,7 +58,7 @@ namespace CAtravels
                 }
                 else
                 {
-                    alerta.Text = "<script>Swal.fire('compañia registrada', 'Esta compañia ya fue registrada', 'error'); </script>";
+                    alerta.Text = "<script>Swal.fire('compañia no registrada', 'Esta compañia ya fue registrada', 'error'); </script>";
                 }
 
             }

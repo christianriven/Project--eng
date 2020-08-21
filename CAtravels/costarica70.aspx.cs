@@ -42,7 +42,7 @@ namespace CAtravels
 
         protected void LBmastercard_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("Masterdcard.aspx");
+            Response.Redirect("Mastercard.aspx");
         }
     }
 }

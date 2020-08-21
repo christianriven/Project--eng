@@ -34,7 +34,7 @@ namespace CAtravels
                 Eempresa = TxtEempresa.Text;
 
                     
-                    if (conexiónE.EmpresaRpetida(Ename, Uempresa, Dempresa, Pempresa, Tempresa, Eempresa) == 0)
+                    if (conexiónE.AgregarUsuario(Ename, Uempresa, Dempresa, Pempresa, Tempresa, Eempresa) == 0)
                     {
                         alerta.Text = "<script>Swal.fire('Succesfully Register', 'Welcome', 'success'); </script>";
                      TxtEname.Text = "";

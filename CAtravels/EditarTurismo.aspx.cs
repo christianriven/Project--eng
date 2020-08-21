@@ -83,11 +83,11 @@ namespace CAtravels
                 TxtTempresa.Text = "";
                 TxtEempresa.Text = "";
                 txtid.Text = "";
-                alerta.Text = "<script>Swal.fire('Su producto se Editado con exito.', '¡Gracias por preferirnos!', 'success'); </script>";
+                alerta.Text = "<script>Swal.fire('Your Product has been edited successfully.', 'Thanks for Prefering Us!', 'success'); </script>";
             }
             else
             {
-                alerta.Text = "<script>Swal.fire('ADVERTENCIA', 'No deje espacios en blanco', 'error') </script>";
+                alerta.Text = "<script>Swal.fire('WARNING', 'No deje espacios en blanco', 'error') </script>";
             }
         }
 
@@ -101,7 +101,7 @@ namespace CAtravels
                 MySqlDataReader registro = comand.ExecuteReader();
                 if (registro.Read())
                 {
-                    alerta.Text = "<script>Swal.fire('Se ha seleccionado con exito.', '', 'success'); </script>";
+                    alerta.Text = "<script>Swal.fire('It has been selected successfully', '', 'success'); </script>";
 
                     TxtEname.Text = registro["Nombre_empresa"].ToString();
                     TxtUempresa.Text = registro["Ubicacion_Empresa"].ToString();
@@ -114,7 +114,7 @@ namespace CAtravels
             }
             catch
             {
-                alerta.Text = "<script>Swal.fire('Algo salio mal Intentalo otra vez', 'Verifique que ID se correcto', 'error') </script>";
+                alerta.Text = "<script>Swal.fire('Something went wrong, try again', 'Verify that your ID is correct', 'error') </script>";
 
             }
         }
