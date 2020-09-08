@@ -80,7 +80,7 @@
                       
                     </li>
 				   <li>
-                       <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton3_Click">PROMOTIONS</asp:LinkButton>
+                       <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton3_Click">OFFERS</asp:LinkButton>
                     </li>
 				</ul>
 			</div>	

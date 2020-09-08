@@ -20,26 +20,28 @@ namespace CAtravels
 
         protected void Btnadd_Click(object sender, EventArgs e)
         {
-            if (TxtEname.Text.Trim() != "" && TxtUempresa.Text.Trim() != "" && TxtDempresa.Text != "" && TxtPempresa.Text != "" && TxtTempresa.Text != "" && TxtEempresa.Text.Trim() != "")
+            if (TxtEname.Text.Trim() != "" && TxtUempresa.Text.Trim() != "" && TxtDempresa.Text != "" && Txtmoneda.Text.Trim() != "" && TxtPempresa.Text != "" && TxtTempresa.Text != "" && TxtEempresa.Text.Trim() != "" )
             {
 
-                string Ename, Uempresa, Dempresa, Pempresa, Tempresa, Eempresa;
+                string Ename, Uempresa, Dempresa, Moneda, Pempresa, Tempresa, Eempresa;
 
 
                 Ename = TxtEname.Text;
-                Uempresa = TxtUempresa.Text;
+                Uempresa = TxtUempresa.Text;   
                 Dempresa = TxtDempresa.Text;
+                Moneda = Txtmoneda.Text;
                 Pempresa = TxtPempresa.Text;
                 Tempresa = TxtTempresa.Text;
                 Eempresa = TxtEempresa.Text;
 
                     
-                    if (conexiónE.AgregarUsuario(Ename, Uempresa, Dempresa, Pempresa, Tempresa, Eempresa) == 0)
+                    if (conexiónE.AgregarUsuario(Ename, Uempresa, Dempresa, Moneda, Pempresa, Tempresa, Eempresa) == 0)
                     {
-                        alerta.Text = "<script>Swal.fire('Succesfully Register', 'Welcome', 'success'); </script>";
-                     TxtEname.Text = "";
-                    TxtUempresa.Text = "";
+                    alerta.Text = "<script>Swal.fire('Register Company', 'The Company name already exists', 'error'); </script>";
+                    TxtEname.Text = "";
+                    TxtUempresa.Text = "";                
                     TxtDempresa.Text = "";
+                    Txtmoneda.Text = "";
                     TxtPempresa.Text = "";
                     TxtTempresa.Text = "";
                     TxtEempresa.Text = "";
@@ -47,7 +49,7 @@ namespace CAtravels
                     }
                     else
                     {
-                        alerta.Text = "<script>Swal.fire('Register Company', 'The Company name already exists', 'error'); </script>";
+                        alerta.Text = "<script>Swal.fire('Succesfully Register', 'Welcome', 'success'); </script>";
                     }
                 
                 

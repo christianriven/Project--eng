@@ -41,6 +41,7 @@ namespace CAtravels
                     TxtEname.Text = registro["Nombre_empresa"].ToString();
                     TxtUempresa.Text = registro["Ubicacion_Empresa"].ToString();
                     TxtDempresa.Text = registro["Precio"].ToString();
+                    Txtmoneda.Text = registro["Moneda"].ToString();
                     TxtPempresa.Text = registro["Promocion_mes"].ToString();
                     TxtTempresa.Text = registro["Telefono_contacto"].ToString();
                     TxtEempresa.Text = registro["Email_contacto"].ToString();
@@ -56,7 +57,7 @@ namespace CAtravels
 
         protected void Btnadd_Click(object sender, EventArgs e)
         {
-            if (TxtEname.Text.Trim() != "" && TxtUempresa.Text.Trim() != "" && TxtDempresa.Text.Trim() != "" && TxtPempresa.Text.Trim() != "" && TxtTempresa.Text.Trim() != "" && TxtEempresa.Text.Trim() != "" && txtid.Text.Trim() != "")
+            if (TxtEname.Text.Trim() != "" && TxtUempresa.Text.Trim() != "" && TxtDempresa.Text.Trim() != "" && Txtmoneda.Text.Trim() != "" && TxtPempresa.Text.Trim() != "" && TxtTempresa.Text.Trim() != "" && TxtEempresa.Text.Trim() != "" && txtid.Text.Trim() != "")
             {
 
                 conexionA.Eliminar2(Convert.ToInt32(txtid.Text));
@@ -75,6 +76,7 @@ namespace CAtravels
                 TxtEname.Text = "";
                 TxtUempresa.Text = "";
                 TxtDempresa.Text = "";
+                Txtmoneda.Text = "";
                 TxtPempresa.Text = "";
                 TxtTempresa.Text = "";
                 TxtEempresa.Text = "";

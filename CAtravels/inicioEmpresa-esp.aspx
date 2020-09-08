@@ -96,9 +96,13 @@
             <p>
                 <asp:TextBox ID="TxtPempresa" runat="server"  Height="119px" TextMode="MultiLine"  Width="434px"></asp:TextBox>
             </p>
-        &nbsp;<p>Precio:</p>
+        &nbsp;<p>Moneda:<asp:ListBox ID="ListBox4" runat="server"></asp:ListBox>
+            <asp:ListBox ID="ListBox5" runat="server"></asp:ListBox>
+        <p>
+            <asp:TextBox ID="Txtmoneda" runat="server" Width="214px"></asp:TextBox>
+        <p>Precio:</p>
             <p>
-                <asp:TextBox ID="TxtDempresa" runat="server" Height="26px" Width="251px" OnTextChanged="TxtDempresa_TextChanged"></asp:TextBox>
+                <asp:TextBox ID="TxtDempresa" runat="server" Height="26px" Width="222px" OnTextChanged="TxtDempresa_TextChanged"></asp:TextBox>
             </p>
 			&nbsp;<p>Teléfono de Contacto:</p>
             <p>

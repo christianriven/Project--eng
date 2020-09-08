@@ -83,6 +83,10 @@
 			<asp:TextBox ID="Txtprecio" runat="server"></asp:TextBox>
 &nbsp;&nbsp;
 
+        <p>Currency</p>
+			<asp:TextBox ID="Txtmoneda" runat="server"></asp:TextBox>
+&nbsp;&nbsp;
+
 </select><p>Phone Number </p>
 			<asp:TextBox ID="Txttelefono" runat="server" Height="29px" Width="256px"></asp:TextBox>
 &nbsp;<p>E-mail</p>

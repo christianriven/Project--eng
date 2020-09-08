@@ -80,6 +80,8 @@
 &nbsp;&nbsp;<p>Price</p>
 			<asp:TextBox ID="Txtprecio" runat="server" ></asp:TextBox>
 &nbsp;&nbsp;
+&nbsp;&nbsp;<p>Currency</p>
+			<asp:TextBox ID="Txtmoneda" runat="server" ></asp:TextBox>
 
 <p>Phone Number</p>
 			<asp:TextBox ID="Txttelefono" runat="server" Height="29px" Width="256px"></asp:TextBox>
@@ -107,6 +109,7 @@
                     <asp:BoundField DataField="Salida" HeaderText="Departure Date" />
                     <asp:BoundField DataField="Regreso" HeaderText="Return Date" />
                     <asp:BoundField DataField="Precio" HeaderText="Price" />
+                    <asp:BoundField DataField="Moneda" HeaderText="Currency" />
 			        <asp:BoundField DataField="Telefono" HeaderText="Phone Number" />
 			        <asp:BoundField DataField="Email" HeaderText="Email" />
          </Columns>

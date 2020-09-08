@@ -102,6 +102,10 @@
             <p>
                 <asp:TextBox ID="TxtDempresa" runat="server" Height="16px" Width="337px" ></asp:TextBox>
             </p>
+            &nbsp;<p>Moneda:</p>
+            <p>
+                <asp:TextBox ID="Txtmoneda" runat="server" Height="16px" Width="337px" ></asp:TextBox>
+            </p>
 			&nbsp;<p>Paquete a Ofrecer:</p>
             <p>
                 <asp:TextBox ID="TxtPempresa" runat="server"  Height="119px" TextMode="MultiLine"  Width="434px"></asp:TextBox>
@@ -132,6 +136,7 @@
                     <asp:BoundField DataField="Nombre_empresa" HeaderText="Nombre de la Compañia" />
                     <asp:BoundField DataField="Ubicacion_Empresa" HeaderText="Ubicacion" />
                     <asp:BoundField DataField="Precio" HeaderText="Precio" />
+                    <asp:BoundField DataField="Moneda" HeaderText="Moneda" />
                     <asp:BoundField DataField="Promocion_mes" HeaderText="Promocion" />
                     <asp:BoundField DataField="Telefono_contacto" HeaderText="Telefono" />
                     <asp:BoundField DataField="Email_contacto" HeaderText="Email" />

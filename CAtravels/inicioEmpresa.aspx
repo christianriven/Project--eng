@@ -92,12 +92,15 @@
             </p>
 			<p>Company Location</p>
             <p>
-                <asp:TextBox ID="TxtUempresa" runat="server" Height="28px" Width="138px"></asp:TextBox>
+                <asp:TextBox ID="TxtUempresa" runat="server" Height="21px" Width="138px"></asp:TextBox>
             </p>
-			&nbsp;<p>Price: </p>
+            
+        <p>Price: </p>
             <p>
-                <asp:TextBox ID="TxtDempresa" runat="server" Height="20px" Width="397px" OnTextChanged="TxtDempresa_TextChanged"></asp:TextBox>
+                <asp:TextBox ID="TxtDempresa" runat="server" Height="20px" Width="181px" ></asp:TextBox>
             </p>
+        &nbsp;<p>Currency: </p>
+			&nbsp;<asp:TextBox ID="Txtmoneda" runat="server"></asp:TextBox>
 			&nbsp;<p>Package to be offer: </p>
             <p>
                 <asp:TextBox ID="TxtPempresa" runat="server"  Height="119px" TextMode="MultiLine"  Width="434px"></asp:TextBox>

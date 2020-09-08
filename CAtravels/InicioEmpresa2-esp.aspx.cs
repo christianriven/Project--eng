@@ -25,10 +25,10 @@ namespace CAtravels
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (Txtvempresa.Text.Trim() != "" && Txtvsalida.Text.Trim() != "" && Txtvllegada.Text != "" && TxtSalida.Text != "" && Txtllegada.Text != "" && Txtprecio.Text != "" && Txttelefono.Text != "" && Txtemail.Text.Trim() != "")
+            if (Txtvempresa.Text.Trim() != "" && Txtvsalida.Text.Trim() != "" && Txtvllegada.Text != "" && TxtSalida.Text != "" && Txtllegada.Text != "" && Txtprecio.Text != "" && Txtmoneda.Text != "" && Txttelefono.Text != "" && Txtemail.Text.Trim() != "")
             {
 
-                string VEname, Psalida, Pdestino, regreso,salida, Preciovuelo, EVempresa;
+                string VEname, Psalida, Pdestino, regreso,salida, Preciovuelo, Moneda, EVempresa;
                 int Telefono;
                 //DateTime salida = Convert.ToDateTime(TxtSalida.Text);
 
@@ -38,11 +38,12 @@ namespace CAtravels
                 salida = TxtSalida.Text;
                 regreso = Txtllegada.Text;
                 Preciovuelo = Txtprecio.Text;
+                Moneda = Txtmoneda.Text;
                 Telefono = Convert.ToInt32(Txttelefono.Text);
                 EVempresa = Txtemail.Text;
                 
 
-                if (ConexiónV.EmpresaRpetida(VEname, Psalida, Pdestino, salida, regreso, Preciovuelo, Telefono, EVempresa) == 0)
+                if (ConexiónV.AgregarVempresaesp(VEname, Psalida, Pdestino, salida, regreso, Preciovuelo, Moneda, Telefono, EVempresa) == 0)
                 {
                     alerta.Text = "<script>Swal.fire('Se agrego de una manera exitosa', 'Bienvenido', 'success'); </script>";
 
@@ -52,6 +53,7 @@ namespace CAtravels
                     TxtSalida.Text = "";
                     Txtllegada.Text = "";
                     Txtprecio.Text = "";
+                    Txtmoneda.Text = "";
                     Txttelefono.Text = "";
                     Txtemail.Text = "";
 

@@ -16,7 +16,7 @@ namespace CAtravels
         {
             conec.Open();
             MySqlCommand cmd = conec.CreateCommand();
-            cmd.CommandText = "select * from empresavuelos";
+            cmd.CommandText = "select * from empresavueloseng";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
@@ -31,7 +31,7 @@ namespace CAtravels
             try
             {
                 MySqlConnection conexion = conexionBD.ObtenerConexion();
-                MySqlCommand comand = new MySqlCommand("SELECT * FROM empresavuelos WHERE Id_Vempresa=@ID", conexion);
+                MySqlCommand comand = new MySqlCommand("SELECT * FROM empresavueloseng WHERE Id_Vempresa=@ID", conexion);
                 comand.Parameters.AddWithValue("@ID", txtid.Text);
                 MySqlDataReader registro = comand.ExecuteReader();
                 if (registro.Read())
@@ -44,6 +44,7 @@ namespace CAtravels
                     TxtSalida.Text = registro["Salida"].ToString();
                     Txtllegada.Text = registro["Regreso"].ToString();
                     Txtprecio.Text = registro["Precio"].ToString();
+                    Txtmoneda.Text = registro["Moneda"].ToString();
                     Txttelefono.Text = registro["Telefono"].ToString();
                     Txtemail.Text = registro["Email"].ToString();
                 }
@@ -64,11 +65,11 @@ namespace CAtravels
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (Txtvempresa.Text.Trim() != "" && Txtvsalida.Text.Trim() != "" && Txtvllegada.Text.Trim() != "" && TxtSalida.Text.Trim() != "" && Txtllegada.Text.Trim() != "" && Txtprecio.Text.Trim() != "" && Txttelefono.Text.Trim() != "" && Txtemail.Text.Trim() != "" && txtid.Text.Trim() != "")
+            if (Txtvempresa.Text.Trim() != "" && Txtvsalida.Text.Trim() != "" && Txtvllegada.Text.Trim() != "" && TxtSalida.Text.Trim() != "" && Txtllegada.Text.Trim() != "" && Txtprecio.Text.Trim() != "" && Txttelefono.Text.Trim() != "" && Txtemail.Text.Trim() != "" && txtid.Text.Trim() != "" && Txtmoneda.Text.Trim() != "")
             {
 
                 MySqlConnection conexion = conexionBD.ObtenerConexion();
-                string query = "UPDATE empresavuelos SET Nombre_Vempresa = @empresa,  Pais_Salida = @paisSalida, Pais_llegada = @paisLlegada, Salida = @Diasalida, Regreso= @Diaregreso, Precio=@precio, Telefono = @telefono, Email= @email WHERE Id_Vempresa=@id";
+                string query = "UPDATE empresavueloseng SET Nombre_Vempresa = @empresa,  Pais_Salida = @paisSalida, Pais_llegada = @paisLlegada, Salida = @Diasalida, Regreso= @Diaregreso, Precio=@precio, Moneda=@moneda, Telefono = @telefono, Email= @email WHERE Id_Vempresa=@id";
                 MySqlCommand comando = new MySqlCommand(query, conexion);
 
                 comando.Parameters.AddWithValue("@empresa", Txtvempresa.Text);
@@ -77,6 +78,7 @@ namespace CAtravels
                 comando.Parameters.AddWithValue("@Diasalida", TxtSalida.Text);
                 comando.Parameters.AddWithValue("@Diaregreso", Txtllegada.Text);
                 comando.Parameters.AddWithValue("@precio", Txtprecio.Text);
+                comando.Parameters.AddWithValue("@moneda", Txtmoneda.Text);
                 comando.Parameters.AddWithValue("@telefono", Txttelefono.Text);
                 comando.Parameters.AddWithValue("@email", Txtemail.Text);
                 comando.Parameters.AddWithValue("@id", txtid.Text);
@@ -85,7 +87,7 @@ namespace CAtravels
                 conec.Open();
 
                 MySqlCommand cmd = conec.CreateCommand();
-                cmd.CommandText = "select * from empresavuelos";
+                cmd.CommandText = "select * from empresavueloseng";
                 cmd.ExecuteNonQuery();
                 DataTable dt = new DataTable();
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);
@@ -100,6 +102,7 @@ namespace CAtravels
                 TxtSalida.Text = "";
                 Txtllegada.Text = "";
                 Txtprecio.Text = "";
+                Txtmoneda.Text = "";
                 Txttelefono.Text = "";
                 Txtemail.Text = "";
                 txtid.Text = "";

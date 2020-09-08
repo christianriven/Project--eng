@@ -87,6 +87,33 @@ namespace CAtravels
         protected global::System.Web.UI.WebControls.TextBox TxtPempresa;
 
         /// <summary>
+        /// Control ListBox4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ListBox4;
+
+        /// <summary>
+        /// Control ListBox5.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ListBox5;
+
+        /// <summary>
+        /// Control Txtmoneda.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txtmoneda;
+
+        /// <summary>
         /// Control TxtDempresa.
         /// </summary>
         /// <remarks>

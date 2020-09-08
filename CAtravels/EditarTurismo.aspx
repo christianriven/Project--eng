@@ -100,7 +100,11 @@
             </p>
 			&nbsp;<p>Price: </p>
             <p>
-                <asp:TextBox ID="TxtDempresa" runat="server" Height="16px" Width="370px" ></asp:TextBox>
+                <asp:TextBox ID="Txtprecio" runat="server" Height="16px" Width="370px" ></asp:TextBox>
+            </p>
+            &nbsp;<p>Currency: </p>
+            <p>
+                <asp:TextBox ID="Txtmoneda" runat="server" Height="21px" Width="370px" ></asp:TextBox>
             </p>
 			&nbsp;<p>Package to be offer: </p>
             <p>
@@ -114,8 +118,7 @@
             <p>
                 <asp:TextBox ID="TxtEempresa" runat="server" Height="29px" Width="141px"></asp:TextBox>
             </p>
-			&nbsp;
-
+			&nbsp;&nbsp;
 
             <div class="btn__form">
             	&nbsp;<asp:Button ID="Button1" runat="server" Text="SELECT" cssClass="btn__reset" Height="34px" OnClick="Button1_Click" Width="261px"/>
@@ -138,6 +141,7 @@
                     <asp:BoundField DataField="Ubicacion_empresa" HeaderText="Location" />
                     <asp:BoundField DataField="Promocion_mes" HeaderText="Package" />
 			        <asp:BoundField DataField="Precio" HeaderText="Price" />
+                    <asp:BoundField DataField="Moneda" HeaderText="Currency" />
                     <asp:BoundField DataField="Telefono_contacto" HeaderText="Phone Number" />                   
 			        <asp:BoundField DataField="Email_contacto" HeaderText="Email" />
          </Columns>

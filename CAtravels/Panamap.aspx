@@ -53,7 +53,7 @@
                         <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PACKAGES</asp:LinkButton>
                     </li>
 				   <li>
-                       <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">PROMOTIONS</asp:LinkButton>
+                       <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">OFFERS</asp:LinkButton>
                     </li>
 				</ul>
 			</div>	

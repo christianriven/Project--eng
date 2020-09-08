@@ -38,7 +38,7 @@ namespace CAtravels
         {
             int retorno = 0;
             MySqlConnection conexion = conexionBD.ObtenerConexion();
-            MySqlCommand comando = new MySqlCommand(string.Format("Delete From empresavuelos where Id_Vempresa={0}", pId), conexion);
+            MySqlCommand comando = new MySqlCommand(string.Format("Delete From empresavueloseng where Id_Vempresa={0}", pId), conexion);
 
             retorno = comando.ExecuteNonQuery();
             conexion.Close();
@@ -49,7 +49,7 @@ namespace CAtravels
         {
             int retorno = 0;
             MySqlConnection conexion = conexionBD.ObtenerConexion();
-            MySqlCommand comando = new MySqlCommand(string.Format("Delete From empresa where Id_empresa={0}", pId), conexion);
+            MySqlCommand comando = new MySqlCommand(string.Format("Delete From empresaeng where Id_empresa={0}", pId), conexion);
 
             retorno = comando.ExecuteNonQuery();
             conexion.Close();
