@@ -1,5 +1,11 @@
 ﻿@charset "utf-8";
 /* CSS Document */
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 #franja{
 	background-color: #0d47a1 ;
 	background-position: center;
@@ -9,19 +15,16 @@ nav-wrapper{
 	background-color: crimson;
 }
 
-#franja-inicio{
-	background-color: #2962ff ;
-	background-position: center;
-	margin: auto;
-}
 #franja-pestanas{
 	background-color: #cddc39 ;
 	background-position: center;
 	margin: auto;
 }
 
-#fondo{
-	background-color:#f9fbe7 ;
+#fondo {
+	background-color: #f9fbe7;
+
+	font-size: 16px;
 }
 
 #cuadrito{
@@ -473,6 +476,35 @@ padding-left: 190px;
 	font-family: "Porky's";
 }
 
-#franja {
-	color #e1f5fe
+
+
+.container{
+	width: 90%;
+	margin:auto;
+}
+.nav-main {
+	font-size: 17px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	padding: 20px 0;
+	background-color: #cddc39;
+}
+
+.nav-brand {
+	width: 50px;
+}
+
+.nav-brand ul  {
+	display: flex;
+}
+
+.nav-brand ul li{
+	padding: 10px;
+}
+
+.nav-main ul.nav-menu{
+	flex: 1;
+	margin-left: 20px;
 }

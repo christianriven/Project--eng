@@ -78,6 +78,8 @@
         <asp:TextBox ID="Txtllegada" runat="server" TextMode="Date"></asp:TextBox>
 &nbsp;&nbsp;<p>Precio</p>
 			<asp:TextBox ID="Txtprecio" runat="server" ></asp:TextBox>
+        &nbsp;&nbsp;<p>Moneda:</p>
+			<asp:TextBox ID="Txtmoneda" runat="server" ></asp:TextBox>
 &nbsp;&nbsp;
 
 </select><p>Teléfono </p>
@@ -108,6 +110,7 @@
                     <asp:BoundField DataField="Salida" HeaderText="Día de salida" />
                     <asp:BoundField DataField="Regreso" HeaderText="Día de llegada" />
                     <asp:BoundField DataField="Precio" HeaderText="Precio" />
+                    <asp:BoundField DataField="Moneda" HeaderText="Moneda" />
 			        <asp:BoundField DataField="Telefono" HeaderText="Numero de telefono" />
 			        <asp:BoundField DataField="Email" HeaderText="Email" />
          </Columns>

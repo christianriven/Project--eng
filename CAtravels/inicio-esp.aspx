@@ -8,6 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CA TRAVELS</title>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <!-- Bootstrap -->
 
     <link href="css/mi-estilo.css" rel="stylesheet">
@@ -18,7 +19,7 @@
 	   <link href="PAQUETES.html" rel="stylesheet">
 	   <link href="PAQUETES-2.html" rel="stylesheet">
 	   <link href="HOME.html" rel="stylesheet">
-	   <link rel="stylesheet" href="css/css.css">
+	   <link rel="stylesheet" href="mi-estilo.css">
 	   
 
 	
@@ -31,39 +32,52 @@
 	
 <div class="container" id="fondo">
 	
-	<nav>
-    <div class="nav-wrapper" id="franja">       
-      <a href="#" class="brand-logo"></a>
-	  <img src="imagenes/Logo.png" width="6%" height="75%">
-    </div>
-  </nav>
+	
       
-  <div class="row" id="menuprincipal1">
-		<div class="col-12">
-			<div class="menudelapagina">
-				<ul id="palabras" >
-			  <li>
-                  <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click" >INICIO</asp:LinkButton>
-&nbsp;</li>
+  <div class="container" id="menuprincipal1">
+	  <nav class="nav-main">
+
+		  <ul class="nav-menu">
+                 <li>
+					 <br>
+                  <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click" >INICIO</asp:LinkButton>&nbsp;</li>
 				  <li>
-                      <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">VUELOS</asp:LinkButton>
-                    </li>
+					  <br>
+                      <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">VUELOS</asp:LinkButton></li>
 					<li>
-						<asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PAQUETES</asp:LinkButton>
-                        
-                    </li>
+						<br>
+						<asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PAQUETES</asp:LinkButton></li>
 				   <li>
+					   <br>
                        <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">PROMOCIONES</asp:LinkButton>
                     </li>
-				</ul>
-			</div>	
-		</div>
+		   </ul>
+		  <ul class="nav-menu-right">
+			  <li>
+				  <a href="#">
+					  <i class="fas fa-search"></i>
+				  </a>
+			  </li>
+		  </ul>
+	  </nav>
   </div>
 	
 	
-  <div class="col-5"> 
-	<img class="tp-kbimg" src="imagenes/BANNER 1.png" style="position: absolute; height: 356px; width: 846px; transform: translate3d(-30px, 0px, 0px) scale(1.1, 1.1); transform-origin: 0% 0% 0px; top: 3px; left: 15px;"></div>
+   <div class="col-8"> 
+	<img class="tp-kbimg" src="imagenes/BANNER 1.png" style="position: absolute; height: 327px; width: 971px; transform: translate3d(-30px, 0px, 0px) scale(1.1, 1.1); transform-origin: 0% 0% 0px; top: 147px; left: 80px;"></div>
 		<!-- LAYERS -->
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 	<br>
 	<br>
 	<br>
