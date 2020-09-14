@@ -58,14 +58,14 @@
     </script>
   	  <form id="form1" runat="server">
   	<!-- body code goes here -->
-<div class="container"> 
+<div class="containaer"> 
 	
 	<div class="nav-wrapper" id="franja">       
       <a href="#" class="brand-logo"></a>
 	       <img src="imagenes/Logo.png" width="6%" height="75%">
   </div>
 	
-	<div class="container" id="menuprincipal1">
+	<div class="contaidner" id="menuprincipal1">
 	  <nav class="nav-main">
 
 		  <ul class="nav-menu">

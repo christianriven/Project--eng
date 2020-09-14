@@ -25,7 +25,7 @@
   	<!-- body code goes here -->
 
 
-	  <div class="container" id="fondo">
+	  <div class="contaainer" id="fondo">
 	
 	<nav>
     <div class="nav-wrapper" id="franja">       
@@ -34,28 +34,28 @@
     </div>
   </nav>
       
- <div class="container" id="menuprincipal1">
+ <div class="containera" >
 	  <nav class="nav-main">
 
 		  <ul class="nav-menu">
                  <li>
 					 <br>
-                  <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click" >INICIO</asp:LinkButton>&nbsp;</li>
+                  <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LBinicio_Click" >HOME</asp:LinkButton>&nbsp;</li>
 				  <li>
 					  <br>
-                      <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">VUELOS</asp:LinkButton></li>
+                      <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LBvuelos_Click">FLIGHTS</asp:LinkButton></li>
 					<li>
 						<br>
-						<asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PAQUETES</asp:LinkButton></li>
+						<asp:LinkButton ID="LinkButton3" runat="server" OnClick="LBpaquetes_Click">PACKAGES</asp:LinkButton></li>
 				   <li>
 					   <br>
-                       <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">PROMOCIONES</asp:LinkButton>
+                       <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton2_Click">OFFERS</asp:LinkButton>
                     </li>
 		   </ul>
 		  <ul class="nav-menu-right">
 			  <li>
 				  <a href="#">
-					  <i class="fas fa-search"></i>
+					  <i class="fas fa-sign-out-alt"></i>
 				  </a>
 			  </li>
 		  </ul>

@@ -135,5 +135,10 @@ namespace CAtravels
 
             }
         }
+
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Promociones-esp.aspx");
+        }
     }
 }

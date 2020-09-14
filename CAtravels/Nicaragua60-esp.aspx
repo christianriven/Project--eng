@@ -25,7 +25,7 @@
   	<!-- body code goes here -->
 
 
-	  <div class="container" id="fondo">
+	  <div class="constainer" id="fondo">
 	
 	<nav>
     <div class="nav-wrapper" id="franja">       
@@ -34,26 +34,32 @@
     </div>
   </nav>
       
-  <div class="row" id="menuprincipal1">
-		<div class="col-12">
-			<div class="menudelapagina">
-				<ul id="palabras" >
+  <div class="contaifner" id="menuprincipal1">
+	  <nav class="nav-main">
+
+		  <ul class="nav-menu">
+                 <li>
+					 <br>
+                  <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click" >INICIO</asp:LinkButton>&nbsp;</li>
+				  <li>
+					  <br>
+                      <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">VUELOS</asp:LinkButton></li>
+					<li>
+						<br>
+						<asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PAQUETES</asp:LinkButton></li>
+				   <li>
+					   <br>
+                       <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">PROMOCIONES</asp:LinkButton>
+                    </li>
+		   </ul>
+		  <ul class="nav-menu-right">
 			  <li>
-                  <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click">INICIO</asp:LinkButton>
-                    </li>
-                    <li>&nbsp;<asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">VUELOS</asp:LinkButton>
-                    </li>
-					<li></li>
-                     <li>
-                       <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PAQUETES</asp:LinkButton>                     
-                    </li>
-                    <li>
-                        <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">PROMOCIONES</asp:LinkButton>
-                    </li>
-                   
-				</ul>
-			</div>	
-		</div>
+				  <a href="#">
+					  <i class="fas fa-search"></i>
+				  </a>
+			  </li>
+		  </ul>
+	  </nav>
   </div>
 
 		  <table width="1631" border="0" cellpadding="0" cellspacing="10">

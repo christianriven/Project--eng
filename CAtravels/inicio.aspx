@@ -29,7 +29,7 @@
 	
     <form id="form1" runat="server">
 	
-<div class="container" id="fondo">
+<div class="congtainer" id="fondo">
 	
 	<nav>
     <div class="nav-wrapper" id="franja">       
@@ -38,28 +38,35 @@
     </div>
   </nav>
       
-  <div class="row" id="menuprincipal1">
-		<div class="col-12">
-			<div class="menudelapagina">
-				<ul id="palabras">
-				  <li>
-                      <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click">HOME</asp:LinkButton>
-                    </li>
-				  <li>
-                      <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click1">FLIGHTS</asp:LinkButton>
-                    </li>
-				  <li>
-					  <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PACKAGES</asp:LinkButton>
-                      
-                    </li>
-				   <li>
-                       <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">OFFERS</asp:LinkButton>
-                    </li>
-				</ul>
-			</div>	
-		</div>
-	</div>
+ 
 	
+	 <div class="contdainer" id="menuprincipal1">
+	  <nav class="nav-main">
+
+		  <ul class="nav-menu">
+                 <li>
+					 <br>
+                  <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LBinicio_Click" >HOME</asp:LinkButton>&nbsp;</li>
+				  <li>
+					  <br>
+                      <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LBvuelos_Click">FLIGHTS</asp:LinkButton></li>
+					<li>
+						<br>
+						<asp:LinkButton ID="LinkButton3" runat="server" OnClick="LBpaquetes_Click">PACKAGES</asp:LinkButton></li>
+				   <li>
+					   <br>
+                       <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton2_Click">OFFERS</asp:LinkButton>
+                    </li>
+		   </ul>
+		  <ul class="nav-menu-right">
+			  <li>
+				  <a href="#">
+					  <i class="fas fa-search"></i>
+				  </a>
+			  </li>
+		  </ul>
+	  </nav>
+  </div>
 	
   <div class="col-5"> 
 	<img class="tp-kbimg" src="imagenes/BANNER 1.png" style="position: absolute; height: 327px; width: 971px; transform: translate3d(-30px, 0px, 0px) scale(1.1, 1.1); transform-origin: 0% 0% 0px; top: 147px; left: 80px;"></div>

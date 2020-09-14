@@ -1,13 +1,13 @@
 ﻿@charset "utf-8";
 /* CSS Document */
-{
+*{
 	box-sizing: border-box;
-	margin: 0;
+	margin: auto;
 	padding: 0;
 }
 
 #franja{
-	background-color: #0d47a1 ;
+	background-color: #ffff ;
 	background-position: center;
 	margin: auto;
 }
@@ -23,19 +23,30 @@ nav-wrapper{
 
 #fondo {
 	background-color: #f9fbe7;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1440px;
+	overflow: hidden;
+	min-height: 1440px;
+}
 
-	font-size: 16px;
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1440px;
+	overflow: hidden;
+	min-height: 1440px;
 }
 
 #cuadrito{
 	background-color:#078DA6  ;
 }
 
-#franja-bottom{
-	background-color: #0d47a1 ;
-	background-position: center;
-	margin: auto;
-}
+
 .container {
 	background-size: contain;
 	background-image: url("../imagenes/fondo.png")

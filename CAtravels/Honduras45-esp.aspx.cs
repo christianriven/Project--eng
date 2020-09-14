@@ -42,5 +42,10 @@ namespace CAtravels
         {
             Response.Redirect("Paquetes1-esp.aspx");
         }
+
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Promociones-esp.aspx");
+        }
     }
 }

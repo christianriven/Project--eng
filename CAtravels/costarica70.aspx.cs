@@ -44,5 +44,10 @@ namespace CAtravels
         {
             Response.Redirect("Mastercard.aspx");
         }
+
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Promociones.aspx");
+        }
     }
 }

@@ -24,7 +24,7 @@ namespace CAtravels
 
         protected void LinkButton2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Vuelos-esp.aspx");
+            Response.Redirect("Promociones-esp.aspx");
         }
 
         protected void LinkButton3_Click(object sender, EventArgs e)
@@ -70,6 +70,21 @@ namespace CAtravels
         protected void gvdlista_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void LBvuelos_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Bvuelos-esp.aspx");
+        }
+
+        protected void LBpaquetes_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Paquetes1-esp.aspx");
+        }
+
+        protected void LBinicio_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("inicio-esp.aspx");
         }
     }
 }

@@ -171,5 +171,15 @@ namespace CAtravels
                 alerta.Text = "<script>Swal.fire('Cuidado', 'Rellene todos los espacios', 'error') </script>";
             }
         }
+
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Promociones-esp.aspx");
+        }
+
+        protected void LBvuelos_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Bvuelos-esp.aspx");
+        }
     }
 }

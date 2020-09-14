@@ -58,34 +58,40 @@
     </script>
   	  <form id="form1" runat="server">
   	<!-- body code goes here -->
-<div class="container"> 
+<div class="contaianer"> 
 	
 	<div class="nav-wrapper" id="franja">       
       <a href="#" class="brand-logo"></a>
 	       <img src="imagenes/Logo.png" width="6%" height="75%">
   </div>
 	
-	<div class="row" id="menuprincipal1">
-		<div class="col-12">
-			<div class="menudelapagina">
-				<ul id="palabras">
+	<div class="conftainer" id="menuprincipal1">
+	  <nav class="nav-main">
+
+		  <ul class="nav-menu">
+                 <li>
+					 <br>
+                  <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LBinicio_Click" >HOME</asp:LinkButton>&nbsp;</li>
 				  <li>
-                      <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">HOME</asp:LinkButton>
-                    </li>
-				  <li>
-                      <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">FLIGHTS</asp:LinkButton>
-                    </li>
+					  <br>
+                      <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LBvuelos_Click">FLIGHTS</asp:LinkButton></li>
 					<li>
-                        <asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton4_Click">PACKAGES</asp:LinkButton>
-                      
-                    </li>
+						<br>
+						<asp:LinkButton ID="LinkButton3" runat="server" OnClick="LBpaquetes_Click">PACKAGES</asp:LinkButton></li>
 				   <li>
-                       <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton3_Click">OFFERS</asp:LinkButton>
+					   <br>
+                       <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton2_Click">OFFERS</asp:LinkButton>
                     </li>
-				</ul>
-			</div>	
-		</div>
-	</div>
+		   </ul>
+		  <ul class="nav-menu-right">
+			  <li>
+				  <a href="#">
+					  <i class="fas fa-search"></i>
+				  </a>
+			  </li>
+		  </ul>
+	  </nav>
+  </div>
 	
 	<div class="col-4 col-xl-12">
 	  <h1 align="justify" id="encuentra" class="">Flight Configuration</h1>

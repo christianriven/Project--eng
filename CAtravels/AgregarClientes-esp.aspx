@@ -14,7 +14,7 @@
 </head>
 <body>
 
-	<div class="container">
+	<div class="containear">
 		&nbsp;<div class="form__top">
 			<h1><span>CA</span></h1><h2><span>Registro</span></h2>
 		</div>

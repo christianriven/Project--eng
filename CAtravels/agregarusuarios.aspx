@@ -61,7 +61,7 @@
 
     </script>
 
-	<div class="container">
+	<div class="conatainer">
 		<div class="form__top">
 			<h1><span>CA TRAVELS</span></h1><h2><span>Register</span></h2>
 		</div>

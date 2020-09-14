@@ -26,7 +26,7 @@
   	  <form id="form1" runat="server">
   	<!-- body code goes here -->
 
-	    <div class="container" id="fondo"> 
+	    <div class="contgainer" id="fondo"> 
 		  
   <nav>
     <div class="nav-wrapper" id="franja">       
@@ -36,7 +36,7 @@
   </nav>
       
 
-	  <div class="container" id="menuprincipal1">
+	  <div class="contadiner" id="menuprincipal1">
 	  <nav class="nav-main">
 
 		  <ul class="nav-menu">

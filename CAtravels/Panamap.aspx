@@ -28,7 +28,7 @@
   	  <form id="form1" runat="server">
   	<!-- body code goes here -->
 
-	    <div class="container" id="fondo"> 
+	    <div class="contafiner" id="fondo"> 
 		  
   <nav>
     <div class="nav-wrapper" id="franja">       
@@ -38,27 +38,33 @@
   </nav>
       
 
-	  <div class="row" id="menuprincipal1">
-		<div class="col-12">
-			<div class="menudelapagina">
-				<ul id="palabras">
+	 <div class="cosntainer" id="menuprincipal1">
+	  <nav class="nav-main">
+
+		  <ul class="nav-menu">
+                 <li>
+					 <br>
+                  <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LBinicio_Click" >HOME</asp:LinkButton>&nbsp;</li>
 				  <li>
-                      <asp:LinkButton ID="LBinicio" runat="server" OnClick="LBinicio_Click">HOME</asp:LinkButton>
-                    </li>
-				  <li>
-                      <asp:LinkButton ID="LBvuelos" runat="server" OnClick="LBvuelos_Click">FLIGHTS</asp:LinkButton>
-                    </li>
-				  <li></li>
+					  <br>
+                      <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LBvuelos_Click">FLIGHTS</asp:LinkButton></li>
 					<li>
-                        <asp:LinkButton ID="LBpaquetes" runat="server" OnClick="LBpaquetes_Click">PACKAGES</asp:LinkButton>
-                    </li>
+						<br>
+						<asp:LinkButton ID="LinkButton3" runat="server" OnClick="LBpaquetes_Click">PACKAGES</asp:LinkButton></li>
 				   <li>
-                       <asp:LinkButton ID="LBpromociones" runat="server" OnClick="LBpromociones_Click">OFFERS</asp:LinkButton>
+					   <br>
+                       <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton2_Click">OFFERS</asp:LinkButton>
                     </li>
-				</ul>
-			</div>	
-		</div>
-	</div>
+		   </ul>
+		  <ul class="nav-menu-right">
+			  <li>
+				  <a href="#">
+					  <i class="fas fa-search"></i>
+				  </a>
+			  </li>
+		  </ul>
+	  </nav>
+  </div>
 	
 			
 <h2>DIRECT TO PANAMA</h2>

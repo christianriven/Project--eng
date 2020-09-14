@@ -21,7 +21,7 @@
 
 	<form id="form1" runat="server">
 
-		<div class="container"> 
+		<div class="contaidfner"> 
  
 		<div class="nav-wrapper" id="franja">       
           <a href="#" class="brand-logo"></a>

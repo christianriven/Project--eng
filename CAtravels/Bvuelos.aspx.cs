@@ -27,7 +27,7 @@ namespace CAtravels
 
         protected void LinkButton2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Vuelos.aspx");
+            Response.Redirect("Promociones.aspx");
         }
 
         protected void LinkButton3_Click(object sender, EventArgs e)
@@ -71,6 +71,21 @@ namespace CAtravels
             }
             
 
+        }
+
+        protected void LBpaquetes_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Paquetes1.aspx");
+        }
+
+        protected void LBvuelos_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Vuelos.aspx");
+        }
+
+        protected void LBinicio_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("inicio.aspx");
         }
     }
 }
